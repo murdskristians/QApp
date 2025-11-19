@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import ResetPassword from './pages/auth/ResetPassword';
+import { Sidebar } from './components/sidebar/Sidebar';
 
 import './App.css';
 
@@ -54,18 +55,21 @@ function App() {
           element={user ? <Navigate to="/" replace /> : <ResetPassword />}
         />
 
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
             user ? (
-              <div>
-                <p>Welcome! You are logged in.</p>
-                <button onClick={handleSignOut}>Sign Out</button>
+              <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
+                <Sidebar user={user} />
+                <div style={{ flex: 1, padding: '20px', overflow: 'auto' }}>
+                  <p>Welcome! You are logged in.</p>
+                  <button onClick={handleSignOut}>Sign Out</button>
+                </div>
               </div>
             ) : (
               <Navigate to="/auth/login" replace />
             )
-          } 
+          }
         />
 
         <Route path="*" element={<Navigate to="/auth/login" replace />} />
