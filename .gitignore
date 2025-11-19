@@ -23,4 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # verdaccio
-.verdaccio
+.verdaccio/*
+!.verdaccio/storage
+!.verdaccio/storage/**

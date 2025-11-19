@@ -1,0 +1,2385 @@
+{
+	"name": "typescript-optional",
+	"versions": {
+		"0.1.0": {
+			"name": "typescript-optional",
+			"version": "0.1.0",
+			"description": "",
+			"main": "dist/index.js",
+			"types": "dist/index.d.js",
+			"scripts": {
+				"prepublish": "npm run build",
+				"build": "tsc",
+				"test": "echo \"Error: no test specified\" && exit 1"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"typescript": "^2.5.3"
+			},
+			"_id": "typescript-optional@0.1.0",
+			"_shasum": "404479b9db1f3e2ae08db435570a69fcb4c98634",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "404479b9db1f3e2ae08db435570a69fcb4c98634",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-0.1.0.tgz",
+				"integrity": "sha512-m7wdSXNOPoJFYEorJA6aATUZeypg89OQpTQdIvwVgQ51E7mz4PKLkQeMUNIcAxAOwN2CKvywPPqQAHPMaiJzLw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDbAt+W/EqOyl0QpFeTh1oIXHHprteagl5ThaRorTDdoAIgVYiPIuzmK8Clwk1PAPK7Et/lKHTbeTnbWfJ5CQqIAnQ="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-0.1.0.tgz_1506689395449_0.7342072308529168"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.0": {
+			"name": "typescript-optional",
+			"version": "1.0.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"main": "dist/index.js",
+			"types": "dist/index.d.js",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "4a6f7245e5489526f05b83ae5eafd9c7d354300d",
+			"_id": "typescript-optional@1.0.0",
+			"_shasum": "cd93a2b1be9414e67cf8a85440dcc2a9666723c1",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "cd93a2b1be9414e67cf8a85440dcc2a9666723c1",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.0.0.tgz",
+				"integrity": "sha512-mp05Wef0AIQmrUhSjOAMXEXnv7PaI8ubupKw35T/hBp1uKXdG/vxo1bRD2fdXLiSnbLHF9BEjeKOfYzC9q9BHg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIEenT41IXbJWpegqPXNMtw88xNEpsVfN9wgw31q9BM8VAiBE1WV/7ALYeSUdh3nsiAUiAssgOqSlpdBxMTPi3NduNg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.0.0.tgz_1506750834664_0.9427289231680334"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.1": {
+			"name": "typescript-optional",
+			"version": "1.0.1",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.js",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "79e7b1e11fb131955332e69c5af1c1cb6f3a2be5",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.0.1",
+			"_shasum": "ee4112ae497650edf6a5247542f44b8f7a6b080e",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "ee4112ae497650edf6a5247542f44b8f7a6b080e",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.0.1.tgz",
+				"integrity": "sha512-k645mQ1uDBsTD54ZC+s+mbaoed5T+HV928K0dZA9VIxsaBTa4oXi6K5/+OqlnkvTXy0MpGLmuVKkQUIfARNdJQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIHWegfTDwfuZuq/LmLtYeMgDhS6pkyTso8VnyPXiJ4/2AiEAh7BzNTB2V7V1QEWQe15riX7MDPMAO18c/ZOH12rwexo="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.0.1.tgz_1506754219065_0.17554407636635005"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.0.2": {
+			"name": "typescript-optional",
+			"version": "1.0.2",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.js",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "f8432f7302e48e8947577548878008eef7dae62e",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.0.2",
+			"_shasum": "be652753f1af5ea1a8ccbbb8d4717f90db96b03e",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "be652753f1af5ea1a8ccbbb8d4717f90db96b03e",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.0.2.tgz",
+				"integrity": "sha512-vP2eYFYCRancUpmPUBvHGIOHIst5vApUJzv5Nu8Iaja7HtZkOlKPKt6jywVF/XGkzy5kXFyRjWEP+xIdVDqrTg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIB3caDO3ykpo8R7QqpVg+BO0hZI/NiZAyEH5Y9seVJgFAiBVXSthXijVi5i4kgHMxzyDlDaK+09siNm/ax/xT5w0yA=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.0.2.tgz_1506755486525_0.14092779369093478"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.1.0": {
+			"name": "typescript-optional",
+			"version": "1.1.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.js",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "c4fca6eb0e29caad81c30e331be381a1f3933dfa",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.1.0",
+			"_shasum": "62de711abe978e54e4174627b60b31bd73244b90",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "62de711abe978e54e4174627b60b31bd73244b90",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.1.0.tgz",
+				"integrity": "sha512-33BdFYGWmPn2Qbo4udiJ/J5RzExqQLRrNyvgQeZ/io2veD5gO92Ki5fOPjbeKzeY8Y61fyjDK+xKTWtLngxzIg==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIHOi0I7QaEiePcZkD2T/MPmgwLDTZk5jLFbKw9W3Uwt3AiBCK5o2Fs/rEZZD/NEQMVZQGBw16BqZcelB3zp6BTOWGw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.1.0.tgz_1506956022485_0.5126555217429996"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.2.0": {
+			"name": "typescript-optional",
+			"version": "1.2.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.js",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "043aec35639e121407b6f5f95ba56118fca9d90d",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.2.0",
+			"_shasum": "9d9a9e5e1ff5bd0549ab889f3212f691dcc6c55b",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "9d9a9e5e1ff5bd0549ab889f3212f691dcc6c55b",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.2.0.tgz",
+				"integrity": "sha512-PAOMJihRucKS5dUSVGywX40cmExi/DeE+yLlXJC8uFfhUkCzzajGcTfxY5yQCIUR7oHOI6WrjwQ0BEh/M0kecQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDkvpPSMh2un9FOwQSA8T/jBDR1SRSnPLNL9sw5WtNGpgIhALxzobQFDE6fX+9oP7epqL190IKUfv5Q0PCJno4xp9Hn"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.2.0.tgz_1509005752973_0.11060010804794729"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.2.1": {
+			"name": "typescript-optional",
+			"version": "1.2.1",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.js",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "19ac2045ca5f1085346848d4242717f62b62c2bf",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.2.1",
+			"_shasum": "7323ea7a289aa7f3e4e7c555dd29e5e1b1f1a159",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "7323ea7a289aa7f3e4e7c555dd29e5e1b1f1a159",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.2.1.tgz",
+				"integrity": "sha512-tM3h952iY7ZfaOlRHTXZbHgmo78hz4p4BSWR61gTeG7pLSbDlcpM1fatAPqvfiNJXbcOwN66VagLLBcgx/VbsQ==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCICA4R1Phe0vu3h8IdxRCaSpKyJkyLYtr2MHhV1KwbO80AiEAizhVe6t8sQoa9ILsc5PDecI3bukTAy61UryOagl8DCA="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.2.1.tgz_1509069591218_0.41513510537333786"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.3.0": {
+			"name": "typescript-optional",
+			"version": "1.3.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.ts",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "f2ca030a0caec5c01e27e13b5540b80b75b86540",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.3.0",
+			"_shasum": "5a5c84c380661dee3621c3936f120056b2a47151",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "5a5c84c380661dee3621c3936f120056b2a47151",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.3.0.tgz",
+				"integrity": "sha512-+YkrXqhxHHlCMIHJLVzu8sa0L/qtJZs2vcCZ4K1dHuuuYuaJYQMF+gnYAx8v587FySx1QYpfaMTH6cadRg4Zqw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIA7QSchEZ4zniR2pk4QOW91UxzQCxqFl7vC99Y/z77aYAiBCG85XyTAehmHV8RapXs2gBcpNx9TT/AYIAStfo/Qoxg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.3.0.tgz_1510536481721_0.7255409928038716"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.4.0": {
+			"name": "typescript-optional",
+			"version": "1.4.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.ts",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "9d1ffdebbced81cdca6076958d22539a9a82bd71",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.4.0",
+			"_shasum": "1c411afd74da23314494709bfe5249cd457a8f6e",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "1c411afd74da23314494709bfe5249cd457a8f6e",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.4.0.tgz",
+				"integrity": "sha512-0nmmJdJDviXULnh9+xzrX+/g31Kcy/L0evIvCMXyk+3Jhwe7Ool0S3evfZUuLDsivE33FaTO1l0HQqkcG441QA==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDtIZ0ZQeJezgRa7RB9oSS9mC/OZ/lbA43FX2HX0x/fUwIhAOTKddT6fosOjudYVlApQ6FyPKXDVQOmmmxskfTsrLhc"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.4.0.tgz_1512714246729_0.6291688510682434"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.5.0": {
+			"name": "typescript-optional",
+			"version": "1.5.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.ts",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "8707159acff34879ffb5c34d531d323156e32b0c",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.5.0",
+			"_shasum": "7ad1ab07ce4ca883cc961c07cf3acec9eabe8e38",
+			"_from": ".",
+			"_npmVersion": "3.10.10",
+			"_nodeVersion": "6.11.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"shasum": "7ad1ab07ce4ca883cc961c07cf3acec9eabe8e38",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.5.0.tgz",
+				"integrity": "sha512-4VZlQuDJ+fWgAJVKKgBwJAN7oSIJ4F6jYIbqKxSbCzoSKkTJLEi3X7nSXfxQlfLO9hP7nGOGe6PggPu69q6Obw==",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQC8MJMhDYuztUb5w8huYkiNqgZC9vbvSjr4LDn16DRFOQIhAPS/p73WPriwnYxDhkCC82UkdlyPu1aj2xWUFAOmmua3"
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional-1.5.0.tgz_1514574648975_0.976007055491209"
+			},
+			"directories": {},
+			"contributors": []
+		},
+		"1.6.1": {
+			"name": "typescript-optional",
+			"version": "1.6.1",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.ts",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "dd1185c1efa80f340a3f2ad3f7bb3fb8511f1e54",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.6.1",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "8.9.4",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-hE7QmyBxoj2eTOTgSiCDxlBvesbjps3z812SDGTbubl3KKYit1o6oLFCxUk2nv7sRfAn4eWVQJkLNxGEuIiMyg==",
+				"shasum": "9d005e0d2f9d4de047a8f5373710d62a57e6454d",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.6.1.tgz",
+				"fileCount": 11,
+				"unpackedSize": 15214,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbDMVaCRA9TVsSAnZWagAALSwP/A7KhY/Vfbua3roY5Mx4\nN6E/w9XE9cURzfIte2fPTyiWyfP3ZKC0yOo3g/bDzmi/DNylfiUgEtqlEiq3\nnoGe/IFA2+WiVT5sJqCrd/FX1TIpEjGZR+on/HQvwt5sLokfs8UkO9BhaDQE\nx1AiORA9CSvM3soYmEZ6vxRDAEgfGnEofMK4m+ScamnXxNrbrpDleB/a5drh\nugzuziizbAwrca3adNYWh7vgUJUrv1Tu6gQlJc4HccB677o2dzc4XdB4M0oa\n9ltq8uTF6cQvmy51SHHYWU04pSwK3vvtWTOfkkV1mdD3VIvYO30qFMLyE1Ak\nA3Bi3cCc7lvYhMyGmEuHGBbX0LSbBFFw6a+WnI9Ru6Ib+jX3ZXUrhqEEBM5A\n9ovPcQdNRu7+NMeIYr5TL3JuBLaWsTFSnAPD2tAZtJSciP3TjM6DlWkvqJuH\nJ4EaV41FRj8qZViSotZQjTtL3pmmbfPVGVCk51/MSTrqkbWGSeJvj9iwVSao\nHX7LeT3kE8CfdQIT+6gCwH24psxQ+4qep0+OWoqtrUECwsUbl1q7w/27xhG5\n4cZ38fEvVUQN1bn3Yb/7Gd3gZxmyzgw8O2/RAXAmZx2ZMbEcL3ezz8TSuZuO\nMIGrjQkDqKC3DP81dT7cvke5aLEjdP+sWurAG7GIeP9T0nogfduE+LjCiy1A\n3Jsv\r\n=kSpR\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIDRFR/xumBSdiNAT4uiMzAxKudoyh24EedCSqJmYE7bwAiEAnYqNumvoGVeIaBOmOs1kxcDVwNJeo6HxlPYJ1EBwALs="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_1.6.1_1527563608983_0.7144139320705429"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.7.0": {
+			"name": "typescript-optional",
+			"version": "1.7.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.ts",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "78fcbe0ae817622a9193a71e9e0d1b561185ef6e",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.7.0",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "8.9.4",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-Gx9TXdlZ1Lc4Ona7sytAF+A9v8fXMe5X1k9jZ8KyzNgg1LZlfeYK3GMSDwXlyzSAfhovKj3QqMl4i7vdlQgGkQ==",
+				"shasum": "0871444234f59edcaa1ad7f03808ed93bc025029",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.7.0.tgz",
+				"fileCount": 11,
+				"unpackedSize": 15203,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbFWSYCRA9TVsSAnZWagAA4DEQAIB8s4wAi2d07KvIbP1H\nnwoO0DpntcGmUd9kWpCtWnJb4pyZ8t0lhzCtM1loL/Wyv89MMXoiaSX63kOc\nDdaA5ozcdthhZLbgp06N6KARqe8ZMUIQoELede68Dtiy/Z9yhbrqJkjbY1eo\nT57wp30B7M0BDPmVd6SqRfQv43bM5hs8fmr1Rfk70hy56YUdymfpoH+iY1h5\nD4DgNzdBYNwMvgGJZV39xQymucqEx5DEV3zB3QvSc2uiGIQdw9ihOy51DdHp\nR4IRowe/P1mdG3jRDZ7bBM4uaJQUoFJOiS1leUHDmfpwsT6+83US+sYaLFb2\n98xtKZLIyhKcHeYuBjkR4+tchmGrYIz56gUScrhD56XQ5MuSAIHtalIr2/3Z\ny7a2gO+eONTDPK1HVJ6elztRnIvs8Pt6r7RRRocJljGTY138otR92lFANjRa\niM2ct4BixO/qu4ccreFgvaw/E+cgZATZzZVws/4GcXsQ6oPf2tNO9v+J5Xtn\nxmI3c1mmZLNCfzMwkR3tQxUnOxDZSo1MFYR22Cg0MbeNSexJyQRxJlRUjoA9\n5TZfkk94o0KpSLKiYxQk5QQfic+dOysWaZvVimWIjD4Lv3tju8kYdvP5I3FS\nfsFQ5lrH4zkdTeSaxh7aeoyMX2fsAOCE8RwaMs9QhFng9IFSAaeL3HmZno9d\nb4QN\r\n=w1nd\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIHl1SeXAREr+6QfB3p/dpu/h3SIeTWnmroYzz0sU+eg/AiEAu4IlS9yAJ3xUD29vFKfYX/b+7d/Y3hXT9Wf7KSqoBD0="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_1.7.0_1528128663514_0.384586131378684"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"1.8.0": {
+			"name": "typescript-optional",
+			"version": "1.8.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/lib/index.js",
+			"types": "dist/lib/index.d.ts",
+			"scripts": {
+				"prepublish": "npm run build-test",
+				"build": "tsc",
+				"test": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec dist/test",
+				"coverage": "remap-istanbul -i coverage/coverage.json -o testResult/lcov.info -t lcovonly",
+				"coveralls": "coveralls < testResult/lcov.info",
+				"build-test": "npm run build && npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.43",
+				"@types/power-assert": "^1.4.29",
+				"coveralls": "^3.0.0",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"power-assert": "^1.4.4",
+				"remap-istanbul": "^0.9.5",
+				"typescript": "^2.5.3"
+			},
+			"gitHead": "4e7f20ca5fad746e26344b96b57708bf8878007a",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@1.8.0",
+			"_npmVersion": "5.6.0",
+			"_nodeVersion": "8.10.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-313OpXGvG97CLgzEdDZOgNHGOOyIseWBMX7M7PG3YDNejSJXubVdshKO//kyovKkqE2FcapC6ZoVhteHDFRlFg==",
+				"shasum": "f9da28d5131382722a4724ee9a02f3effb355cca",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.8.0.tgz",
+				"fileCount": 9,
+				"unpackedSize": 19817,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbM2G0CRA9TVsSAnZWagAA0ZkP/iABKDTusPAgmYzD77AG\nDp4p9VVFCSyERmU6msl5evQVTtUx/O4AgLDJ3YLQmonm2fOp/KWMiLKmTjXI\nNNwiKTO2+nLBj9rS6EDI74fVuQq+qIGV1rjmpaGGQxrXYM8CIddyipt+nKZX\nToxBnhL/MhAxH9xH+i5GXA3NtBbPe5kBrnqBavaDuRzQFC5G8EtzidpS5xFn\nLg+TEj6PRjPfvraYbwJibTPSSimHcrpDE5zHAfY7pz6RXwiBzgYu8i2NVZzl\nSHCqsAS5ae/SQ2v/CLnyEzRBPx2bmyH/xWO9W9rd6tTHtBK0zTas2VmKXsM/\ny6optGTfAY7ybfCZZCtMC84dhu5HCy51LiCOOin56EuJ9ZkRL5jSQbFZfPL5\nC8/uFF36d32HUx0ALM/4hNO2nS9HjMo8ZjHYjN5sU1+47ArKjeaAH3+LEP2J\nAzGLhu4vNf8/hMEwTW8uW/QHgeFA4Af1PUrz7IAvZ86u6cPbCSV8WItuxror\nzMc48e8iTuYQ9xiRQ7gV2Mr2dA3QSibYGeHjuZiDDQPOU8njUdQbaaivkuqU\n7cSWL9S9IjuNHkYOeWMjZt7alfQF3f8ZOLQ/Y1WrrFuakr3aOFLrtBhd/OrL\ngJjrLyjgsdH6cMTmxAFZS1hoFy8/pHkiaTHNee8OvI5aBaIOTdUaRNqVu88N\n+IcR\r\n=879l\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIF8BRWy67VNC+Y5opoMOtWXadqF80/6JyLbB6Q6sGPHhAiBmsN1UjrLncUSy7Z5LGaKP5irzYpGe6OSAY0AxdQfKqg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_1.8.0_1530094004890_0.3977032355224388"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.1-alpha": {
+			"name": "typescript-optional",
+			"version": "2.0.1-alpha",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "nyc mocha src/*",
+				"coveralls": "coveralls < coverage/lcov.info",
+				"test:coverage": "npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.48",
+				"@types/power-assert": "^1.5.0",
+				"coveralls": "^3.0.2",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"nyc": "^13.1.0",
+				"power-assert": "^1.6.1",
+				"remap-istanbul": "^0.9.6",
+				"ts-node": "^7.0.1",
+				"tslint": "^5.12.0",
+				"typescript": "^3.2.2"
+			},
+			"nyc": {
+				"include": [
+					"src/**/*.ts"
+				],
+				"exclude": [
+					"src/**/*.spec.ts"
+				],
+				"extension": [
+					".ts"
+				],
+				"require": [
+					"ts-node/register"
+				],
+				"reporter": [
+					"lcov"
+				],
+				"sourceMap": true
+			},
+			"gitHead": "5442f1f4b3d1593d3332ccd169178dd1cb8d8b25",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.1-alpha",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "8.15.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-TjMV35B64eoLB4OkIzg+pZLAmJ7PvjFfsgS0+SxmdN3XjP7X5eTfAHHS0qJYO08nefQKLcWZYH3hG8LLM395Nw==",
+				"shasum": "14fc8048945db7faff43f4c9281d6af63a5f6ae9",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.1-alpha.tgz",
+				"fileCount": 12,
+				"unpackedSize": 20380,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcMOpfCRA9TVsSAnZWagAAdQgP/j0h6XgLukW4HgDMAui6\nlxoWe66+0ufp/J53zFsf0tnhtH+gIX+XId+3xgUb3bMQfxCjuF3DaP7xFgrx\n8BPx0b9fwBQKa9TebjLp40tD79GPoH6xrmO6oyasdSho+nk+QzY0wTnABrLy\nTozaMvzpu1TG8ynjrcmExlNC/d5yQ40NCK1WFkLW64A/f/4OiLKUFi8zKplB\nVffO8pvHqlwsyZCD20L27ubGGOvPehCwzFaPVBb+hLJhUMnxPpHMqkhWHM+w\niXYSEVDMwSbKqUFZF8eUa8RUZDR32xc3F85x4lXDT49vmSB4ArhU6KBHn1Sw\nhk0p+iW2jNp6o7DSDNCLpc+yHjwJ+lM/EyQJU+AOx1YRh44CeDdyoY+MD9Ta\nlpGlXHHJr+l9atmgrOnTUEOnoCef19ZNtOnzCErh0UZXdJfySJe7P9C2livi\nk+Q6F/N/KcO0qhkQ7SbJqVTM5Xnu3DjPGYnFfNfJvEV319Dx/OiC6MzS4Xx0\nJpP9ltF4I339W2FxxPyAlQTr8+Gfp8lZHHcToZOb49s7np/eDwe3PWXBVYLK\nM+qTg/upO09F9cXG+x7Tj45MPdki1KL8uiVN2CSPkyyueuu4/KyAZefM68XL\nVaqmlggAuSS8WrTw9p0Rkiy7bmpcU66/wMBmZzD9okeer/lVrI9qEtrFMWJx\nnR3L\r\n=tAFX\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIGtsgYLPBU1bYdm2Od08QzVivrXg93GUDSy9uEOt5PmrAiB8nqFronyIjs46lGwWArWhCszYDTJcI4lxL48U/GN6Pw=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.1-alpha_1546709598849_0.15604286087775798"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.1": {
+			"name": "typescript-optional",
+			"version": "2.0.1",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "nyc mocha src/*",
+				"coveralls": "coveralls < coverage/lcov.info",
+				"test:coverage": "npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.48",
+				"@types/power-assert": "^1.5.0",
+				"coveralls": "^3.0.2",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"nyc": "^13.1.0",
+				"power-assert": "^1.6.1",
+				"remap-istanbul": "^0.9.6",
+				"ts-node": "^7.0.1",
+				"tslint": "^5.12.0",
+				"typescript": "^3.2.2"
+			},
+			"nyc": {
+				"include": [
+					"src/**/*.ts"
+				],
+				"exclude": [
+					"src/**/*.spec.ts"
+				],
+				"extension": [
+					".ts"
+				],
+				"require": [
+					"ts-node/register"
+				],
+				"reporter": [
+					"lcov"
+				],
+				"sourceMap": true
+			},
+			"gitHead": "73157e0a090fccb079187461325ede11d5b415c2",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.1",
+			"_npmVersion": "6.4.1",
+			"_nodeVersion": "8.15.0",
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"dist": {
+				"integrity": "sha512-xuwmqsCjE4OeeMKxbNX3jjNcISGzYh5Q9R1rM5OyxEVNIr94CB5llCkfKW+1nZTKbbUV0axN3QAUuX2fus/DhQ==",
+				"shasum": "1dd4826bd751f78756e7eb3f96a16fbbeb3f7ee6",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.1.tgz",
+				"fileCount": 12,
+				"unpackedSize": 20374,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcMO+mCRA9TVsSAnZWagAAMrYP/3s81OJ8VEZXhtzp0fC8\ngS3poIGeYdFMjWMF2ULnFTghTCf8f0q1IQEJ7oeLGdP8BjvpUUnKMWd4GjmK\nTkUB+oYCmzXT2p5PTb83Yo4TQUrIpB5uRN/iek61XMLlMQULu9VKOnC4ILFf\ncmUxidYF3noMsjFpnOWsZih5/WS7GHtd1yt2p5PWtgVztb4dKBHMEUgDMVWN\nSL3IAtQvZRhesYulRn2ZDaqEjLfGjjE8nbIJFXVfiGQzg7qzUbZeIIUZqDTE\nQnRprKTSTOu5heyKm2KFnritfyeIKl7iuNP1IbYgRYUkknL9yunWioA7lfYL\nUNOLX2xu2xkehc2mE3N0E2K3AlF/24CcWMXCaai0LfdgXNddnLEsGo6Su2MG\nTO8+BTw81tcxrGTPxbemrWE5lBUmxKY+nSYYPBm9sy935FostxW91i5FLUG3\npT6/1nqtU7qxxmzp4eoYR1Eit863fGmPu3RmdUFcHRf41cNw1tbGJfq0bmT3\nZCIfWRkwrO+0LKlz+QugaI4OX8tdMmEh3aReivWQOP9TIaZ6f9l2K4+EFLie\nlAmQzB7j72EjRZOT0h7qxP4OU1nBplXXzU9lxEc4oyYeOeJ5uO3DasG802Je\nScXRbGT6M4lAfPeikUd+oQakHDXQcVLucDULKR6RMY1tJasqXXjQWMjnr2Mz\nQId0\r\n=xpx6\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIGADfroE4VOavkP38fwVGqUkzsxYoIF31ZR2AU+FDdb7AiAJUEWh4Sr/isMKoJm10KI9TnLfupOtOKLYcz+kgl95gg=="
+					}
+				]
+			},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"directories": {},
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.1_1546710949902_0.9910135946992307"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-1": {
+			"name": "typescript-optional",
+			"version": "2.0.2-1",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "nyc mocha src/*",
+				"coveralls": "coveralls < coverage/lcov.info",
+				"test:coverage": "npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.48",
+				"@types/power-assert": "^1.5.0",
+				"coveralls": "^3.0.2",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"nyc": "^13.1.0",
+				"power-assert": "^1.6.1",
+				"remap-istanbul": "^0.9.6",
+				"ts-node": "^7.0.1",
+				"tslint": "^5.12.0",
+				"typescript": "^3.2.2"
+			},
+			"nyc": {
+				"include": [
+					"src/**/*.ts"
+				],
+				"exclude": [
+					"src/**/*.spec.ts"
+				],
+				"extension": [
+					".ts"
+				],
+				"require": [
+					"ts-node/register"
+				],
+				"reporter": [
+					"lcov"
+				],
+				"sourceMap": true
+			},
+			"gitHead": "9f4ea968ef0056123d775ca1980eba773f9709a6",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-1",
+			"_nodeVersion": "16.13.1",
+			"_npmVersion": "8.1.2",
+			"dist": {
+				"integrity": "sha512-3WIAzHzLbWUghLu/kDKBNBWP5tmkcBIS0+Ry2Q/0H7dJSb3R54SjwmzOKzenG8FAAgr2tIsNr4+hztPeXiYW4Q==",
+				"shasum": "0c05e2892d97e491d0c312a9a628bf253c718478",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-1.tgz",
+				"fileCount": 13,
+				"unpackedSize": 21666,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh0gISCRA9TVsSAnZWagAAJIkQAKRTtCVSjhGCWXMd4H8+\nWWeMs899YipUiUW0ZExGGMJg+CAb8E9aNl+q54Xw3RAzvoWT0RwRgY9GRCIG\nmx/krD0OBO4T0otqmhx4TzzEvdgFz7pNZinm5BUT6A6xtjFrx8WvgWGBXV8z\n7yy0P0/JL0G7/gmlJlLGmjJyO7LJb6tWk7RfyVcP9ZXIQcvvsEU7VB1HA1G9\npYwZQMs2bs8H3jQ5LtSAL+jfSwnr0UndTBF3N5Cn12v2ViDiMYTnUUKaZxix\nxQMKT3Bsk5GxM0IpEc+cusNtZBsEmaXAxj94GEd/g6ZtC6QL2et4/ebzeDYB\n8Um5Z9iaRnL6qe1VZ3N34MDOV5NrKUFvSllHVnEJ684OX3h/W2lQF6vrsO20\nI1UVRnfe5u/TyJkYb9QK3TNowIy/gOz38i4SDbS8ZKrkwu5ah4o98QRSJkLR\n0OnqG9scl3uhzQUQMz+E7t7m568aOVgD+m7tIWlMWNkICTtjMuD/phCgmbOK\nO0AhODzuUwg1205dgCAaGGIkLU40BgIQnGt6Vw9AOJVww/xQMwOG7PTOjPD4\nsFI9TYs4BjTJz6sEuoe1Ez60DbGozbcANsdng6T0Ek8/zOPvc9NKYSesEHer\nj7lMSzJasHBiYU70k6DqS/iccXtuN78jG+yve2UWEOXPJdRFkwbmXNsyPzf2\nwo1g\r\n=CYq8\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQC5xDOffAhZOSi1L4g9j0BCFMYtd9g0bqDYgTrn+XJb9gIgGhvPR4Ep71pOeVii0eKZnslmj9vPbog7BB+JNkV17Sw="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-1_1641153042737_0.23652125584362227"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.0": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "nyc mocha src/*",
+				"coveralls": "coveralls < coverage/lcov.info",
+				"test:coverage": "npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.48",
+				"@types/power-assert": "^1.5.0",
+				"coveralls": "^3.0.2",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"nyc": "^13.1.0",
+				"power-assert": "^1.6.1",
+				"remap-istanbul": "^0.9.6",
+				"ts-node": "^7.0.1",
+				"tslint": "^5.12.0",
+				"typescript": "^3.2.2"
+			},
+			"nyc": {
+				"include": [
+					"src/**/*.ts"
+				],
+				"exclude": [
+					"src/**/*.spec.ts"
+				],
+				"extension": [
+					".ts"
+				],
+				"require": [
+					"ts-node/register"
+				],
+				"reporter": [
+					"lcov"
+				],
+				"sourceMap": true
+			},
+			"gitHead": "169f0fae9da652485914deb6fa503160908eefad",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.0",
+			"_nodeVersion": "16.13.1",
+			"_npmVersion": "8.1.2",
+			"dist": {
+				"integrity": "sha512-gDfbj16AQKRu0A4jhnIvSkyH0nlGE94T4VQgiaFezOYZxIDmnXpgYof6CL2hgL/GEXArZUPb/XHN9jTDEr06TQ==",
+				"shasum": "8a81613b31639a9d66254332639497829b13ec1c",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.0.tgz",
+				"fileCount": 13,
+				"unpackedSize": 21672,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh0gNkCRA9TVsSAnZWagAABWEP/15r97i0yF8BsfV4ggnw\nGCREDwUciMacu08+xlIEV3v65DBnWC0YUvdCLJ9v4lS8bCq6yRag1YskocCR\nzPReku1/7yJZPLi4X+u5204+kWHBBBhTN/d+0JexOhvJMcnSumaLDT7Ihjdb\nIpJ2wZ4BSELWVZ4lgShC7obDVB+LVSwvTuoC9+M5NhZIME3X+1msWKhAQZMc\nRs8r9yMzNoa86wAgVvFdt1bDtRnYPQkhRJLu0GWv5gW4MY9ZYeVlECOm9Wnj\nQYhBWs3EX5Iy0AP3yujNEq+pKlf5AlEsXlHgpq0L1osmFIk3WcQYr4APK4PB\nIa9GnhhVc8grrODy13OvXcZzfdz33L1Ys941w2rXtm2WYS4LMx6dHCrPRuzO\ndpmzsqz9j7CECXFtqbReVrt6YwY8t8yTaDKEHBWjWqVQb5Z+GAHim61yVbql\nPUyX/SIbyi3BqnLJK3qkKIE2lltxXSbIS8AJBUIPjcYRYKkDcbOkb+9+u2dW\ny1xMPfI10I/+fv/0Dc5sSniKAaIv0W19pZMA6ocIZgpiwYmEKKfzjO6sRvNh\nRweCuI6ajPUevBZGzZp5YRKe8IM/IOrTT01FmMFdZi9EGJqoaRkW6vvxg9PY\nICqZ0Zrb25rYtvP/MkcqeXB17gdRWe0ape0l+EDySsqpGTi0NIZ6uNbJcyGk\njp52\r\n=E/Zx\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIAXOvi+pftLkOj/BVN8DSQ6JAWVugwRXsKLVnkS5EWSsAiEAjdo+aB3DimOtiWncQ7IUNJfnYhNyzkApgl0wtmgg52I="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.0_1641153380048_0.1688986612075145"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.1": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.1",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "nyc mocha src/*",
+				"coveralls": "coveralls < coverage/lcov.info",
+				"test:coverage": "npm run test && npm run coverage"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/mocha": "^2.2.48",
+				"@types/power-assert": "^1.5.0",
+				"coveralls": "^3.0.2",
+				"istanbul": "^0.4.5",
+				"mocha": "^3.5.3",
+				"nyc": "^13.1.0",
+				"power-assert": "^1.6.1",
+				"remap-istanbul": "^0.9.6",
+				"ts-node": "^7.0.1",
+				"tslint": "^5.12.0",
+				"typescript": "^3.2.2"
+			},
+			"nyc": {
+				"include": [
+					"src/**/*.ts"
+				],
+				"exclude": [
+					"src/**/*.spec.ts"
+				],
+				"extension": [
+					".ts"
+				],
+				"require": [
+					"ts-node/register"
+				],
+				"reporter": [
+					"lcov"
+				],
+				"sourceMap": true
+			},
+			"gitHead": "4603f0077714e4cdaa59c6b160d90e7ac9858015",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.1",
+			"_nodeVersion": "16.13.1",
+			"_npmVersion": "8.1.2",
+			"dist": {
+				"integrity": "sha512-iNS1Utzc87G3h1OF36eOndiOvqL19WhWMvqEXcTgA+2qQWO7+ZKQc7A/hXrti9JQmUzyAETlmopa7hNef+4IIg==",
+				"shasum": "4359a8da565a2909c78357c6471945bd373b27bf",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.1.tgz",
+				"fileCount": 12,
+				"unpackedSize": 20715,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh0gSQCRA9TVsSAnZWagAA+AoP/iknHM3BfFStNuIfuHmh\ndt2b/7f9xjTVRe58C5mL3xkfnCIqOAQnGDJY9aliyNuCEDBzAIsH7yn4pbXD\n0DFc9ee0x6F60C+X+/nMl9aMDTsEzg5SStXX09dzdMWyP2v1UjHuBdLNqHB9\nxp3J8sxikc5QWn/FU4r7qRzBQpaEtRK4jqG4a5q/o2gV8Lp/2f/I4GrT/ntd\nevxCG5gpNtMzdrOIVXv8EOgE0lgTUEOxjQmc3BJXOtqPou8MRelCm3EmNEe9\nKkVxgRA7mamk20bo+gHwpvPmt2SuaOMlFboSAhZuv4x2LKv9InTYHkYkuoQV\n8WkD/CXdZcmwzVKcoIcRpaWHo2uGp3s3kX8araZVRLywqXNJslxVY01JmUg8\nWKAaRo77xssvYLMn2QEoMx5LfnDvkR/9fA5qkVfFrVYwdJZf9ougJH2d2K86\ntk/rIoTuk14UIvVDYdWOsrtSDk1yGzahgrj05Mnh1t1VfPi7QajUqttY7q09\nWRiCtW5B7IfmxZ1ZFVmGALf/wvr7EzLTONM8ZtOND3J4YcVQUHSmmJCA/15w\nhpjm3KVT7WbPUp3zXqGZgNcp9Pyrh6L2ADGY90bYKNFHAEg1cX+8BOxenEYN\nWz1Csef+6+Lnyt3twUcY0hlFq/HOvCllTwyB4fpyyJROrh3SXdQ+ag6CM0Tb\nEsCF\r\n=9BqU\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIGsvNKqdmYAHSqF5XVP7sHZmAP/MRWKLBj0jLcbnVl5GAiAQCVkwkxKwlQfKUpVFCiNzlj/PpqOGQt1+CUdOx8D9PQ=="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.1_1641153679963_0.44454927471759764"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.2": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.2",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"author": {
+				"name": "bromne"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"@types/mocha": "^2.2.48",
+				"@types/power-assert": "^1.5.0",
+				"codecov": "^3.8.3",
+				"coveralls": "^3.0.2",
+				"istanbul": "^0.4.5",
+				"jest": "^27.4.5",
+				"mocha": "^3.5.3",
+				"nyc": "^13.1.0",
+				"power-assert": "^1.6.1",
+				"remap-istanbul": "^0.9.6",
+				"ts-jest": "^27.1.2",
+				"ts-node": "^7.0.1",
+				"tslint": "^5.12.0",
+				"typescript": "^3.2.2"
+			},
+			"gitHead": "4702d6c4277990e17c646707019d9cf52fa11b37",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.2",
+			"_nodeVersion": "16.13.1",
+			"_npmVersion": "8.1.2",
+			"dist": {
+				"integrity": "sha512-T+nWcGqmD4HQg8hn/P8JwOgkpScAuLq1zQFBXUgASH6LKRIQrvxlttlqzT+asic36iyJDIieswoVPVpsuhTMNA==",
+				"shasum": "1a52db8d54817164fbbc7112da36f8b5d9697478",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.2.tgz",
+				"fileCount": 12,
+				"unpackedSize": 20510,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh0vVzCRA9TVsSAnZWagAAF4wP/iIvGMWYPwINwB3HPxyf\nzfUlAFQbDiPASUVLAT9zCHPudNQSGGwKTgZId3wBk0SolnmWsTOUwKytUnH6\ngSl3Ef7+p5vj2EBeWc4emlGMZJ9KKXWPlzoELqybulgWNx4nuptI1LyGMdnr\nLbg63SQT+XCT3E85jIKn+HQpmSbpW1d+TriehOej+NuUsyWKN1DbApkYduNt\nYJ3qc3feEyjlb8vJ9yZclGUj276j8OfP/ls/En8SR7ysYgfOSjulzi/sEHap\nXFUxtPZip8zgg0kmhjPRDHH/8JZOhJQR4EgeTo8/86j/DjOLKBJTEqpdqRNm\n6i3IY4EnfwkXm1pgi6hi9J9TFnAtWIzBuG7mQylwwRH5P0UIQGTJlH+7HvPp\n7jbAk7s0nVe2xomLluYNKO7vIZWxf4hz7QqVgirjFGnwa+2B/vviMkgxynAR\n4t6ulVruN6RNAF/f+T6Uh2vTWugzAjaDricVNg07CuA739b9IFhcPVt3IJP9\nlbe5uqcsshoYzxMtAIq13cbM21AouNHMJdb19ad/bw6YLHjuzHusN+rtzAYB\nDplGaDiGhJKbjDV3AZd7Y0SL2ODW0yPP1XMi5Khi9PU5iKWJlTlr2VNPtUrT\nJ+2hUpWM68JWnq+0DojOomd1ppDhcF8VsI//kKQgrzxAlUapkWrb7RIzcT6L\nSnAK\r\n=edH7\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIBlCRD1bbTXVLk5WgrquEq0EjqV26xprq37KcIrAwQkWAiAuk8/p1/gl+8vbm6A/wX8WsB09m27RnRVDQYZ+/oQ6Ow=="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.2_1641215347834_0.10893320439594611"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.4": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.4",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"type": "module",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "3341032bcca8bea12886ce8b9257d9e9e3317d39",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.4",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-bPIxn/tgaIwqObhwx1S3XaPM4JWthTMxLz+xBZ4g8YXgyGsgSGE9ClSviRR0i0IYS2KsBp25albqKtmxI3sqdA==",
+				"shasum": "22f67785660c547a42071c310bb49d58446524ef",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.4.tgz",
+				"fileCount": 12,
+				"unpackedSize": 17060,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1JU9CRA9TVsSAnZWagAAmqoP/2R3OCl1x6JOY5huGnUb\nVn2M72Z/dgNIJmaDFkBG+BctPKZXdCHlGv291nnptYjLXHksgBVhriqmuyLu\naoOrL4rj9PFQnHGRQztN6ZrXNZOaHxfu5KoyZGCBj3TEOk6SdQbOhV2VI2fQ\nSYsrqA1qIioy8EMGZLV7TOP9CualqbvU5KVFCjOA5iEQGPwUEmPHwrT/vaHG\nGJg2fjjCtxKX4D13O3ajaYMGBaee0XUF9EUgIFLFtEmT8S1hMf+EORZ9UyfP\nFlJrsENSOoDnh/cdAaBNiTEmGhmksj1FQ3ajnjvWhPp6mJXf22lnJ4b4IW6Q\n+37JLS07d+kohIk+B7fGfRTO6jFXODRqP+/hhSjlzEyaJ88hGkvYINi40MzM\nJuaWRNwsinSHAA9GWMuoTHjQcsnFg9srJWbourx8CCQbW0GjkvaF74ADts/H\ngpxJTWtUd34ksxfePdN9lhDt6ABK87qTByqVEQeOsWrTVyFRMUqz2zZ1tcEq\nFl6gA4llSdfod9aDRKIYkdYLiHteCDzJyiJHAnaxWH3AbycnweFFZXlztyRy\n5Ihil64R/110aKujjSDFeGyppuGkqdb2/SZkh3X36ksuLQpOgVbzXwacq/ZZ\nkSvNT/O1l+EZZ62oQCeyDt4xUrZvTIA1Q5mb3IAEL/hzQmsk0hlQ8FOErYCk\n6f1A\r\n=4uTp\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIAaHfBZ0+TWOuNFwIzaTJ0jwSNsj8sSxUC87U1WT5tf6AiAW7CSqKO6AWrlpHFS8pEVQgQ6YF3P6yg99fCM3w+mHag=="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.4_1641321788772_0.4596540742625075"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.5": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.5",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"type": "module",
+			"main": "dist/cjs/index.js",
+			"module": "dist/esm/index.js",
+			"types": "dist/esm/index.d.ts",
+			"sideEffects": false,
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "npm run build:esm && npm run build:cjs",
+				"build:esm": "tsc",
+				"build:cjs": "tsc --module commonjs --outDir dist/cjs/",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "0345bdc347f95e7e1c161623db391cc170b4e5fb",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.5",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-gmsmREPs76/w3buappvbKHrbhYXbtpwJg5g/NZlMOIniiC1Pc30suS60EoNoXAhsYMiZtICgQp0EaYr3m1mstw==",
+				"shasum": "3c7c6c65d559b4ebae08eb584af2e392e47ec310",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.5.tgz",
+				"fileCount": 21,
+				"unpackedSize": 25891,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1K+LCRA9TVsSAnZWagAAkw8P/jHc0QwVdvOXN56rVlLB\nBG9lMDsS/40dZcH0aZMcpMc9febq0qm4Qwv3ZYpdZh2HiB7/DVNAwTId2wDR\nIVSdldU30leEqykeNXxLngONxGOizH5XFjzuThQgc6CJ64BRq04vOCRj8T5m\nXFHfd/cvJa/bQZbuFEoSiyE7QiPv+R/kRx0xnnx24n70lCvw03nOZ6pYi75o\n2Shp6ubCOT1/XmJ7T30NehxjbEB0SKrSLbulelqWaKHb7mzDlyutdGsyNlSo\nHmsdSH1LIWB/G3o0s48sV+1cwGrHCISDm6WwdrCGar2BMBhjsEPMJehp+ccL\n9Zs4kknQqwla5ms+xGDaNmTjVO1Mwmi0M/caI3MEmqi6RH51PJZ+WY2EqsAb\n8Md/y7LJPrXnSFfpghhHCBGh72wm1c/J1DShba9uJxhcYwoguZgeIat7BVza\n1KRJfPrdgT6ObnWdjZeLdfS+VnqT6FHd3k3Ij2KBwU2/NVn+fen4pbyiRP/I\niqbCoPAqG75Zccxwg1uog6LDeRZFnRVBDXqc6bg8+TMR9FjShY5ygzCzNxJL\nU9vhnRxy08IEOmqXgegSKWlNK3jXvTJPzwhC6GjMO3GUKOTpiI+4snHkD1C3\nK43WbbqhRnR2Wh36FbUUugU+46MxjxX0VVS4fTVP7J8AXhh6IVKZlBgETli/\n1KmZ\r\n=pb9k\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIG/34ymPD6HhP8oTwoAI9ZXkapCNPU07SAoIabBca0ggAiEAhR8fi3JU7/OGrWanlEmAKVi8/TCoP3+5xTmSatKT0ZY="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.5_1641328523212_0.007231698248199914"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.6": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.6",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/cjs/index.js",
+			"module": "dist/esm/index.js",
+			"types": "dist/esm/index.d.ts",
+			"sideEffects": false,
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "npm run build:esm && npm run build:cjs",
+				"build:esm": "tsc",
+				"build:cjs": "tsc --module commonjs --outDir dist/cjs/",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "2a99c6c2df15ea87d933ff7f5c4f1df504b2bc16",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.6",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-uSIQ0UsW6Uq7D8ccqKBNAAnS+Zt6DgVdiLyl065pjjrTh5bLPp6EMGmhvd4XYzsmGZokf5N39CALDMVQzfZaEQ==",
+				"shasum": "f6b8a350094f1e467364d9856f975fc64d6d4109",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.6.tgz",
+				"fileCount": 21,
+				"unpackedSize": 25871,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1LJvCRA9TVsSAnZWagAAiA8P/RWE239i9DegOkqBFapm\nCGaX5p0+CVZ8En8V0vpPV+3i/4iC7RYEHmd3zV+CTYt3AR/gKPhep6zPo5/z\nfVYsNHWWN+SjcMVDgmx4UQFLkhk9l7oiCrYYw0G56vSzDWxU6VxFqji5YBov\no7TxKqszYcInx/fwinGvcePGgT0C4b0V60XyUKKIt9CKno1/Rd4Z4i9AoBRS\nWlMnU82MFJYcNJJ2zP+eGGLy+sUsgwTptICpepB5SHunmbQs/OdHRXUqcYuw\nuVv3le2t9utCtHY4BYnSoAhP5m7cyfQqYNxrdXGttHS6t0Xpo1oPBzBmv0ZF\nUCtIJYjj27AZnTD+2RDQhP4gCJ5tjNutgLlaDKCXink7oVXqCTvMdaLAEZPL\n+GFWx7dzIvq3EGN2OFDD3J1GfhDicmQid8J2qFdITnsmGnRh/6ju37bUndv5\nBsNmuXWWPTGgtYEktL5uyWUxQ3ZvUaedwL5fcNEnPhRFIMI1h6kJZ3M4FEP2\nZFUQiVD+I9N30v3aHPcKk+woD/98vdWVkXMLeRZSB9lZ3r0s8xbUyFP36V75\n/7DG1ef3NGSaUHmlRifqrJAhIeUe9KhnDARHw+Tw7rTiwTOXEB8K3AwMXpO5\n6fO8amdOAG9tHbiGu0mcVIR1yiaxsCJuVn7PsjsrJWtDgSIcDXFxaxpm+GtU\n20F9\r\n=upyD\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQCMXfMvWe1nDU6rpDbqj0X8A3+QLcSdquLfT/LYg0H00gIgJj2P/ozMUKgWrq1evljGzAYm3uUgbRaBCHrJqDfCdh4="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.6_1641329262636_0.14814569259591193"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.7": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.7",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/cjs/index.js",
+			"module": "dist/esm/index.js",
+			"types": "dist/esm/index.d.ts",
+			"sideEffects": false,
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "npm run build:esm && npm run build:cjs",
+				"build:esm": "tsc",
+				"build:cjs": "tsc --module commonjs --outDir dist/cjs/",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "4c8f306f1fcf8b0f0130c02cb5f71978a5730cb3",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.7",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-EiBWLe6fnY3rVUHyvM0BxjSkQB2ts0l5WmDZF2IC3QC+eTc9sFi383+H4jyqlHmCRvjjaZcp56G0GCxeu9xTGA==",
+				"shasum": "562ba356fab60b465b27e5cd3d1614da0240d311",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.7.tgz",
+				"fileCount": 21,
+				"unpackedSize": 25883,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1LL+CRA9TVsSAnZWagAAu78P/j4nkHYRuttt8yUiPpaf\n3Pco+a6Q3fPoyd5Rr8nFYBQzT6aYHG3yvMW5D4OLahMy9RS1ygW+X5BxcJK7\nAOzuZH6wEu/Ol1yOyZeSD28+8QEFBDD12lR8jgt5WF6JODs9kOCNwLh1L+L+\njcLxNMem+olHQSER0zIO4j6ekRKbAh04NVE7nlbApvTPpiY/i7gH/5aQ5sCf\nuBrsV7ij7FlhP5/YquV4t0qyf2J21mJaRqdKyDBX++Z8JcbkAqJzWrYXjh6P\n2Z7GdhyZLM8jveKLDFO85oABOOBF3Q4abuiUn/4ngknRgTZmfsQF8GliupEk\nKdkjENUjBuw2+J7vVYEMhigHK0bA7UUJeIaYjzEsMaZPfnU1YMzRKliO+xx4\ndqkPYErBQWDHDLUE03wHTErHagTsLhPtMgZWqU3nGFHQE9WBJIYXRoAVdSFS\n3a5TpLE77h4rMlqJd+Rj+kz9aBfY45yNMK9cG7wYASvzIr/cmQXtgSnsPWJP\nBKiXq8m6sQFRy08ghgdVy+GuTx9DZrF+tsoXvCLs1FziI9b4JjCJCOqZ3RjH\n1haeNx0peObfO9uCyY8GaQ2DYRt1orJARNYLGLzxg0bOyZYR3YrXc/vy3NIp\n9jREo70VxMmSCC3M05O2shFCxFVlHvIfCKjHVwILxT0Hk3Cg4ts9MUm89AtC\nMtKo\r\n=6xEt\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQD35g6RkdrhVfWsolP40Zg+u68DhLyN5p/ZM2gL6s41VgIhAOoSwJue5ZZlwqynFBsraE8cNa02A6Fu362ycJu7nqq/"
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.7_1641329406795_0.7168003307631687"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.0-alpha.0": {
+			"name": "typescript-optional",
+			"version": "3.0.0-alpha.0",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/cjs/index.js",
+			"module": "dist/esm/index.js",
+			"types": "dist/esm/index.d.ts",
+			"sideEffects": false,
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "npm run build:esm && npm run build:cjs",
+				"build:esm": "tsc",
+				"build:cjs": "tsc --module commonjs --outDir dist/cjs/",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "a02443e825d5ab8c136de7bee7bfa317d01a9cd0",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@3.0.0-alpha.0",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-zhais11N81mZ3Mqc8xAynqv9KrXjkCdi9Ldw7JGfJoE1lftbTxdIeuwFy/ws4N/MKJJ5Aue9rEyenCyt+klnKQ==",
+				"shasum": "a2f2ba75832e487e22da498298ae881379c39b62",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.0.tgz",
+				"fileCount": 21,
+				"unpackedSize": 25883,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1LRdCRA9TVsSAnZWagAAI4UQAJ/GWcqg69aTpW1FLSUO\nG00yoOpVRc7V3q512eFcvA+M8aapupOICTfR+Kv7by/GeFHnmvnwPKfbPX+s\nsZxHSlcmGUKgSzLAsWSbhTFZO1SE0KugniE0NJ365WmeVzdZXNT0pwvROWQF\npnQR7qel0zqQBmsy552TwU2AcaHHLV1vFE5JY0i6GRxZ+v8wCZJpUmgKk9MD\n+oBNrKPWyw7vSEv0j/IlPAHzYsqtu6/7xMVUN0wRfC73oPLmtwllJs5Go1hh\no1szptj1l6myyE8R3cV8kAERzcKSvMUKqoxkrpQkFjWcXLvICaxx06cFeN8/\nxhnIsM8SDlTWEoNZ3y8rpjt1B+m86IX+HHHEkGj6c60/39jaJl7wx/VUgRWB\nuL+EXqiUO8/lXORjKrKiNVO+iISBMHj0lvKoLwkbP1buqlfzvrIwCHkhtIHB\n84kXSVjwKjCBIhYa6dEoqc+m5cG6a9EL7pB5ap6YAB7Bnqg7Yxyq6Wvv7Y2x\n73kE/lV6/hC4uXHImgybxNZavODbQRvQf2GefR6qJ/D3LAarqOpRqvNMFOhD\nqrac77zJQk/YZL+Vj+wm7oLyO82tPVbsUqTyNXRhAG1OcoNDTYugpNPan32i\nYQLCF8H4+5cUTdp1i5UvEViUREaZpHcxZ9ZcKpLQbSaSie4D940RBGteEnid\ndh4W\r\n=IcYz\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCICjWf50NlsGBFym5ktx1bcVY2oC4m0buvZ6dpg+MwJC9AiAAzvKuA3x6Wnro+WZmEdcPfa0RObUKVXK0qh00QcYz8Q=="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_3.0.0-alpha.0_1641329757078_0.3061614161584647"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"2.0.2-alpha.8": {
+			"name": "typescript-optional",
+			"version": "2.0.2-alpha.8",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/index.js",
+			"types": "dist/index.d.ts",
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "tsc",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.2.2"
+			},
+			"gitHead": "27549d7202515ce14723f9bb90c648d4bbc4f2fa",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@2.0.2-alpha.8",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-Uqja+icbJ+Ykqf2gPcwKw3V8y0qwnzr8RL8Tp4fqoE4VOdrJtHMY3QIUsbp92psaq8VVhlUJHzBCHv1CGnQvYA==",
+				"shasum": "b711d856e5fd74ed268a38464d5ef0a61673eff6",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.8.tgz",
+				"fileCount": 12,
+				"unpackedSize": 27321,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1LXjCRA9TVsSAnZWagAABBoP/3SPJ9gsdGbOCYSEmLQV\n7jg0/JEG7K/Iyhjiq9Vs/nhV+E2pSy0EswBLO3mkXDwhzRjZzd6/d4lJuasb\n1PEXdwqakcA8ZPahxw9EMqzhNwx+XJbDU79uNyPO4aJFWaNydpz3FGEbijey\nNuOTjuigSq9nBZ4a23s4EGGBFmi/8wGJmH7ZXPbP+Gx4uet9xR+aTkz9Nne8\nYP558AaC3xASmGAlYIfqWh1u7WIkf9m/MeFgD1t1GZirDtzttMB3EsZqpmRB\nywxFa6fdMOgJlVSyOwFwb+5/ucxybptdsfyzrRlQCq54ZXa8S/F9oaXfcWUC\n98he7Aco3Ger0RbiW/UW/Ko5f42Iraekvupw2wirxh0UZLO137rTNVm1+W5c\nVCK8yvYWzNJUnz0sy8YSjZce58VyToBw3popRTdnlUijE7uBuBflXAkPzaZl\nlyrtygZcqJVkP4+g55f5HXFUOssxLBaSr1kbKnfyXQ4Kku7+VVKNb5wWtFlm\nAapZZ2eiXKxc30vg+vSoqqPZhVFrMrOREU3CiCBLc5jBm4f6U6DmVzoWF4kv\nHc4m43koQ92GoSNSkEzlJI4e725yKVMmJdip5ovnVokJ1/+db+k/3nFPvX2c\nG50E54QMFmyR7JQF59+CfFljdUv1gbNWXeSEojHItuSEVNzTWgHrTYLc8qMS\n6Bw9\r\n=wEGA\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIDogKFLBwMhhu90Kx6eIHnTcoSB+lUTOuFJQGGCIan3hAiA1kLi3elLHubII91RkurhvqFV0PuSZWkTHurnA98FyTQ=="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_2.0.2-alpha.8_1641330147559_0.5943768715379889"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.0-alpha.1": {
+			"name": "typescript-optional",
+			"version": "3.0.0-alpha.1",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/cjs/index.js",
+			"module": "dist/esm/index.js",
+			"types": "dist/esm/index.d.ts",
+			"sideEffects": false,
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "npm run build:esm && npm run build:cjs",
+				"build:esm": "tsc",
+				"build:cjs": "tsc --module CommonJS --outDir dist/cjs/",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "a1f44c1b9b357e6de0350610f3f26a9ed9b38ed7",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@3.0.0-alpha.1",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-Fv3OoIGlGRTiznByYHk2dmgr7by4uP2o40kyN0asj9BznrocKACUpGjYKA63OKCfzWjuSY8tHZ8FELEDB+XN5w==",
+				"shasum": "58d04836b2f3759d58b4794e3a47d979241a4488",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.1.tgz",
+				"fileCount": 21,
+				"unpackedSize": 25883,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1TopCRA9TVsSAnZWagAAgQ0P/jkK3y8Yc+TSwIW+7fEO\nbEaCvH9KIbcyCitn8MDWfpWfhgkS9Kv8aKPfQ++Sa1glNXsCo0kP9sruY4Yu\nFfjgYK3/Qglq3lbAfVUXeunEZR2pKY8RFXgnIeOAV5BXckHSUsNxCaF+Yt+e\nrYGeXPyvU7rYbqm/7bNdCuQFjOeCWiJUXCZMbkNquDNzE+hNmhPBz2xQq0lI\nQt7RgUJoTpFs90i0/Yx/ctm34VvsLkwON9yLONoGxIEz/nLy6S168rpThuBi\nJLiq7Szeid04vicA8vjg+hoZ54vSWcrOaudpbFPlBgXn9pU8cKWvaHbLEiii\nKkKIeig43cMrl4ShriWr95FYktiY28Nn97ibIxDIqTV2oN6mh4x4qEyWI8EJ\naKryXzbK7vrMY2DZxNMfLlLQnLgUHa9jT4F6Qw975BKc+4cb/hh0xqX6ed9y\n6XOJDPTVUQ2jIliWMwlFHRlfyff4CuJQddB+qx8qqL1xIfrfvPV4DYfdAz9U\nZDL+PlTjur3Z/PNSw1pPxTCjJr4j5r/x+YOTsRkTrA3JhZA700VtjMgKIALe\n0PPAS7OO2Mbk1iUHxpFVqf9TFYAc6Fdcj70x8StqRRrF3PxpWXKAwY3dZ+Ga\nq/wDHjanIlad74+5cZGUiHIR8P/VNfkW0qnu17ybT/tfXZsdOEWM3EKJ+KbK\n9/Rh\r\n=73Io\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEQCIASX3jba77xU2zTfT05hJO5w3Ew4Kz36D4YX6N70k/1EAiBeoamMet85MfsX25llIML/oEDyw2gcF29lQ7bys1Vxaw=="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_3.0.0-alpha.1_1641364009409_0.7450110798221683"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.0-alpha.2": {
+			"name": "typescript-optional",
+			"version": "3.0.0-alpha.2",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/cjs/index.js",
+			"module": "dist/esm/index.js",
+			"types": "dist/esm/index.d.ts",
+			"sideEffects": false,
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "npm run build:esm && npm run build:cjs",
+				"build:esm": "tsc",
+				"build:cjs": "tsc --module CommonJS --outDir dist/cjs/",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "81329940a40cb5c459be02697f3f68352be02082",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@3.0.0-alpha.2",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-ipdWJu8Mbe80I64imD0o5zH9LuA7QAKVNzLxtggwsXlP4Lbd9tOuhA/eDh7BweEzlvw5IYSTHg1lKnICxir6Dw==",
+				"shasum": "9875c015b9db9b7ad1e9309b9028f856daecf682",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.2.tgz",
+				"fileCount": 21,
+				"unpackedSize": 29079,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1VaACRA9TVsSAnZWagAA5JIP/0AeyZP/t1mkGd297JOa\nJ2uZQ9igfT4H7Pnglt5x13LmeZXo9Ne8ICsvhx2UozaOEDg9v9py3xOd6AF9\njxV4G7AeW+Env25VNIMcfUcrSa4G6esLsYBgf1Y4zWst1+ogTYrclkUkTwAO\nt5WHWVSpqmnzPXepL+OiwNXCcNx5iZXRLdxtlYwZqEC3b97p2Nn4GHB+sXZ9\nXSCNOJefGWQi84CpC/SmEQ8kyy0DXYYTDBVnZCRP+KCo2by16l5MBqMj4BGg\nNCdCZsmQQ4/xR3EYYdHOr5pyV9vDauKHgPNZg/RSYDAalntsE6b8uIE9MrFH\ntoCZGJ9c+GH9H76plcK9chTYMOphJI1GEZRpI7Bu9b6K2CmHLD9cGfz7B4zi\nXVpCHMKQFxpFY0/ER8xNcIbSw3dlVHTf1vHx10RW0Bcq2MS2McLBf9p19dqf\n5gZrTqsS1s5eFNYo1KrkrUseu4PwkY+vl9owEi8ZYCH3YIEQEPycbRGc1crq\njh8FALwjjd+2WWmBYFy1QpFuieKNCvIUELCYEgEK4iKq7sALqGpkn82V8UVU\nQJQKRy6OIyZmdJjGKVQnOB4X56pKFYAYniw+VhJqFVhbbvpFVWiEdLQyzy9i\npyhdZRe+qdl1rmbZm5gl8zPKNUYLYni1puCL0uNj8Fuxd9Vqq2U1t8eKVETR\nvPx4\r\n=jnI4\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEUCIQDCNmWJRx5gAlpg5JRRrGcOtR81mDMZ+Az3hHvTbta2BQIgD2ZSyLqZpyn63RztCSAvIc4P37//Wh7j5R2UtIzJoTA="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_3.0.0-alpha.2_1641371264007_0.7204846041775348"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		},
+		"3.0.0-alpha.3": {
+			"name": "typescript-optional",
+			"version": "3.0.0-alpha.3",
+			"description": "Optional (like Java) implementation in TypeScript",
+			"keywords": [
+				"java",
+				"optional",
+				"typescript"
+			],
+			"author": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"license": "MIT",
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/bromne/typescript-optional.git"
+			},
+			"main": "dist/cjs/index.js",
+			"module": "dist/esm/index.js",
+			"types": "dist/esm/index.d.ts",
+			"sideEffects": false,
+			"scripts": {
+				"lint": "tslint lib/**/*.ts test/**/*.ts",
+				"build": "npm run build:esm && npm run build:cjs",
+				"build:esm": "tsc",
+				"build:cjs": "tsc --module CommonJS --outDir dist/cjs/",
+				"test": "jest",
+				"test:coverage": "jest --coverage",
+				"codecov": "codecov"
+			},
+			"devDependencies": {
+				"@types/jest": "^27.4.0",
+				"codecov": "^3.8.3",
+				"jest": "^27.4.5",
+				"ts-jest": "^27.1.2",
+				"tslint": "^5.12.0",
+				"typescript": "^3.9.10"
+			},
+			"jest": {
+				"preset": "ts-jest"
+			},
+			"gitHead": "187e4754a493d60b5b4f5934c151f232e2f18260",
+			"bugs": {
+				"url": "https://github.com/bromne/typescript-optional/issues"
+			},
+			"homepage": "https://github.com/bromne/typescript-optional#readme",
+			"_id": "typescript-optional@3.0.0-alpha.3",
+			"_nodeVersion": "14.18.2",
+			"_npmVersion": "6.14.15",
+			"dist": {
+				"integrity": "sha512-X2JbUQA+WK0P8gwiickO6s8yZnX/ufov6zx4hbvdYVqHFTz8fAYoh+8JMKxVzQuh2/aMUvF9KSNqXi4p6pNxuA==",
+				"shasum": "2f5317275f66318c6c521423b3e313feab0e8f79",
+				"tarball": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.3.tgz",
+				"fileCount": 21,
+				"unpackedSize": 29549,
+				"npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJh1VdjCRA9TVsSAnZWagAALv4P/ivVlmXLI64tTwn7s/2M\nyTfQ/Ti3c5UTDko76xrwlEjL+/63Zbn2sbwmTTGacnadseC1q7ruOGhlwknN\nZvIfiE8ZyjHnuV4FYYQAC3LhKyQmP10p6d8/OPrx68bZHdIPn6eUmnKwSReY\nZhi2LdM4jY8n+tHzBAkV2nLf46NS8aj36RMBJkwtP63ZjKOn2qTNvCsNiVQZ\nk15631LExE8RyD2W44XgSOLXt1z7IiykCJj3cGmTuTxP4+7WUt4Q4plvqLY8\nrnmaygt54LOVtAbXp8QLGSY9GPoaEeYtB6NRMNVhQbtJAZxHDSLwBfFfPyMz\nUF/KHpsPbzPV3YDCxYR6DO+QPeX4x8J0rRilfCb3XNBBdjTBINtpBhW4Ux4s\nnhrETmjnee5bVGc7WGv+Nz56fOJwUNBQa1vPFbieQgsw+yMnm5VOZ+wwx1bL\n2G/1wJicNGu+OTEUD9A3a9eVJ8qyDpaWcL7PymYMEoPjdDygkWybIsjL1WmU\nWtZU/wbEq4AVjdqSkqPLG0l1r+TZGhs4YBdKPkvihgXTqaEdSltlzj713aJv\nm7/4QCuw4kHMQCJcruT1XBL4TsxqvgboB03EgAnfDS3SJLdN/BDikYS+LDBs\neWiAgpbED1VtjoZaFDpyrzjoSMahXlZa2nod7cQZSWClS20A0fn1ejYexMJC\nOwy3\r\n=iApY\r\n-----END PGP SIGNATURE-----\r\n",
+				"signatures": [
+					{
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+						"sig": "MEYCIQDqgbx8z2VFPLKH1lD+4mpBVsaS4FbPgBG6MpP5VQhtVQIhAPMfXdy+60sN83iWZVxp6PNzwGpeT/0rycGCuErgJzyz"
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "bromne",
+				"email": "bromne@gmail.com"
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "bromne",
+					"email": "bromne@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages",
+				"tmp": "tmp/typescript-optional_3.0.0-alpha.3_1641371491392_0.22220854635434728"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2022-06-28T01:57:40.088Z",
+		"created": "2017-09-29T12:49:55.532Z",
+		"0.1.0": "2017-09-29T12:49:55.532Z",
+		"1.0.0": "2017-09-30T05:53:54.719Z",
+		"1.0.1": "2017-09-30T06:50:19.458Z",
+		"1.0.2": "2017-09-30T07:11:26.663Z",
+		"1.1.0": "2017-10-02T14:53:42.550Z",
+		"1.2.0": "2017-10-26T08:15:53.054Z",
+		"1.2.1": "2017-10-27T01:59:51.353Z",
+		"1.3.0": "2017-11-13T01:28:01.787Z",
+		"1.4.0": "2017-12-08T06:24:06.801Z",
+		"1.5.0": "2017-12-29T19:10:49.057Z",
+		"1.6.1": "2018-05-29T03:13:29.056Z",
+		"1.7.0": "2018-06-04T16:11:03.599Z",
+		"1.8.0": "2018-06-27T10:06:44.948Z",
+		"2.0.0": "2019-01-04T10:33:36.699Z",
+		"2.0.1-alpha": "2019-01-05T17:33:18.951Z",
+		"2.0.1": "2019-01-05T17:55:50.004Z",
+		"2.0.2-1": "2022-01-02T19:50:42.885Z",
+		"2.0.2-alpha.0": "2022-01-02T19:56:20.202Z",
+		"2.0.2-alpha.1": "2022-01-02T20:01:20.117Z",
+		"2.0.2-alpha.2": "2022-01-03T13:09:07.992Z",
+		"2.0.2-alpha.4": "2022-01-04T18:43:09.135Z",
+		"2.0.2-alpha.5": "2022-01-04T20:35:23.390Z",
+		"2.0.2-alpha.6": "2022-01-04T20:47:43.029Z",
+		"2.0.2-alpha.7": "2022-01-04T20:50:06.943Z",
+		"3.0.0-alpha.0": "2022-01-04T20:55:57.269Z",
+		"2.0.2-alpha.8": "2022-01-04T21:02:27.705Z",
+		"3.0.0-alpha.1": "2022-01-05T06:26:49.608Z",
+		"3.0.0-alpha.2": "2022-01-05T08:27:44.166Z",
+		"3.0.0-alpha.3": "2022-01-05T08:31:31.557Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "3.0.0-alpha.3"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"3c606fa5f2b1336642b1d64c1bb4034f\"",
+			"fetched": 1763552394857
+		}
+	},
+	"_distfiles": {
+		"typescript-optional-0.1.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-0.1.0.tgz",
+			"sha": "404479b9db1f3e2ae08db435570a69fcb4c98634",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.0.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.0.0.tgz",
+			"sha": "cd93a2b1be9414e67cf8a85440dcc2a9666723c1",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.0.1.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.0.1.tgz",
+			"sha": "ee4112ae497650edf6a5247542f44b8f7a6b080e",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.0.2.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.0.2.tgz",
+			"sha": "be652753f1af5ea1a8ccbbb8d4717f90db96b03e",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.1.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.1.0.tgz",
+			"sha": "62de711abe978e54e4174627b60b31bd73244b90",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.2.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.2.0.tgz",
+			"sha": "9d9a9e5e1ff5bd0549ab889f3212f691dcc6c55b",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.2.1.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.2.1.tgz",
+			"sha": "7323ea7a289aa7f3e4e7c555dd29e5e1b1f1a159",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.3.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.3.0.tgz",
+			"sha": "5a5c84c380661dee3621c3936f120056b2a47151",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.4.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.4.0.tgz",
+			"sha": "1c411afd74da23314494709bfe5249cd457a8f6e",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.5.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.5.0.tgz",
+			"sha": "7ad1ab07ce4ca883cc961c07cf3acec9eabe8e38",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.6.1.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.6.1.tgz",
+			"sha": "9d005e0d2f9d4de047a8f5373710d62a57e6454d",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.7.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.7.0.tgz",
+			"sha": "0871444234f59edcaa1ad7f03808ed93bc025029",
+			"registry": "npmjs"
+		},
+		"typescript-optional-1.8.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-1.8.0.tgz",
+			"sha": "f9da28d5131382722a4724ee9a02f3effb355cca",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.1-alpha.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.1-alpha.tgz",
+			"sha": "14fc8048945db7faff43f4c9281d6af63a5f6ae9",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.1.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.1.tgz",
+			"sha": "1dd4826bd751f78756e7eb3f96a16fbbeb3f7ee6",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-1.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-1.tgz",
+			"sha": "0c05e2892d97e491d0c312a9a628bf253c718478",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.0.tgz",
+			"sha": "8a81613b31639a9d66254332639497829b13ec1c",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.1.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.1.tgz",
+			"sha": "4359a8da565a2909c78357c6471945bd373b27bf",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.2.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.2.tgz",
+			"sha": "1a52db8d54817164fbbc7112da36f8b5d9697478",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.4.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.4.tgz",
+			"sha": "22f67785660c547a42071c310bb49d58446524ef",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.5.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.5.tgz",
+			"sha": "3c7c6c65d559b4ebae08eb584af2e392e47ec310",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.6.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.6.tgz",
+			"sha": "f6b8a350094f1e467364d9856f975fc64d6d4109",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.7.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.7.tgz",
+			"sha": "562ba356fab60b465b27e5cd3d1614da0240d311",
+			"registry": "npmjs"
+		},
+		"typescript-optional-3.0.0-alpha.0.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.0.tgz",
+			"sha": "a2f2ba75832e487e22da498298ae881379c39b62",
+			"registry": "npmjs"
+		},
+		"typescript-optional-2.0.2-alpha.8.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-2.0.2-alpha.8.tgz",
+			"sha": "b711d856e5fd74ed268a38464d5ef0a61673eff6",
+			"registry": "npmjs"
+		},
+		"typescript-optional-3.0.0-alpha.1.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.1.tgz",
+			"sha": "58d04836b2f3759d58b4794e3a47d979241a4488",
+			"registry": "npmjs"
+		},
+		"typescript-optional-3.0.0-alpha.2.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.2.tgz",
+			"sha": "9875c015b9db9b7ad1e9309b9028f856daecf682",
+			"registry": "npmjs"
+		},
+		"typescript-optional-3.0.0-alpha.3.tgz": {
+			"url": "https://registry.npmjs.org/typescript-optional/-/typescript-optional-3.0.0-alpha.3.tgz",
+			"sha": "2f5317275f66318c6c521423b3e313feab0e8f79",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-725781343557f870",
+	"_id": "typescript-optional",
+	"readme": "# TypeScript Optional\r\n\r\n[![npm](https://img.shields.io/npm/v/typescript-optional.svg)](https://www.npmjs.com/package/typescript-optional)\r\n[![License](https://img.shields.io/npm/l/typescript-optional.svg)](https://www.npmjs.com/package/typescript-optional)\r\n\r\n[![codecov](https://codecov.io/gh/bromne/typescript-optional/branch/master/graph/badge.svg?token=vwg9UEGoic)](https://codecov.io/gh/bromne/typescript-optional)\r\n\r\nOptional (like Java) implementation in TypeScript\r\n\r\n## Overview\r\n\r\n`Optional<T>` is a type which *may* or *may not* contain a *payload* of type `T`.\r\nIt provides a common interface regardless of whether an instance is *present* or is *empty*. \r\n\r\nThis module is inspired by [Optional class in Java 8+](https://docs.oracle.com/javase/10/docs/api/java/util/Optional.html).\r\n\r\n The following methods are currently not supported:\r\n \r\n - `equals`\r\n - `toString`\r\n - `hashCode`\r\n - `stream`\r\n\r\n### Install\r\n\r\n```\r\nnpm install --save typescript-optional\r\n```\r\n\r\n## Usage\r\n\r\n### import\r\n\r\n```ts\r\n// import Optional type from this module\r\nimport { Optional } from \"typescript-optional\";\r\n```\r\n\r\n### creating `Optional<T>` objects\r\n\r\n```ts\r\nconst nullableString: string | null = /* some nullable value */;\r\n\r\n// all the following variables will be parameterized as Optional<string>.\r\nconst optional = Optional.ofNullable(nullableString);\r\nconst optionalPresent1 = Optional.ofNullable(\"foo\");\r\nconst optionalPresent2 = Optional.ofNonNull(\"foo\"); // accepts non-null value (or else throws TypeError)\r\nconst optionalEmpty1: Optional<string> = Optional.empty(); // type hinting required\r\nconst optionalEmpty2 = Optional.empty<string>(); // or parameterize explicitly\r\n```\r\n\r\n### operations\r\n\r\n```ts\r\nconst optional: Optional<string> = Optional.ofNullable( /* some optional value: null | string */ );\r\n\r\n// force to retrieve the payload. (or else throws TypeError.)\r\n// this method is not used match.\r\noptional.get();\r\n\r\n// represent whether this is present or not.\r\noptional.isPresent();\r\n\r\n// represent whether this is empty or not. (negation of `isPresent` property)\r\noptional.isEmpty();\r\n\r\n// if a payload is present, execute the given `consumer`.\r\noptional.ifPresent(value => console.log(value));\r\n\r\n// if a payload is present, execute the first argument (`consumer`),\r\n// otherwise execute the second argument (emptyAction).\r\noptional.ifPresentOrElse(value => console.log(value), () => console.log(\"empty\"));\r\n\r\n// filter a payload with additional predicate.\r\noptional.filter(value => value.length > 0);\r\n\r\n// map a payload with the given mapper.\r\noptional.map(value => value.length);\r\n\r\n// map a payload with the given mapper which returns value wrapped with Optional type.\r\nconst powerIfPositive: (x: Number) => Optional<Number>\r\n    = x => (x > 0) ? Optional.ofNonNull(x * x) : Optional.empty();\r\nconst numberOptional: Optional<null | number> = Optional.ofNullable(/* some optional value: null | number */)\r\nnumberOptional.flatMap(value => powerIfPositive(value as number));\r\n\r\n// if this is present, return this, otherwise return the given another optional.\r\nconst another: Optional<string> = Optional.ofNullable(/* ... */);\r\noptional.or(another);\r\n\r\n// if this is present retrieve the payload,\r\n// otherwise return the given value.\r\noptional.orElse(\"bar\");\r\n\r\n// if a payload is present, retrieve the payload, \r\n// otherwise return a value supplied by the given function.\r\noptional.orElseGet(() => \"bar\");\r\n\r\n// if a payload is present, retrieve the payload,\r\n// otherwise throw an exception supplied by the given function.\r\noptional.orElseThrow(() => new Error());\r\n\r\n// if a payload is present, retrieve the payload,\r\n// otherwise return null.\r\noptional.orNull();\r\n\r\n// if a payload is present, retrieve the payload,\r\n// otherwise return undefined.\r\noptional.orUndefined();\r\n\r\n// return an appropriate result by emulating pattern matching with the given cases.\r\noptional.matches({\r\n    present: value => value.length,\r\n    empty: () => 0, \r\n})\r\n\r\n// convert this to an Option value.\r\noptional.toOption();\r\n```\r\n\r\n### prototype-free types\r\n\r\nWhile `Optional`'s fluent interface for method chaining with `prototype` is usually useful and elegant,\r\nrelying on `prototype` can cause some problems in certain situations like that an external function copies such objects *except* `prototype`.\r\nFor example, `setState` of React reflects the given value as a state except the value's `prototype` (and then you will see \"TypeError: undefined is not a function\" in runtime though TypeScript compilation has been succeeded!).\r\n\r\nTo avoid this issue, you have three options that *convert* an `Optional` into a *prototype-free*, or a simple JavaScript object (associative array, string etc.).\r\n\r\n- `Optional.orNull`\r\n- `Optional.orUndefined`\r\n- `Optional.toOption`\r\n\r\n#### `Optional.orNull` and `Optional.orUndefined`\r\n\r\nUsing `Optional.orNull` or `Optional.orUndefined` is the simple way to obtain prototype-free objects.\r\nThese methods convert an `Optional<T>` into a value of *type union*.\r\n\r\n`Optional<T>.orNull` returns `T | null`.\r\n\r\n`Optional<T>.orUndefined` returns `T | undefined`. The `T | undefined` type is compatible with [optional parameters and properties](http://www.typescriptlang.org/docs/handbook/advanced-types.html#optional-parameters-and-properties) of TypeScript.\r\n\r\nUse `Optional.ofNullable` to restore an Optional value from a value of these type unions.\r\n\r\n```ts\r\nconst update: <T> (original: T) => T = /* some external function that returns without the prototype */\r\nconst optional: Optional<string> = /* some Optional object */;\r\n\r\nlet nullable: string | null = optional.orNull();\r\nlet orUndefined: string | undefined = optional.orUndefined();\r\n\r\n// update using external functions!\r\nnullable = update(nullable);\r\norUndefined = update(orUndefined);\r\n\r\n// retore from (string | null).\r\nconst optionalFromNullable: Optional<string> = Optional.ofNullble(nullable);\r\n\r\n// restore from (string | undefined).\r\nconst optionalFromOrUndefined: Optional<string> = Optional.ofNullble(orUndefined);\r\n```\r\n\r\n#### `Option.toOption`\r\n\r\nAs a more explicit way to obtain prototype-free objects, `Optional.toOption` is provided.\r\nThis method convert an `Optional<T>` into an object of `Option<T>` type, which conforms to [*discriminated unions*](http://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions) also known as *algebraic data types*.\r\nRefer the [API document](lib/types.ts) of `Option<T>` to learn about the structure.\r\n\r\n```ts\r\nconst update: <T> (original: Option<T>) => T = /* some external function that returns without the prototype */\r\nconst optional: Optional<string> = /* some Optional value */;\r\n\r\nlet option: Option<string> = optional.toOption();\r\n\r\n// update using external functions!\r\noption = update(option);\r\n\r\n// restore from Option<T>.\r\nconst optionalFromOption: Optional<string> = Optional.from(option);\r\n```\r\n\r\n## License\r\n\r\nMIT License - [LICENSE.md](LICENSE.md)"
+}

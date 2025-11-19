@@ -1,0 +1,95 @@
+{
+	"name": "react-firechat-poc",
+	"versions": {
+		"0.1.0": {
+			"name": "react-firechat-poc",
+			"version": "0.1.0",
+			"dependencies": {
+				"@testing-library/dom": "^10.4.1",
+				"@testing-library/jest-dom": "^6.9.1",
+				"@testing-library/react": "^14.0.0",
+				"@testing-library/user-event": "^13.5.0",
+				"clsx": "^2.1.1",
+				"darkmode-js": "^1.5.7",
+				"date-fns": "^2.30.0",
+				"emoji-picker-react": "^4.15.1",
+				"firebase": "^12.5.0",
+				"openai": "^6.9.0",
+				"piche.ui": "^1.1.461",
+				"react": "^18.3.1",
+				"react-dom": "^18.3.1",
+				"react-router-dom": "^6.28.0",
+				"react-scripts": "5.0.1",
+				"web-vitals": "^2.1.4"
+			},
+			"eslintConfig": {
+				"extends": [
+					"react-app",
+					"react-app/jest"
+				]
+			},
+			"browserslist": {
+				"production": [
+					">0.2%",
+					"not dead",
+					"not op_mini all"
+				],
+				"development": [
+					"last 1 chrome version",
+					"last 1 firefox version",
+					"last 1 safari version"
+				]
+			},
+			"devDependencies": {
+				"@types/jest": "^29.5.14",
+				"@types/node": "^20.19.24",
+				"@types/react": "^18.3.12",
+				"@types/react-dom": "^18.3.1",
+				"firebase-admin": "^12.0.0",
+				"typescript": "^4.9.5"
+			},
+			"scripts": {
+				"start": "react-scripts start",
+				"build": "react-scripts build",
+				"test": "react-scripts test",
+				"eject": "react-scripts eject",
+				"firebase:seed": "node scripts/seedFirestore.js",
+				"firebase:migrate-legacy": "node scripts/migrateLegacyMessages.js"
+			},
+			"_id": "react-firechat-poc@0.1.0",
+			"readmeFilename": "README.md",
+			"description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+			"_integrity": "sha512-ZhvoL6evVIrr+XvihTDPPbZxPb5fShwTVYCzehGB4o10e25cTqbbvdxNmqqwYwIM0GqXbH6l9d8WcmJdqAxznw==",
+			"_resolved": "C:\\Users\\KRISTI~1\\AppData\\Local\\Temp\\1f319fecd61ca77c84a2ba1acd366dbe\\react-firechat-poc-0.1.0.tgz",
+			"_from": "file:react-firechat-poc-0.1.0.tgz",
+			"_nodeVersion": "22.17.1",
+			"_npmVersion": "11.6.0",
+			"dist": {
+				"integrity": "sha512-ZhvoL6evVIrr+XvihTDPPbZxPb5fShwTVYCzehGB4o10e25cTqbbvdxNmqqwYwIM0GqXbH6l9d8WcmJdqAxznw==",
+				"shasum": "ba04d20cd4a7483afdf2de8ec13c824a704e6692",
+				"tarball": "http://localhost:4873/react-firechat-poc/-/react-firechat-poc-0.1.0.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2025-11-19T11:20:07.517Z",
+		"created": "2025-11-19T11:20:07.517Z",
+		"0.1.0": "2025-11-19T11:20:07.517Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "0.1.0"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"react-firechat-poc-0.1.0.tgz": {
+			"shasum": "ba04d20cd4a7483afdf2de8ec13c824a704e6692",
+			"version": "0.1.0"
+		}
+	},
+	"_rev": "4-51c911ea8109c603",
+	"_id": "react-firechat-poc",
+	"readme": "# Getting Started with Create React App\n\nThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\n\n## Available Scripts\n\nIn the project directory, you can run:\n\n### `npm start`\n\nRuns the app in the development mode.\\\nOpen [http://localhost:3000](http://localhost:3000) to view it in your browser.\n\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n\n### `npm test`\n\nLaunches the test runner in the interactive watch mode.\\\nSee the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.\n\n### `npm run build`\n\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\n\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\n\nSee the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.\n\n### `npm run eject`\n\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\n\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\n\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\n\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n\n## Learn More\n\nYou can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).\n\nTo learn React, check out the [React documentation](https://reactjs.org/).\n\n### Code Splitting\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)\n\n### Analyzing the Bundle Size\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)\n\n### Making a Progressive Web App\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)\n\n### Advanced Configuration\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)\n\n### Deployment\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)\n\n### `npm run build` fails to minify\n\nThis section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)\n# REACT-FIREBASE-CHAT-APP-POC\n# REACT-FIREBASE-CHAT-APP-POC"
+}

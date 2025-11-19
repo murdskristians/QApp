@@ -1,0 +1,6009 @@
+{
+	"name": "@mui/x-charts-vendor",
+	"versions": {
+		"7.12.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.12.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.12.0",
+			"maintainers": [
+				{
+					"name": "mui-release-bot",
+					"email": "shared-accounts@mui.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "aarongarciah",
+					"email": "aaron.garcia.hervas@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "d279b0bbc14c433a31fa7227ca04ca21f9df2c9a",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.12.0.tgz",
+				"fileCount": 312,
+				"integrity": "sha512-05J1o0T3/7iNd0I4LnXLjGwxybzJN8hF2qr/n8XduJYWxYIXRbGsD/Y0nVnHh/EjIGe3aHqCYbt1Ob9E/RQUtQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIHLWYcpogY9pfbWOQe/YIS+ri3hzGlBWCjN0N0pMrIdvAiEAmhSFQR5VB8w7W8YDn2gZ7BNv8Dl3ZPuX5XpHHrtx5Bk=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1195400
+			},
+			"main": "./index.js",
+			"_from": "file:mui-x-charts-vendor-7.12.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.js",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "jcquintas",
+				"email": "juniorquintas@gmail.com"
+			},
+			"_resolved": "/private/var/folders/r5/jjg350c932j8bfk047b4vhzh0000gn/T/862329b9c4a2eba5a6248105b9aaa802/mui-x-charts-vendor-7.12.0.tgz",
+			"_integrity": "sha512-05J1o0T3/7iNd0I4LnXLjGwxybzJN8hF2qr/n8XduJYWxYIXRbGsD/Y0nVnHh/EjIGe3aHqCYbt1Ob9E/RQUtQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git"
+			},
+			"_npmVersion": "10.5.0",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.12.2",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.0",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.3.0",
+				"rimraf": "^5.0.8",
+				"d3-path": "^3.0.1",
+				"d3-array": "^3.1.6",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.0.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.0.3",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.24.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.12.0_1722530593546_0.07503829624439717",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.12.1": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.12.1",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.12.1",
+			"maintainers": [
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "mui-release-bot",
+					"email": "shared-accounts@mui.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "aarongarciah",
+					"email": "aaron.garcia.hervas@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "e9aaa91e134ca23741f7ea018dfcc552f5690e7b",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.12.1.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-YlB/NNHCABeWPG8lAdN982XBkANE06WLJRk+nKNCoWLxAKTMFfbQd2+CM5GGtNclHs/fYHllxRKDWGWkewi0nA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC4RwiMictbgCDXUX7oPMuhn0u2jABb3gzmOBCIJA+K4wIhAKEws7JPCPCMAi5W4FTAddVe7gVoYNeOEmOEGdRYP500",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196294
+			},
+			"main": "./index.js",
+			"_from": "file:mui-x-charts-vendor-7.12.1.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.js",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "jcquintas",
+				"email": "juniorquintas@gmail.com"
+			},
+			"_resolved": "/private/var/folders/r5/jjg350c932j8bfk047b4vhzh0000gn/T/a2ce4935cb40e29514d35afe9f6ac5d4/mui-x-charts-vendor-7.12.1.tgz",
+			"_integrity": "sha512-YlB/NNHCABeWPG8lAdN982XBkANE06WLJRk+nKNCoWLxAKTMFfbQd2+CM5GGtNclHs/fYHllxRKDWGWkewi0nA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git"
+			},
+			"_npmVersion": "10.5.0",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.12.2",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.0",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.3.0",
+				"rimraf": "^5.0.8",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.24.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.12.1_1723209676946_0.7451885769836157",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.13.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.13.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.13.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "556e792081dfaf4b35a82f7b099f811dde26e99a",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.13.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-Db2KRvTOZZhXHGiP2rb/YmlXrOA+dTuD8ltk6luqXK4YMxy18z59IR9cyn/KzfrrzGnpnCERrws/a9vOkCKcKA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDh7F3XLz7czdm5kxdeqqv2KNeFPw/f24zr//1f1FXKJgIgUJp0Sd4mReFbjxYOG+XKiY5DSlH5N0gLO1+FduJIOC4=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196295
+			},
+			"main": "./index.js",
+			"_from": "file:mui-x-charts-vendor-7.13.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.js",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "danailh",
+				"email": "hadjiatanasov@gmail.com"
+			},
+			"_resolved": "/private/var/folders/wl/ng298cv95h73_wp9gn1xxmkc0000gn/T/b08ed3e60b1b335f5048598cf6e5b93f/mui-x-charts-vendor-7.13.0.tgz",
+			"_integrity": "sha512-Db2KRvTOZZhXHGiP2rb/YmlXrOA+dTuD8ltk6luqXK4YMxy18z59IR9cyn/KzfrrzGnpnCERrws/a9vOkCKcKA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git"
+			},
+			"_npmVersion": "10.2.3",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "18.19.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.0",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.3.0",
+				"rimraf": "^5.0.10",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.24.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.13.0_1723816373077_0.9374052264054602",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.14.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.14.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.14.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "7dd2a0cce4448ae0e0fe812a8eb1395f22f9f9e2",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.14.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-hhEwqQ5Gt2uEFCIna7OPycyu/CzVlywmH5SIX9O3Rxe/y0muLhafEX2ooOQpopcrgGPmP+2/zTf7cssXPiMmAQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCkh92Xfk2NOjJOJu3byLB0qzgwaj6qqx4C4NM5DpkavQIhAJHQvEQOZobdGAJmG9TBKlSe6+45LlQHq1X4hxfcmEQT",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196295
+			},
+			"main": "./index.js",
+			"_from": "file:mui-x-charts-vendor-7.14.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.js",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "noraleonte",
+				"email": "noraleonte00@gmail.com"
+			},
+			"_resolved": "/tmp/910306ab2de2870ac6341ec993e4d48c/mui-x-charts-vendor-7.14.0.tgz",
+			"_integrity": "sha512-hhEwqQ5Gt2uEFCIna7OPycyu/CzVlywmH5SIX9O3Rxe/y0muLhafEX2ooOQpopcrgGPmP+2/zTf7cssXPiMmAQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git"
+			},
+			"_npmVersion": "10.5.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.13.1",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.0",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.3.1",
+				"rimraf": "^5.0.10",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.24.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.14.0_1724408883035_0.48434499288785826",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.15.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.15.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.15.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "f0d486ad416bf2c63772c9d439d8edf463dc8d7b",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.15.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-5PNzV3//gdS3jlsbvAc/kj6k7KTikjNhprXVaTIrqj9/Jm2MU0cNtmwDwDVkekXLpjeXGGT6nrIehb129GIinw==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCvQAm4EJV8dZuaVxQDGCwNLvmE0oi/ezb3ROGmQ0QbWQIhAPx0hv538sJsmxFj+C5bZnUo5UvSWfhpy9kzOef57p+y",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196277
+			},
+			"main": "./index.js",
+			"_from": "file:mui-x-charts-vendor-7.15.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.js",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "michelengelen",
+				"email": "jsnerdic@gmail.com"
+			},
+			"_resolved": "/private/var/folders/p5/fc6zg5650ynbrmhkqtzx6db80000gn/T/0e8d57b5ee92c67cd1dff3c3e678ab35/mui-x-charts-vendor-7.15.0.tgz",
+			"_integrity": "sha512-5PNzV3//gdS3jlsbvAc/kj6k7KTikjNhprXVaTIrqj9/Jm2MU0cNtmwDwDVkekXLpjeXGGT6nrIehb129GIinw==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git"
+			},
+			"_npmVersion": "10.2.4",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "18.19.1",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.4",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.3.1",
+				"rimraf": "^5.0.10",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.15.0_1724937517403_0.2596958924741912",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.16.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.16.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.16.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "6f745457eac05955bfcfc6180562ceab576a8abf",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.16.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-MyMCCl7eAM53rLbjqP4zbMy5hYtdeqCjAYCH2jpvBKdgugm2eaPLKOPM8bUVfen0wHA8BXleQrIrNceytFPyZA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCyKQl0Y0BOP434VizVRuyknO9dR3sc7KvOG43VzQlz8AIhALpeEYbLlF3qejQ/Hxy1ac9MqlS+Ao6FjzEV33mNq6q9",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196303
+			},
+			"_from": "file:mui-x-charts-vendor-7.16.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "lukastyla",
+				"email": "LLukas.Tyla@gmail.com"
+			},
+			"_resolved": "/private/var/folders/ld/z8py9cds7v77zgj9lhbmbb_h0000gn/T/f83c0e58ad35bf984e56d610fd92b1c9/mui-x-charts-vendor-7.16.0.tgz",
+			"_integrity": "sha512-MyMCCl7eAM53rLbjqP4zbMy5hYtdeqCjAYCH2jpvBKdgugm2eaPLKOPM8bUVfen0wHA8BXleQrIrNceytFPyZA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.5.0",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "18.20.2",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.6",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.3.1",
+				"rimraf": "^5.0.10",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.16.0_1725546863782_0.7446373748837798",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.18.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.18.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.18.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "f8e26840bdc29311af629326063ea854b7a4608a",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.18.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-YPL7SP6W7t9jBIrK8WjmCtW/YoUmgr0BA7j2QE9bKX4VJLEUU498fEKik0ZJZyzyR7ov0MD3m7S+YCw1o5sqkw==",
+				"signatures": [
+					{
+						"sig": "MEQCIFWzz00SbXRAwFZ6zuGeRikFu9fiVp/tjvyiEy/XaA9mAiBQ0dWgbGVs2j8/AatZHpkLViiz/566HeZS4Dbpy+brjg==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196313
+			},
+			"_from": "file:mui-x-charts-vendor-7.18.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "kyusuf",
+				"email": "kenan.m.yusuf@gmail.com"
+			},
+			"_resolved": "/private/var/folders/y6/76n3whx57lgfr3j0zlq4yvsc0000gn/T/9b312b063b425f1e94e46e701a598303/mui-x-charts-vendor-7.18.0.tgz",
+			"_integrity": "sha512-YPL7SP6W7t9jBIrK8WjmCtW/YoUmgr0BA7j2QE9bKX4VJLEUU498fEKik0ZJZyzyR7ov0MD3m7S+YCw1o5sqkw==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.1",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.16.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.6",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.3.1",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.18.0_1726820251610_0.33701080122974547",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.19.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.19.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.19.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "fb3fcfe3157f3bf2929a52bc87a2f909259f1f46",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.19.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-idHOi6U8mmX1ezKclv2p4QBrWxQIUSS+bd7rp2PGnf7XAPtUY/X9VTZvU1mDRawtyKjyzQD+vmSbYx9piytqAg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCF+xqNsyS9SlAv5S8R05kQ0SzO1VhXiFXQglyq6vKPvgIhAPitcX36mpxZgPn/c0jsM5UnnnR73IbWK877hgrfCq+M",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196313
+			},
+			"_from": "file:mui-x-charts-vendor-7.19.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "danailh",
+				"email": "hadjiatanasov@gmail.com"
+			},
+			"_resolved": "/private/var/folders/wl/ng298cv95h73_wp9gn1xxmkc0000gn/T/4fcd99d04d3978918ce4456f32c858b5/mui-x-charts-vendor-7.19.0.tgz",
+			"_integrity": "sha512-idHOi6U8mmX1ezKclv2p4QBrWxQIUSS+bd7rp2PGnf7XAPtUY/X9VTZvU1mDRawtyKjyzQD+vmSbYx9piytqAg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.7.0",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "22.1.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.6",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.4.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.19.0_1728069938193_0.9869891015266155",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"7.20.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "7.20.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@7.20.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "b5858b91da0bde4f9c31f5360d05ade0b6eb5e31",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.20.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-pzlh7z/7KKs5o0Kk0oPcB+sY0+Dg7Q7RzqQowDQjpy5Slz6qqGsgOB5YUzn0L+2yRmvASc4Pe0914Ao3tMBogg==",
+				"signatures": [
+					{
+						"sig": "MEUCIErOuiPuQfVlxV/OpRmo13nmQ9/rifhR5P/E+DkNYbY9AiEA33ErXGdRyhOQMZPiurWPoTBiGjHvBX/ZvRANRDddcy8=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196313
+			},
+			"_from": "file:mui-x-charts-vendor-7.20.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "arminmeh",
+				"email": "armin@mehinovic.com"
+			},
+			"_resolved": "/private/var/folders/yh/fh_f1w7560j_70kxfs_ns_cr0000gn/T/5d93891f92afb63c6fe513e271a663a8/mui-x-charts-vendor-7.20.0.tgz",
+			"_integrity": "sha512-pzlh7z/7KKs5o0Kk0oPcB+sY0+Dg7Q7RzqQowDQjpy5Slz6qqGsgOB5YUzn0L+2yRmvASc4Pe0914Ao3tMBogg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.5.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.13.1",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.25.7",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.4.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.7"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_7.20.0_1728638748154_0.04813154275998843",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.0",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "0c7d9f4dd750d9b4a9d632e45839413320722186",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-8xEkMj1Ve7O0TX9BxmMJYSvPlZ6By9g5BFT5LKcnCe9yz1Fow6Xted+eutP92obBSiY/dbfCLJQ+5HhkQe1GDA==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCY0a6VBSWcPO12CNkRMLpuRqyOHSEjrJRObpXcElU07AIgI+Ig/0wwB4uHnbMXbo09qBf5eQ35YMp0pwhOSQWTCuE=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "jcquintas",
+				"email": "juniorquintas@gmail.com"
+			},
+			"_resolved": "/private/var/folders/r5/jjg350c932j8bfk047b4vhzh0000gn/T/89979187fa9da8f33e2650ca7da78498/mui-x-charts-vendor-8.0.0-alpha.0.tgz",
+			"_integrity": "sha512-8xEkMj1Ve7O0TX9BxmMJYSvPlZ6By9g5BFT5LKcnCe9yz1Fow6Xted+eutP92obBSiY/dbfCLJQ+5HhkQe1GDA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.17.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.0",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.1",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.0_1731592216058_0.9349797616785362",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.1": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.1",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.1",
+			"maintainers": [
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "cbaaa8d84c55271222b02f76ccc1d98f9a4560fe",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.1.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-peaO/GThGFz/tyxe67aBs91ayQhDSK/i/3kTu2D8tlATHhpq/RfZqbW9IFAvT+fVuqHucUYhmGK8KEzXYYsryA==",
+				"signatures": [
+					{
+						"sig": "MEUCIDSk63r7KNXgb8hKfHkF5qhO9GH/pLsWYZm6svgRR5KRAiEA8aLvPQNJb4RdlvrQNo1Z9tGCwzBGe254C5Ol/MHsoeA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.1.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "alexandrefauquette",
+				"email": "alex.fauquette@gmail.com"
+			},
+			"_resolved": "/tmp/aa711c7712a4955d2b73549652d92436/mui-x-charts-vendor-8.0.0-alpha.1.tgz",
+			"_integrity": "sha512-peaO/GThGFz/tyxe67aBs91ayQhDSK/i/3kTu2D8tlATHhpq/RfZqbW9IFAvT+fVuqHucUYhmGK8KEzXYYsryA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.3",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "22.9.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.0",
+				"@types/d3-time": "^3.0.3",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.1",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.1_1732291468659_0.9774115921284534",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.3": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.3",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.3",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "c3979693f15e3626f1f5da744e625fcb85349ba1",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.3.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-UIgsztZUxp/sA36rWdg0H4SRbchxAanhE4UcOGlUfAWD57g2RuMaDKgUC/a3Uad9ZwUq5pUpdy+izWyy8GL+bA==",
+				"signatures": [
+					{
+						"sig": "MEQCIBNuISErhXvy5lDyfTmAMmd0sLVBPUPArx8fjAB58p5OAiBGrpTdOq3XyEcOAX19bIIDS5uOTl8G/6sKTIWE00giBQ==",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.3.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "michelengelen",
+				"email": "jsnerdic@gmail.com"
+			},
+			"_resolved": "/private/var/folders/p5/fc6zg5650ynbrmhkqtzx6db80000gn/T/c9435c3e5d359a4511a0984849e0c6e5/mui-x-charts-vendor-8.0.0-alpha.3.tgz",
+			"_integrity": "sha512-UIgsztZUxp/sA36rWdg0H4SRbchxAanhE4UcOGlUfAWD57g2RuMaDKgUC/a3Uad9ZwUq5pUpdy+izWyy8GL+bA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "22.7.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.0",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.1",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.3_1733412890383_0.5610154017690092",
+				"host": "s3://npm-registry-packages"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.4": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.4",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.4",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "dd82911ccc87090df05eb094b0d5545157d20fc5",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.4.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-7QN6S3AUbx/OeuGvZ42kwLVl8LSMUdlbrXkPODT5JF/X5BdKoj6Y/yqjrm4E8Fg/seaSBtSKQUdnb8hyoRkjSw==",
+				"signatures": [
+					{
+						"sig": "MEUCIAqNTPkdNRfnNO//OnP2I/5gIV3jwqNlg7i6B6wGWqFaAiEAimCUQfZW5qkYuS2aK2S+qh6cklq6kD976vUwzJRWTzA=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.4.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "lukastyla",
+				"email": "LLukas.Tyla@gmail.com"
+			},
+			"_resolved": "/private/var/folders/ld/z8py9cds7v77zgj9lhbmbb_h0000gn/T/acb62b98b21c3c677dc51271688392f3/mui-x-charts-vendor-8.0.0-alpha.4.tgz",
+			"_integrity": "sha512-7QN6S3AUbx/OeuGvZ42kwLVl8LSMUdlbrXkPODT5JF/X5BdKoj6Y/yqjrm4E8Fg/seaSBtSKQUdnb8hyoRkjSw==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.9.1",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.18.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.0",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.4_1734085782836_0.06745744348758476",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.5": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.5",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.5",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "5fc92aba118561e788deeaac463c664440779480",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.5.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-qxTgGyI/LL51oxedw8X7G6uPQ523tSQTjvi7OeUtkgm7ud3iYd2ssXCZHTXFV7Re/AfObeZndjl3ECxohejm3w==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDtOmRANIyo1sfLVhVcHkaGOofbtXocy6B1q/RlfiCwyQIgVeknl3Kd4M93BOb+ZrmP+8e6IGju3uwWDsvGysiuzcg=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.5.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "danailh",
+				"email": "hadjiatanasov@gmail.com"
+			},
+			"_resolved": "/private/var/folders/wl/ng298cv95h73_wp9gn1xxmkc0000gn/T/3f22c51d7db81550a22f29dfb1290406/mui-x-charts-vendor-8.0.0-alpha.5.tgz",
+			"_integrity": "sha512-qxTgGyI/LL51oxedw8X7G6uPQ523tSQTjvi7OeUtkgm7ud3iYd2ssXCZHTXFV7Re/AfObeZndjl3ECxohejm3w==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.7.0",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "22.1.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.0",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.5_1735244380962_0.5835528955295619",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.7": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.7",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.7",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "1512da4a6a3ca8aafeffb4d415f6a579a3140225",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.7.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-SMwfF/+x/seXbq9GJKFnOIqYtQya0ZbO0t1yqGKs6tOoMpQsuVS8q2NyxH7z+mkO3eI3V/z8ABfCdJtckdQXAg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQD9N1rhRb8rHgWe7uQLNToCJLcLmlBxYki0GiH41KL5RAIhAMNfzcTUEJArR35syWtSzNXgU2jIE3Y7eAlgMRENgWha",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.7.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "arminmeh",
+				"email": "armin@mehinovic.com"
+			},
+			"_resolved": "/private/var/folders/4x/zh_bj86j6xvd6zsny0s7h5g40000gn/T/cb08fe989dd4a3b235b52046e964096b/mui-x-charts-vendor-8.0.0-alpha.7.tgz",
+			"_integrity": "sha512-SMwfF/+x/seXbq9GJKFnOIqYtQya0ZbO0t1yqGKs6tOoMpQsuVS8q2NyxH7z+mkO3eI3V/z8ABfCdJtckdQXAg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.18.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.0",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.6",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.7_1736434367271_0.7907770173577084",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.8": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.8",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.8",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "4f05a9e1afe94b169b8f1e24d1d35eb921446f2a",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.8.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-BOowKklNvhPoRNiVRbj6TVefMFwb6Bqo80b7OtTT9MbsSFcsn8hHlerTydEkYRRzqQntQwB30m1uJekmyDca4w==",
+				"signatures": [
+					{
+						"sig": "MEUCIGpCa9fWaqxvGLQcShji/x5xCVeyneeZ8Vyc8UcdfaLmAiEAyYVf28X5gqL/y65VGGdfW6959ppfHVb/idAHT4wGf2Q=",
+						"keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.8.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "cherniavskii",
+				"email": "andrew.cherniavskii@gmail.com"
+			},
+			"_resolved": "/private/var/folders/dj/2fq9ln0n2dq_49hjz41ydl480000gp/T/75e639d0ffb36a04542d4bb7a4d9a506/mui-x-charts-vendor-8.0.0-alpha.8.tgz",
+			"_integrity": "sha512-BOowKklNvhPoRNiVRbj6TVefMFwb6Bqo80b7OtTT9MbsSFcsn8hHlerTydEkYRRzqQntQwB30m1uJekmyDca4w==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.5.0",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.12.2",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.0",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.7",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.8_1737043027045_0.1397048069658413",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.10": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.10",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.10",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "arthurbalduini",
+					"email": "arthurbalduini2@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "00e7f9be7873367f52ed2961c86c66925384b49c",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.10.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-g7g3B7NDo5yKWdF3wZqvDSF09HTC2hRbJhspW/Nmltc60fHFnjxWNzj+4hVQUrTKi5oiDuAidUoAIvFpkvxC6A==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDdzgKMq3p6BNdJ0CKR/7Ck8MiviQ2LjIfjCt5U+GYz3gIhAMhOKRCsp0kqU8piwrud2Ugx/eDM62Zg8tpRSDjSRd7m",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1196321
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.10.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "romgrk",
+				"email": "romgrk.cc@gmail.com"
+			},
+			"_resolved": "/tmp/070ddd72f3d12e72a279532577edc4d2/mui-x-charts-vendor-8.0.0-alpha.10.tgz",
+			"_integrity": "sha512-g7g3B7NDo5yKWdF3wZqvDSF09HTC2hRbJhspW/Nmltc60fHFnjxWNzj+4hVQUrTKi5oiDuAidUoAIvFpkvxC6A==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "22.7.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.7",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.8",
+				"@types/d3-shape": "^3.1.7",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.25.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.10_1738349523610_0.06351961661086247",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-alpha.13": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-alpha.13",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-alpha.13",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "8efcc14e95107c4430f1368cfd1fb97d95587889",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.13.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-u/QBjGac0uNa7/Oc3RBQWkqnkbXJUunaK309naPPVlmrKKa2EJtJ4CXD5Llh3M4NcW2E2ogLmsM+mxgYS85XNQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIC7C+YUD8jPJIWeKXjCA5HYLI8j7/pntWXxM3sG8DliPAiAQ/S/wSRpWBOCHMYcrpIbmVJmswXStETCNNR/TyRkbgA==",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1196321
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-alpha.13.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "alexandrefauquette",
+				"email": "alex.fauquette@gmail.com"
+			},
+			"_resolved": "/tmp/c264a827566508163408747710cf3e1a/mui-x-charts-vendor-8.0.0-alpha.13.tgz",
+			"_integrity": "sha512-u/QBjGac0uNa7/Oc3RBQWkqnkbXJUunaK309naPPVlmrKKa2EJtJ4CXD5Llh3M4NcW2E2ogLmsM+mxgYS85XNQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.3",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "22.9.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.9",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.26.9"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-alpha.13_1740755752953_0.6620480954415751",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-beta.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-beta.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-beta.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "8945acde046136d6aa915dec39ad59255ed54780",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-beta.0.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-56XPtu6qPVM3RaK5e1zKRO2l/nZl1oNyo+dPUcKMlWpOFg0YJfMu3i6a+GT1O3cBfOexVwKUL/QJed0oblb9VQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCjulmonqQlsoR/QJEpza1GfGpE97OCvCoko1eA7fJgEQIgfBy3BGR99ucHR3rgsaElTIutRd6fSTh3gK0dwCDvGfY=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-beta.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "lukastyla",
+				"email": "LLukas.Tyla@gmail.com"
+			},
+			"_resolved": "/private/var/folders/ld/z8py9cds7v77zgj9lhbmbb_h0000gn/T/a6054d6e24b8ef009e7d13ad6a884e46/mui-x-charts-vendor-8.0.0-beta.0.tgz",
+			"_integrity": "sha512-56XPtu6qPVM3RaK5e1zKRO2l/nZl1oNyo+dPUcKMlWpOFg0YJfMu3i6a+GT1O3cBfOexVwKUL/QJed0oblb9VQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.19.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.10",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.26.10"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-beta.0_1742315646767_0.2845716124533444",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-beta.1": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-beta.1",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-beta.1",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "e7bbfbd3285dfb02e1b0f326266fa3baa2c0eb2c",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-beta.1.tgz",
+				"fileCount": 316,
+				"integrity": "sha512-CCRHikD1WaMBthsggFVKLtbe3C9jRn8TUhMVyIY3GNbFd3TPfE5gzQs5CFiisuQir5UBF82eeLneHhrznweJ4g==",
+				"signatures": [
+					{
+						"sig": "MEQCIHlK4lD4VI6rHulxiASxwhINN9EPATi2iSaYAk/G594fAiArMv0RqumI1DlcL5FR2BV/gMUHvAq18O0die3VPNjQjg==",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1196320
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-beta.1.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "kyusuf",
+				"email": "kenan.m.yusuf@gmail.com"
+			},
+			"_resolved": "/private/var/folders/y6/76n3whx57lgfr3j0zlq4yvsc0000gn/T/f047db35446f7c1298d7f37f37d0feea/mui-x-charts-vendor-8.0.0-beta.1.tgz",
+			"_integrity": "sha512-CCRHikD1WaMBthsggFVKLtbe3C9jRn8TUhMVyIY3GNbFd3TPfE5gzQs5CFiisuQir5UBF82eeLneHhrznweJ4g==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.1",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.16.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.26.10",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.26.10"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-beta.1_1742562407064_0.8453631936557944",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0-beta.3": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0-beta.3",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0-beta.3",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "ad6328ddda1ac4e08c7c1f712d15cbca186ea6b3",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-beta.3.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-mcelNPzVYyrU8yVkW/CcTGw0doFLtSFj1Pw8q8LghvJW3rMJUeoHxU2WVOUU2+ha4sHSlEBCPwRZvJBJnoWyqA==",
+				"signatures": [
+					{
+						"sig": "MEUCIFY3uz1CQGv3tuF35OfqfzNk9tSZzd0gfPs+JBxPgxwgAiEA4mMspZTR695tG+n5P0iYBkJT7BpK+8OekHM5ElvqVgY=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193737
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0-beta.3.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "arminmeh",
+				"email": "armin@mehinovic.com"
+			},
+			"_resolved": "/private/var/folders/4x/zh_bj86j6xvd6zsny0s7h5g40000gn/T/13d27c6e399645c198589474cb04925d/mui-x-charts-vendor-8.0.0-beta.3.tgz",
+			"_integrity": "sha512-mcelNPzVYyrU8yVkW/CcTGw0doFLtSFj1Pw8q8LghvJW3rMJUeoHxU2WVOUU2+ha4sHSlEBCPwRZvJBJnoWyqA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.9.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "22.14.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.0",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"readmeFilename": "README.md",
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.26.10"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0-beta.3_1743684578210_0.7835979412930159",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.0.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.0.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.0.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "e441f29d9b3a64955a690455a37b5e8b5805667b",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-aXv0QlCTkVxSNX+sHdG92jaQMEWJFw2NuxBx599JyZ5Ij038JwdU9x0dArfPdtpdCX0A19lHKHYgZ8S0I4LpnQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIAPW9f5xeKQSfe9hHbRxtR0mjIrLSxd75Jy9lgAavi3dAiEAhbb1R4tSQIAGN1QP+TddiBXFme4djcxFOrIdXoVcSDI=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.0.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "cherniavskii",
+				"email": "andrew.cherniavskii@gmail.com"
+			},
+			"_resolved": "/private/var/folders/dj/2fq9ln0n2dq_49hjz41ydl480000gp/T/97efad6793c7214d25819b6be379c077/mui-x-charts-vendor-8.0.0.tgz",
+			"_integrity": "sha512-aXv0QlCTkVxSNX+sHdG92jaQMEWJFw2NuxBx599JyZ5Ij038JwdU9x0dArfPdtpdCX0A19lHKHYgZ8S0I4LpnQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.8.2",
+			"description": "Vendored dependencies for MUI X Charts",
+			"directories": {},
+			"_nodeVersion": "20.19.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.0",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.26.10"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.0.0_1744894017386_0.24190469346976706",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.3.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.3.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.3.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "203236b217437d216ac79de73bccc246d0564203",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.3.0.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-zuxsUS2A0n11ICLnoRB91FINFwPu9xsbP98TDm7gjBrSfPA/txccAiHQcMcuYYSKKBzEr1acAVnS9gcYpNXXNQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDwLPm81IyfwqUiipJsbRlvSslIuKAeKJiDws5W8kROigIhAI/wvdMzWi2Sqlp/2ydw+Tq29TRjS2K8jlgWCp2XB9oP",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.3.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "michelengelen",
+				"email": "jsnerdic@gmail.com"
+			},
+			"_resolved": "/private/var/folders/p5/fc6zg5650ynbrmhkqtzx6db80000gn/T/18a58e5d2d24b1a25583502557575bee/mui-x-charts-vendor-8.3.0.tgz",
+			"_integrity": "sha512-zuxsUS2A0n11ICLnoRB91FINFwPu9xsbP98TDm7gjBrSfPA/txccAiHQcMcuYYSKKBzEr1acAVnS9gcYpNXXNQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.7.0",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "20.14.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.1",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.27.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.3.0_1746710349144_0.23666564442782212",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.3.1": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.3.1",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.3.1",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "5bf352fe2ae878f61a94bad978ff688f3a468d9b",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.3.1.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-UcUa7HDIpSfeVBYgeHewWoVALcB4Gg9we53l78j2cyadYBZOWdtLj8fezo9zAhxfZ5s9T+1yIyuD+CCnYJnUpQ==",
+				"signatures": [
+					{
+						"sig": "MEQCIAn5cv91y6+2/uXC2edtjzCutfEMtAhWUHDfKYpZ6wqXAiBlz6gUduq2XX7E9CnRGAbbx016afmrlGK3sOB6Sh08Ig==",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.3.1.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "alexandrefauquette",
+				"email": "alex.fauquette@gmail.com"
+			},
+			"_resolved": "/tmp/cb44b2f53b33a806766ca98db273006a/mui-x-charts-vendor-8.3.1.tgz",
+			"_integrity": "sha512-UcUa7HDIpSfeVBYgeHewWoVALcB4Gg9we53l78j2cyadYBZOWdtLj8fezo9zAhxfZ5s9T+1yIyuD+CCnYJnUpQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "11.1.0",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.9.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.1",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.5.2",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.27.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.3.1_1747227625586_0.10187508507972431",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.4.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.4.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.4.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "72a489bb12a51ffff2287bbe6843939d1e391ceb",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.4.0.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-0VvwJSeFezJTnjoKg5YUbbI82a60+VZfH2RyqaosmKH516lKYKSCuAFmkj4vUBP6+ZJPZDW5mWI3VhwD4DN6hg==",
+				"signatures": [
+					{
+						"sig": "MEQCICif3JJ/TMRDPHEr8vSqmE1vfQALruODCqu7TLVHEWdHAiBo0BkJjDEA5G2/HWQBCSnBk5U1FiI4jvB3K5gNtWO+Nw==",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.4.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "cherniavskii",
+				"email": "andrew.cherniavskii@gmail.com"
+			},
+			"_resolved": "/private/var/folders/dj/2fq9ln0n2dq_49hjz41ydl480000gp/T/46129e4cda8a1d55a9889856facece42/mui-x-charts-vendor-8.4.0.tgz",
+			"_integrity": "sha512-0VvwJSeFezJTnjoKg5YUbbI82a60+VZfH2RyqaosmKH516lKYKSCuAFmkj4vUBP6+ZJPZDW5mWI3VhwD4DN6hg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.9.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.14.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.1",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.5.3",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.27.1"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.4.0_1747849999721_0.7412442254714426",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.5.1": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.5.1",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.5.1",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "d32ca19192413659cb9fa16c8db8bca6dcbc17f4",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.5.1.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-da6QET4FBSzBYjhaaEIA+nrprc2revJMuwXPtDE14KAjEpIluchxsKTqn2XBg0j1NWm40FZX+fLh8m3w2crGIQ==",
+				"signatures": [
+					{
+						"sig": "MEYCIQC7aHa0yG3N9h18G299PKV0UNXfg9XDGUn5o+XDUkluyAIhANLUx8EYsjy+fiBt/r2/34X1FzaH8pghgdkm+q8PVdWK",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.5.1.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "noraleonte",
+				"email": "noraleonte00@gmail.com"
+			},
+			"_resolved": "/tmp/bde02d5f9572c5cbbd37f87e50bad08f/mui-x-charts-vendor-8.5.1.tgz",
+			"_integrity": "sha512-da6QET4FBSzBYjhaaEIA+nrprc2revJMuwXPtDE14KAjEpIluchxsKTqn2XBg0j1NWm40FZX+fLh8m3w2crGIQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.9.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.14.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.4",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.27.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.5.1_1749138716605_0.527936747982471",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.5.2": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.5.2",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.5.2",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "84325a3a1b56c924492b7373bdc050aed148b927",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.5.2.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-93KFrEpo3Xhr0g2TQsbtPVqGAsbkKBN5J57ykrCM5GxFmq3kDGFU4k9+FpKiaIYYL8ijzgHGNh+jNVbP0pq3rQ==",
+				"signatures": [
+					{
+						"sig": "MEUCIDnHRnG1nfeQg2SD/nhStOJepSIvW0iHyzYVdAEr20U3AiEAlPKuC+Bi4HRfbd9KQdHD7tmlNjSx4xpWM6+C3MTeqxI=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.5.2.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "michelengelen",
+				"email": "jsnerdic@gmail.com"
+			},
+			"_resolved": "/private/var/folders/p5/fc6zg5650ynbrmhkqtzx6db80000gn/T/430cc102d545d0ff5548204781d71a53/mui-x-charts-vendor-8.5.2.tgz",
+			"_integrity": "sha512-93KFrEpo3Xhr0g2TQsbtPVqGAsbkKBN5J57ykrCM5GxFmq3kDGFU4k9+FpKiaIYYL8ijzgHGNh+jNVbP0pq3rQ==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.9.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "23.11.1",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.6",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.27.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.5.2_1749737879644_0.6425251235973755",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.5.3": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.5.3",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.5.3",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "76d581008936c021dc18fcb321b2598b03c7b447",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.5.3.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-H05cb0c2qfRhWLPcwtiIU8BOcKTrMNvhgmRAvJJXpmlirOA1km8dUlR71VeUvJiCthhVIHKyFkPPzFYKgHAfng==",
+				"signatures": [
+					{
+						"sig": "MEYCIQCBzveWGcn1ZSdyx5KLWtzK6EeEL3Z4Qlv7YZmKh1ULLwIhAIUkYPPrBPlXDF9LB++wo5TdjY84To5Yl2UtgKryP/iy",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.5.3.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "cherniavskii",
+				"actor": {
+					"name": "cherniavskii",
+					"type": "user",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				"email": "andrew.cherniavskii@gmail.com"
+			},
+			"_resolved": "/private/var/folders/dj/2fq9ln0n2dq_49hjz41ydl480000gp/T/38c1a8cd9b3479e3282615c89b8d1b03/mui-x-charts-vendor-8.5.3.tgz",
+			"_integrity": "sha512-H05cb0c2qfRhWLPcwtiIU8BOcKTrMNvhgmRAvJJXpmlirOA1km8dUlR71VeUvJiCthhVIHKyFkPPzFYKgHAfng==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.9.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.14.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.6",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.27.4"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.5.3_1750368314237_0.9307487476224363",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.6.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.6.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.6.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "6b945ddf80bc499bc1aa072abe0fea10399387c5",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.6.0.tgz",
+				"fileCount": 327,
+				"integrity": "sha512-TTtfhxXuwtoZfyno7+4y3ZhZeFqavFJecWbteLEby0lFqALWB9GGJpkc1TIHWr3GkWE5UHEbdADZ0pfrPenezA==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDNmxzy7wT1i0+elrJ4XoFfB7mvx3ZulNcg5xS/LDTsbgIhAOWo3PudBz6GdVDhKgWQ5D/o8Y8EUrSXTvVllZcGcbuG",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1193730
+			},
+			"_from": "file:mui-x-charts-vendor-8.6.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "bernardobelchior",
+				"email": "bernardo.belchior1@gmail.com"
+			},
+			"_resolved": "/private/var/folders/34/52ypqcmj1gnfpdb34gpxzd0c0000gn/T/2e5d77a067211e335bec8040441929ac/mui-x-charts-vendor-8.6.0.tgz",
+			"_integrity": "sha512-TTtfhxXuwtoZfyno7+4y3ZhZeFqavFJecWbteLEby0lFqALWB9GGJpkc1TIHWr3GkWE5UHEbdADZ0pfrPenezA==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "11.4.1",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "23.11.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.27.6",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.28.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.6.0_1752848924371_0.43010898037450374",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.11.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.11.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.11.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				},
+				{
+					"name": "janpotoms",
+					"email": "potoms.jan@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "5d87f75c9218acfb32687dc23550d8cd60c90177",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.11.0.tgz",
+				"fileCount": 339,
+				"integrity": "sha512-DcLvkSYjG/C7CMHzmC/qQHBQb8QcgGNtRF3d0KifpyOjTEe1J1H2sjQFNjXEJRyAY8eqEK2b5ApxF295XxxTHg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQC8r6rDdgLHB220RQfuYW7oT0KDK8Q3YjJxBHq5q07QIAIgbwCr2l2ofhWSBLxSKl3H5+d9nYumuJbIBabreIdpihk=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1232841
+			},
+			"_from": "file:mui-x-charts-vendor-8.11.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "noraleonte",
+				"email": "noraleonte00@gmail.com"
+			},
+			"_resolved": "/tmp/02953dcb5861897568c5f34a6a467307/mui-x-charts-vendor-8.11.0.tgz",
+			"_integrity": "sha512-DcLvkSYjG/C7CMHzmC/qQHBQb8QcgGNtRF3d0KifpyOjTEe1J1H2sjQFNjXEJRyAY8eqEK2b5ApxF295XxxTHg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "11.5.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.18.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"d3-sankey": "^0.12.3",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.28.2",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"@types/d3-sankey": "^0.12.4",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.1",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.28.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.11.0_1756473982074_0.3868349164146221",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.11.3": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.11.3",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.11.3",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				},
+				{
+					"name": "janpotoms",
+					"email": "potoms.jan@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "508fa7a4c67fdb9a12aa0d462abe31451fe24477",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.11.3.tgz",
+				"fileCount": 339,
+				"integrity": "sha512-1L0haSmoiPR2Ez2cCImCUXOsvNVORTPGQy6XPZEyY2WHkat9DYVsTPIQsOZtquqJZkftET0mF/tbwDDf6hNhFg==",
+				"signatures": [
+					{
+						"sig": "MEUCIF7gQ65ImulDgbpZTytGkElt2D1wW1/+U3lSKy9RWxtgAiEA27hwhYcLYPvjfPPPmdC7DXVlR64A9NzWjyzelnVp6kY=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"attestations": {
+					"url": "https://registry.npmjs.org/-/npm/v1/attestations/@mui%2fx-charts-vendor@8.11.3",
+					"provenance": {
+						"predicateType": "https://slsa.dev/provenance/v1"
+					}
+				},
+				"unpackedSize": 1232841
+			},
+			"_from": "file:mui-x-charts-vendor-8.11.3.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "GitHub Actions",
+				"email": "npm-oidc-no-reply@github.com",
+				"trustedPublisher": {
+					"id": "github",
+					"oidcConfigId": "oidc:a062d689-a27d-4090-b2a5-53e7671e9774"
+				}
+			},
+			"_resolved": "/tmp/d7cdfbe15117f27b4e344e493ae48ad3/mui-x-charts-vendor-8.11.3.tgz",
+			"_integrity": "sha512-1L0haSmoiPR2Ez2cCImCUXOsvNVORTPGQy6XPZEyY2WHkat9DYVsTPIQsOZtquqJZkftET0mF/tbwDDf6hNhFg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "11.6.0",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.19.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"d3-sankey": "^0.12.3",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.28.2",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"@types/d3-sankey": "^0.12.4",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.2",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.28.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.11.3_1758092360647_0.12169911543865197",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.12.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.12.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.12.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				},
+				{
+					"name": "janpotoms",
+					"email": "potoms.jan@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "e36d5b3dfa737584599a26e027b3527167526d13",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.12.0.tgz",
+				"fileCount": 339,
+				"integrity": "sha512-QkJQNgbaZ/RX4qlXuDd3iQVqtDrBOB4CihJYB7SkFjh+rg4e3AwNDWsJpEX1IivE0OUmwU7aQBmvwHheKlzBLw==",
+				"signatures": [
+					{
+						"sig": "MEUCIQCtN0qxmc9PEIClPBZZ9k2tob5DcDAEksdmbgG2iKnh/QIgSCRidGXh7DCSLnLkMwFqcOLukYc3XsAhLirDF6KM7kE=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"unpackedSize": 1232841
+			},
+			"_from": "file:mui-x-charts-vendor-8.12.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "rita-codes",
+				"email": "hi@rita.codes"
+			},
+			"_resolved": "/private/var/folders/c5/1n24kcf56mx0xvzkn015fqfc0000gn/T/be1f485a6965f186af8fb96fa2870c00/mui-x-charts-vendor-8.12.0.tgz",
+			"_integrity": "sha512-QkJQNgbaZ/RX4qlXuDd3iQVqtDrBOB4CihJYB7SkFjh+rg4e3AwNDWsJpEX1IivE0OUmwU7aQBmvwHheKlzBLw==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "10.9.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "23.11.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"d3-sankey": "^0.12.3",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.28.2",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"@types/d3-sankey": "^0.12.4",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.2",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.28.0"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.12.0_1758817960959_0.9846116119986597",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.14.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.14.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.14.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				},
+				{
+					"name": "janpotoms",
+					"email": "potoms.jan@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "e8c7e9a55035ed6932862595d31f7bc367e1b112",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.14.0.tgz",
+				"fileCount": 339,
+				"integrity": "sha512-7ONDEO8Xuuu/G+gS3BqbcgNDihAbJrOYIN1nXE8Wmhhngm4WIzi/ZFDouTayUp1+pdglBujWK2cqrqX82wfTgg==",
+				"signatures": [
+					{
+						"sig": "MEQCIFRbvPZVoGTJq/W99wl5nS8qBXhhKtfsiA6HlDZ67PFBAiBv5lAa2IEnSA04tnq6PWZh41PcWiwNeHySNfe2bKeVBQ==",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"attestations": {
+					"url": "https://registry.npmjs.org/-/npm/v1/attestations/@mui%2fx-charts-vendor@8.14.0",
+					"provenance": {
+						"predicateType": "https://slsa.dev/provenance/v1"
+					}
+				},
+				"unpackedSize": 1232870
+			},
+			"_from": "file:mui-x-charts-vendor-8.14.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "GitHub Actions",
+				"email": "npm-oidc-no-reply@github.com",
+				"trustedPublisher": {
+					"id": "github",
+					"oidcConfigId": "oidc:a062d689-a27d-4090-b2a5-53e7671e9774"
+				}
+			},
+			"_resolved": "/tmp/f780f0ab28e20e9242b22ce8a4d5a4a7/mui-x-charts-vendor-8.14.0.tgz",
+			"_integrity": "sha512-7ONDEO8Xuuu/G+gS3BqbcgNDihAbJrOYIN1nXE8Wmhhngm4WIzi/ZFDouTayUp1+pdglBujWK2cqrqX82wfTgg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "11.6.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.19.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"d3-sankey": "^0.12.3",
+				"delaunator": "^5.0.1",
+				"d3-delaunay": "^6.0.4",
+				"@babel/runtime": "^7.28.4",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"@types/d3-sankey": "^0.12.4",
+				"robust-predicates": "^3.0.2",
+				"@types/d3-delaunay": "^6.0.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@babel/cli": "^7.28.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.2",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.28.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.14.0_1760019136647_0.7841348136101127",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.14.1": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.14.1",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.14.1",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				},
+				{
+					"name": "janpotoms",
+					"email": "potoms.jan@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "68842da9d8463fbf6a148edea9288b37aad9be8f",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.14.1.tgz",
+				"fileCount": 298,
+				"integrity": "sha512-7zoJ02J6HCShvAt6O0GMv6LWFsWj8nq//4Hy2DPjnUf/uEJWPCSLIzlJphWkULp0jJM4ncha1CMOl3qqy8zLFg==",
+				"signatures": [
+					{
+						"sig": "MEYCIQDdJv0pNyOnvaMGOXuOd8KAvTsjRoXc7Op7veCMZUu7LQIhANSxb3xYyF97BD3Z3yLy1ag+yewucm0xAjZmK4YXA1nx",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"attestations": {
+					"url": "https://registry.npmjs.org/-/npm/v1/attestations/@mui%2fx-charts-vendor@8.14.1",
+					"provenance": {
+						"predicateType": "https://slsa.dev/provenance/v1"
+					}
+				},
+				"unpackedSize": 764250
+			},
+			"_from": "file:mui-x-charts-vendor-8.14.1.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "GitHub Actions",
+				"email": "npm-oidc-no-reply@github.com",
+				"trustedPublisher": {
+					"id": "github",
+					"oidcConfigId": "oidc:a062d689-a27d-4090-b2a5-53e7671e9774"
+				}
+			},
+			"_resolved": "/tmp/87a6dd717f4a3bdaa2c040626b011134/mui-x-charts-vendor-8.14.1.tgz",
+			"_integrity": "sha512-7zoJ02J6HCShvAt6O0GMv6LWFsWj8nq//4Hy2DPjnUf/uEJWPCSLIzlJphWkULp0jJM4ncha1CMOl3qqy8zLFg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "11.6.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.19.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"d3-sankey": "^0.12.3",
+				"@babel/runtime": "^7.28.4",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"@types/d3-sankey": "^0.12.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@babel/cli": "^7.28.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.2",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"@babel/plugin-transform-runtime": "^7.28.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.14.1_1760611174108_0.08496882284900464",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.15.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.15.0",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"author": {
+				"name": "MUI Team"
+			},
+			"license": "MIT AND ISC",
+			"_id": "@mui/x-charts-vendor@8.15.0",
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				},
+				{
+					"name": "janpotoms",
+					"email": "potoms.jan@gmail.com"
+				}
+			],
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"dist": {
+				"shasum": "73b798580e4c4e2db5657248695a74dc3619e246",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.15.0.tgz",
+				"fileCount": 298,
+				"integrity": "sha512-0w7Who278kmRFm+5LUZY5MErSJBO75tqBH8abDkTiDNfsCe88vnrImmIT7OGzJGyRJfyrEBht8RLL6bHNEParg==",
+				"signatures": [
+					{
+						"sig": "MEUCIQDEU6+A7IWmuC+WwD3TqlZ9EyBA1wpRoHNiGkKZjoeMHQIgEvV9HdA3hoPfkHxP405r7EMnDulyNN5BlwmVEc8Xhto=",
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+					}
+				],
+				"attestations": {
+					"url": "https://registry.npmjs.org/-/npm/v1/attestations/@mui%2fx-charts-vendor@8.15.0",
+					"provenance": {
+						"predicateType": "https://slsa.dev/provenance/v1"
+					}
+				},
+				"unpackedSize": 764296
+			},
+			"_from": "file:mui-x-charts-vendor-8.15.0.tgz",
+			"exports": {
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				},
+				"./package.json": "./package.json"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_npmUser": {
+				"name": "GitHub Actions",
+				"email": "npm-oidc-no-reply@github.com",
+				"trustedPublisher": {
+					"id": "github",
+					"oidcConfigId": "oidc:a062d689-a27d-4090-b2a5-53e7671e9774"
+				}
+			},
+			"_resolved": "/tmp/901c7300aada693439497ea42ba2cf5d/mui-x-charts-vendor-8.15.0.tgz",
+			"_integrity": "sha512-0w7Who278kmRFm+5LUZY5MErSJBO75tqBH8abDkTiDNfsCe88vnrImmIT7OGzJGyRJfyrEBht8RLL6bHNEParg==",
+			"repository": {
+				"url": "git+https://github.com/mui/mui-x.git",
+				"type": "git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"_npmVersion": "11.6.2",
+			"description": "Vendored dependencies for MUI X Charts.",
+			"directories": {},
+			"_nodeVersion": "22.19.0",
+			"dependencies": {
+				"d3-time": "^3.1.0",
+				"d3-color": "^3.1.0",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-timer": "^3.0.1",
+				"d3-sankey": "^0.12.3",
+				"@babel/runtime": "^7.28.4",
+				"@types/d3-time": "^3.0.4",
+				"d3-interpolate": "^3.0.1",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-timer": "^3.0.2",
+				"@types/d3-sankey": "^0.12.4",
+				"@types/d3-interpolate": "^3.0.4"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"_hasShrinkwrap": false,
+			"devDependencies": {
+				"execa": "^9.6.0",
+				"rimraf": "^6.0.1",
+				"d3-path": "^3.1.0",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"internmap": "^2.0.3",
+				"@babel/cli": "^7.28.3",
+				"@types/d3-path": "^3.1.1",
+				"d3-time-format": "^4.1.0",
+				"@types/d3-array": "^3.2.2",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-time-format": "^4.0.3",
+				"babel-plugin-module-resolver": "^5.0.2",
+				"@babel/plugin-transform-runtime": "^7.28.3"
+			},
+			"_npmOperationalInternal": {
+				"tmp": "tmp/x-charts-vendor_8.15.0_1761222389724_0.3517105282533126",
+				"host": "s3://npm-registry-packages-npm-production"
+			},
+			"contributors": []
+		},
+		"8.18.0": {
+			"name": "@mui/x-charts-vendor",
+			"version": "8.18.0",
+			"author": {
+				"name": "MUI Team"
+			},
+			"description": "Vendored dependencies for MUI X Charts.",
+			"keywords": [
+				"data visualization",
+				"React",
+				"d3",
+				"charting"
+			],
+			"repository": {
+				"type": "git",
+				"url": "git+https://github.com/mui/mui-x.git",
+				"directory": "packages/x-charts-vendor"
+			},
+			"license": "MIT AND ISC",
+			"exports": {
+				"./package.json": "./package.json",
+				"./*": {
+					"types": "./*.d.ts",
+					"import": "./es/*.mjs",
+					"default": "./lib/*.js"
+				}
+			},
+			"dependencies": {
+				"@babel/runtime": "^7.28.4",
+				"@types/d3-color": "^3.1.3",
+				"@types/d3-interpolate": "^3.0.4",
+				"@types/d3-sankey": "^0.12.4",
+				"@types/d3-scale": "^4.0.9",
+				"@types/d3-shape": "^3.1.7",
+				"@types/d3-time": "^3.0.4",
+				"@types/d3-timer": "^3.0.2",
+				"d3-color": "^3.1.0",
+				"d3-interpolate": "^3.0.1",
+				"d3-sankey": "^0.12.3",
+				"d3-scale": "^4.0.2",
+				"d3-shape": "^3.2.0",
+				"d3-time": "^3.1.0",
+				"d3-timer": "^3.0.1"
+			},
+			"devDependencies": {
+				"@babel/cli": "^7.28.3",
+				"@babel/plugin-transform-runtime": "^7.28.5",
+				"@types/d3-array": "^3.2.2",
+				"@types/d3-format": "^3.0.4",
+				"@types/d3-path": "^3.1.1",
+				"@types/d3-time-format": "^4.0.3",
+				"babel-plugin-module-resolver": "^5.0.2",
+				"d3-array": "^3.2.4",
+				"d3-format": "^3.1.0",
+				"d3-path": "^3.1.0",
+				"d3-time-format": "^4.1.0",
+				"execa": "^9.6.0",
+				"internmap": "^2.0.3",
+				"rimraf": "^6.1.0"
+			},
+			"publishConfig": {
+				"access": "public"
+			},
+			"scripts": {
+				"build": "node ./scripts/build.js"
+			},
+			"_id": "@mui/x-charts-vendor@8.18.0",
+			"bugs": {
+				"url": "https://github.com/mui/mui-x/issues"
+			},
+			"homepage": "https://github.com/mui/mui-x#readme",
+			"_integrity": "sha512-NFbFMOR8tsa02C3+YKQOdbzPaDtZLJPprsySw9xVxJpcYw5y/v02TuV/yQCIE0Pk1dVGHW2yvCMBs8AS+irjLA==",
+			"_resolved": "/tmp/02d6e929fd5c31309529ff46747010b1/mui-x-charts-vendor-8.18.0.tgz",
+			"_from": "file:mui-x-charts-vendor-8.18.0.tgz",
+			"_nodeVersion": "22.19.0",
+			"_npmVersion": "11.6.2",
+			"dist": {
+				"integrity": "sha512-NFbFMOR8tsa02C3+YKQOdbzPaDtZLJPprsySw9xVxJpcYw5y/v02TuV/yQCIE0Pk1dVGHW2yvCMBs8AS+irjLA==",
+				"shasum": "abe15a80182e745ef10d5fde1e30fa4ed2a6ad00",
+				"tarball": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.18.0.tgz",
+				"fileCount": 298,
+				"unpackedSize": 764296,
+				"attestations": {
+					"url": "https://registry.npmjs.org/-/npm/v1/attestations/@mui%2fx-charts-vendor@8.18.0",
+					"provenance": {
+						"predicateType": "https://slsa.dev/provenance/v1"
+					}
+				},
+				"signatures": [
+					{
+						"keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U",
+						"sig": "MEQCIBLtDjQUmpW6YZQngd+OG0LrQRxSUY0lc8OWMy8uhb6PAiBc8ghyqSx0Pc1eUnYnn2Ft//EWrjD2q+JE4DxHuCMUbQ=="
+					}
+				]
+			},
+			"_npmUser": {
+				"name": "GitHub Actions",
+				"email": "npm-oidc-no-reply@github.com",
+				"trustedPublisher": {
+					"id": "github",
+					"oidcConfigId": "oidc:a062d689-a27d-4090-b2a5-53e7671e9774"
+				}
+			},
+			"directories": {},
+			"maintainers": [
+				{
+					"name": "cherniavskii",
+					"email": "andrew.cherniavskii@gmail.com"
+				},
+				{
+					"name": "lukastyla",
+					"email": "LLukas.Tyla@gmail.com"
+				},
+				{
+					"name": "alexandrefauquette",
+					"email": "alex.fauquette@gmail.com"
+				},
+				{
+					"name": "danailh",
+					"email": "hadjiatanasov@gmail.com"
+				},
+				{
+					"name": "flaviendelangle",
+					"email": "flaviendelangle@gmail.com"
+				},
+				{
+					"name": "oliviertassinari",
+					"email": "olivier.tassinari@gmail.com"
+				},
+				{
+					"name": "mbilalshafi",
+					"email": "bilalshafidev@gmail.com"
+				},
+				{
+					"name": "jcquintas",
+					"email": "juniorquintas@gmail.com"
+				},
+				{
+					"name": "kyusuf",
+					"email": "kenan.m.yusuf@gmail.com"
+				},
+				{
+					"name": "michelengelen",
+					"email": "jsnerdic@gmail.com"
+				},
+				{
+					"name": "noraleonte",
+					"email": "noraleonte00@gmail.com"
+				},
+				{
+					"name": "arminmeh",
+					"email": "armin@mehinovic.com"
+				},
+				{
+					"name": "romgrk",
+					"email": "romgrk.cc@gmail.com"
+				},
+				{
+					"name": "bernardobelchior",
+					"email": "bernardo.belchior1@gmail.com"
+				},
+				{
+					"name": "rita-codes",
+					"email": "hi@rita.codes"
+				},
+				{
+					"name": "janpotoms",
+					"email": "potoms.jan@gmail.com"
+				}
+			],
+			"_npmOperationalInternal": {
+				"host": "s3://npm-registry-packages-npm-production",
+				"tmp": "tmp/x-charts-vendor_8.18.0_1763031119229_0.5136179520385586"
+			},
+			"_hasShrinkwrap": false,
+			"contributors": []
+		}
+	},
+	"time": {
+		"created": "2024-08-01T16:43:13.404Z",
+		"modified": "2025-11-13T10:51:59.977Z",
+		"7.12.0": "2024-08-01T16:43:13.783Z",
+		"7.12.1": "2024-08-09T13:21:17.281Z",
+		"7.13.0": "2024-08-16T13:52:53.298Z",
+		"7.14.0": "2024-08-23T10:28:03.276Z",
+		"7.15.0": "2024-08-29T13:18:37.701Z",
+		"7.16.0": "2024-09-05T14:34:24.036Z",
+		"7.18.0": "2024-09-20T08:17:31.862Z",
+		"7.19.0": "2024-10-04T19:25:38.587Z",
+		"7.20.0": "2024-10-11T09:25:48.369Z",
+		"8.0.0-alpha.0": "2024-11-14T13:50:16.413Z",
+		"8.0.0-alpha.1": "2024-11-22T16:04:28.918Z",
+		"8.0.0-alpha.3": "2024-12-05T15:34:50.612Z",
+		"8.0.0-alpha.4": "2024-12-13T10:29:43.053Z",
+		"8.0.0-alpha.5": "2024-12-26T20:19:41.275Z",
+		"8.0.0-alpha.7": "2025-01-09T14:52:47.505Z",
+		"8.0.0-alpha.8": "2025-01-16T15:57:07.338Z",
+		"8.0.0-alpha.10": "2025-01-31T18:52:03.966Z",
+		"8.0.0-alpha.13": "2025-02-28T15:15:53.196Z",
+		"8.0.0-beta.0": "2025-03-18T16:34:07.009Z",
+		"8.0.0-beta.1": "2025-03-21T13:06:47.380Z",
+		"8.0.0-beta.3": "2025-04-03T12:49:38.458Z",
+		"8.0.0": "2025-04-17T12:46:57.636Z",
+		"8.3.0": "2025-05-08T13:19:09.414Z",
+		"8.3.1": "2025-05-14T13:00:25.839Z",
+		"8.4.0": "2025-05-21T17:53:20.016Z",
+		"8.5.1": "2025-06-05T15:51:56.893Z",
+		"8.5.2": "2025-06-12T14:17:59.857Z",
+		"8.5.3": "2025-06-19T21:25:14.468Z",
+		"8.6.0": "2025-07-18T14:28:44.591Z",
+		"8.11.0": "2025-08-29T13:26:22.289Z",
+		"8.11.3": "2025-09-17T06:59:20.862Z",
+		"8.12.0": "2025-09-25T16:32:41.195Z",
+		"8.14.0": "2025-10-09T14:12:16.884Z",
+		"8.14.1": "2025-10-16T10:39:34.337Z",
+		"8.15.0": "2025-10-23T12:26:29.981Z",
+		"8.18.0": "2025-11-13T10:51:59.421Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"next": "8.0.0-beta.3",
+		"latest": "8.18.0"
+	},
+	"_uplinks": {
+		"npmjs": {
+			"etag": "W/\"70be7add027ec445f6da0ada37e5122c\"",
+			"fetched": 1763552391779
+		}
+	},
+	"_distfiles": {
+		"x-charts-vendor-7.12.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.12.0.tgz",
+			"sha": "d279b0bbc14c433a31fa7227ca04ca21f9df2c9a",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.12.1.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.12.1.tgz",
+			"sha": "e9aaa91e134ca23741f7ea018dfcc552f5690e7b",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.13.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.13.0.tgz",
+			"sha": "556e792081dfaf4b35a82f7b099f811dde26e99a",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.14.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.14.0.tgz",
+			"sha": "7dd2a0cce4448ae0e0fe812a8eb1395f22f9f9e2",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.15.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.15.0.tgz",
+			"sha": "f0d486ad416bf2c63772c9d439d8edf463dc8d7b",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.16.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.16.0.tgz",
+			"sha": "6f745457eac05955bfcfc6180562ceab576a8abf",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.18.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.18.0.tgz",
+			"sha": "f8e26840bdc29311af629326063ea854b7a4608a",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.19.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.19.0.tgz",
+			"sha": "fb3fcfe3157f3bf2929a52bc87a2f909259f1f46",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-7.20.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-7.20.0.tgz",
+			"sha": "b5858b91da0bde4f9c31f5360d05ade0b6eb5e31",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.0.tgz",
+			"sha": "0c7d9f4dd750d9b4a9d632e45839413320722186",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.1.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.1.tgz",
+			"sha": "cbaaa8d84c55271222b02f76ccc1d98f9a4560fe",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.3.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.3.tgz",
+			"sha": "c3979693f15e3626f1f5da744e625fcb85349ba1",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.4.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.4.tgz",
+			"sha": "dd82911ccc87090df05eb094b0d5545157d20fc5",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.5.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.5.tgz",
+			"sha": "5fc92aba118561e788deeaac463c664440779480",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.7.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.7.tgz",
+			"sha": "1512da4a6a3ca8aafeffb4d415f6a579a3140225",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.8.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.8.tgz",
+			"sha": "4f05a9e1afe94b169b8f1e24d1d35eb921446f2a",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.10.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.10.tgz",
+			"sha": "00e7f9be7873367f52ed2961c86c66925384b49c",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-alpha.13.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-alpha.13.tgz",
+			"sha": "8efcc14e95107c4430f1368cfd1fb97d95587889",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-beta.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-beta.0.tgz",
+			"sha": "8945acde046136d6aa915dec39ad59255ed54780",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-beta.1.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-beta.1.tgz",
+			"sha": "e7bbfbd3285dfb02e1b0f326266fa3baa2c0eb2c",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0-beta.3.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0-beta.3.tgz",
+			"sha": "ad6328ddda1ac4e08c7c1f712d15cbca186ea6b3",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.0.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.0.0.tgz",
+			"sha": "e441f29d9b3a64955a690455a37b5e8b5805667b",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.3.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.3.0.tgz",
+			"sha": "203236b217437d216ac79de73bccc246d0564203",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.3.1.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.3.1.tgz",
+			"sha": "5bf352fe2ae878f61a94bad978ff688f3a468d9b",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.4.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.4.0.tgz",
+			"sha": "72a489bb12a51ffff2287bbe6843939d1e391ceb",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.5.1.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.5.1.tgz",
+			"sha": "d32ca19192413659cb9fa16c8db8bca6dcbc17f4",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.5.2.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.5.2.tgz",
+			"sha": "84325a3a1b56c924492b7373bdc050aed148b927",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.5.3.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.5.3.tgz",
+			"sha": "76d581008936c021dc18fcb321b2598b03c7b447",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.6.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.6.0.tgz",
+			"sha": "6b945ddf80bc499bc1aa072abe0fea10399387c5",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.11.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.11.0.tgz",
+			"sha": "5d87f75c9218acfb32687dc23550d8cd60c90177",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.11.3.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.11.3.tgz",
+			"sha": "508fa7a4c67fdb9a12aa0d462abe31451fe24477",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.12.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.12.0.tgz",
+			"sha": "e36d5b3dfa737584599a26e027b3527167526d13",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.14.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.14.0.tgz",
+			"sha": "e8c7e9a55035ed6932862595d31f7bc367e1b112",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.14.1.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.14.1.tgz",
+			"sha": "68842da9d8463fbf6a148edea9288b37aad9be8f",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.15.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.15.0.tgz",
+			"sha": "73b798580e4c4e2db5657248695a74dc3619e246",
+			"registry": "npmjs"
+		},
+		"x-charts-vendor-8.18.0.tgz": {
+			"url": "https://registry.npmjs.org/@mui/x-charts-vendor/-/x-charts-vendor-8.18.0.tgz",
+			"sha": "abe15a80182e745ef10d5fde1e30fa4ed2a6ad00",
+			"registry": "npmjs"
+		}
+	},
+	"_attachments": {},
+	"_rev": "1-3acb357caa3b201c",
+	"_id": "@mui/x-charts-vendor",
+	"readme": "# Charts Vendor\n\nVendored dependencies for @mui/x-charts.\n\nAn adaptation of the victory-vendor\n\n## Background\n\nD3 has released most of its libraries as ESM-only. This means that consumers in Node.js applications can no longer just `require()` anything with a d3 transitive dependency, including much of @mui/x-charts.\n\nTo help provide an easy path to folks still using CommonJS in their Node.js applications that consume @mui/x-charts, we now provide this package to vendor in various d3-related packages.\n\n## Main difference with victory-vendor\n\nVictory is using the `d3-voronoi` which is an archived project.\n\n## Packages\n\nWe presently provide the following top-level libraries:\n\n- d3-color\n- d3-interpolate\n- d3-sankey\n- d3-scale\n- d3-shape\n- d3-time\n- d3-timer\n\nThis is the total list of top and transitive libraries we vendor:\n\n- d3-array\n- d3-color\n- d3-format\n- d3-interpolate\n- d3-path\n- d3-sankey\n- d3-scale\n- d3-shape\n- d3-time\n- d3-time-format\n- d3-timer\n- internmap\n\n## How to add a new package\n\nTo add a new package, simply install it as a dependency in this package, and then run the build script.\n\nIf your package is not built, you may need to adjust the parameters on [./scripts/build.js](./scripts/build.js), then run the build script again.\n\n## How it works\n\nWe provide two alternate paths and behaviors -- for ESM and CommonJS\n\n### ESM\n\nIf you do a Node.js import like:\n\n```js\nimport { interpolate } from '@mui/x-charts-vendor/d3-interpolate';\n```\n\nunder the hood it's going to just re-export and pass you through to `node_modules/d3-interpolate`, the **real** ESM library from D3.\n\n### CommonJS\n\nIf you do a Node.js import like:\n\n```js\nconst { interpolate } = require('@mui/x-charts-vendor/d3-interpolate');\n```\n\nunder the hood, it will go to an alternate path that contains the transpiled version of the underlying d3 library found at `x-charts-vendor/lib-vendor/d3-interpolate/**/*.js`.\nThis further has internally consistent import references to other `x-charts-vendor/lib-vendor/<pkg-name>` paths.\n\nNote that for some tooling (like Jest) that doesn't play well with `package.json:exports` routing to this CommonJS path, we **also** output a root file in the form of `x-charts-vendor/d3-interpolate.js`.\n\n## Licenses\n\nThis project is released under the MIT license, but the vendored in libraries include other licenses (for example ISC) that we enumerate in our `package.json:license` field."
+}
