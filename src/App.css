@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+/* Main app layout */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #f6f8ff 0%, #ffffff 100%);
+}
+
+.app-layout__profile-view {
+  flex: 1;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  background: transparent;
+  overflow: hidden;
+}
+
+.app-layout__profile-view > * {
+  flex: 1;
+  display: flex;
+}

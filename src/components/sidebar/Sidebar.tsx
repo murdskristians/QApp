@@ -2,11 +2,15 @@ import type firebaseCompat from 'firebase/compat/app';
 import { useTheme } from '../../hooks/useTheme';
 import './Sidebar.css';
 
+type ActiveView = 'chat' | 'profile';
+
 type SidebarProps = {
   user: firebaseCompat.User;
+  activeView: ActiveView;
+  onSelectView: (view: ActiveView) => void;
 };
 
-export function Sidebar({ user }: SidebarProps) {
+export function Sidebar({ user, activeView, onSelectView }: SidebarProps) {
   const displayName = user.displayName ?? user.email ?? 'User';
   const initials = displayName.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
   const { isDark, toggleTheme } = useTheme();
@@ -39,7 +43,10 @@ export function Sidebar({ user }: SidebarProps) {
       </button>
 
       <nav className="sidebar__nav">
-        <button className="sidebar__nav-item active" onClick={() => {}}>
+        <button
+          className={`sidebar__nav-item ${activeView === 'chat' ? 'active' : ''}`}
+          onClick={() => onSelectView('chat')}
+        >
           <div className="sidebar__chat-icon">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="40" height="40" rx="12" fill="url(#chat-gradient)"/>
@@ -56,7 +63,10 @@ export function Sidebar({ user }: SidebarProps) {
         </button>
       </nav>
 
-      <button className="sidebar__profile" onClick={() => {}}>
+      <button
+        className={`sidebar__profile ${activeView === 'profile' ? 'active' : ''}`}
+        onClick={() => onSelectView('profile')}
+      >
         <div className="sidebar__avatar">
           {user.photoURL ? (
             <img src={user.photoURL} alt={displayName} />

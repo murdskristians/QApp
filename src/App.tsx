@@ -5,8 +5,8 @@ import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import ResetPassword from './pages/auth/ResetPassword';
 import { Sidebar } from './components/sidebar/Sidebar';
-
-import './App.css';
+import { MainPanelWrapper } from './pages/user-info/MainPanelWrapper';
+import { ProfileContact } from './types/profile';
 
 import {
   type FirebaseUser,
@@ -14,9 +14,32 @@ import {
   signOut,
 } from './firebase/auth';
 
+import './App.css';
+
+type ActiveView = 'chat' | 'profile';
+
+// Create profile contact from Firebase user
+const createProfileContact = (user: FirebaseUser): ProfileContact => ({
+  id: user.uid,
+  name: user.displayName ?? user.email?.split('@')[0] ?? 'User',
+  email: user.email,
+  avatarUrl: user.photoURL,
+  avatarColor: null,
+  statusMessage: 'Online',
+  company: 'Piche Communications',
+  department: { name: 'Customer Success' },
+  position: { jobTitle: 'Account Executive' },
+  additionalEmails: [],
+  phoneNumbers: [],
+  address: null,
+  socialLinks: [],
+  coverImageUrl: null,
+});
+
 function App() {
   const [user, setUser] = useState<FirebaseUser | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [activeView, setActiveView] = useState<ActiveView>('profile');
 
   useEffect(() => {
     const unsubscribe = subscribeToAuthChanges((currentUser) => {
@@ -59,12 +82,21 @@ function App() {
           path="/"
           element={
             user ? (
-              <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
-                <Sidebar user={user} />
-                <div style={{ flex: 1, padding: '20px', overflow: 'auto' }}>
-                  <p>Welcome! You are logged in.</p>
-                  <button onClick={handleSignOut}>Sign Out</button>
-                </div>
+              <div className="app-layout">
+                <Sidebar user={user} activeView={activeView} onSelectView={setActiveView} />
+                <section className="app-layout__profile-view">
+                  {activeView === 'profile' ? (
+                    <MainPanelWrapper
+                      profileContact={createProfileContact(user)}
+                      isLoading={false}
+                      onSignOut={handleSignOut}
+                    />
+                  ) : (
+                    <div>
+                      <p>Chat view coming soon...</p>
+                    </div>
+                  )}
+                </section>
               </div>
             ) : (
               <Navigate to="/auth/login" replace />
