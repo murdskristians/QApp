@@ -1,3 +1,23 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8ff;
+  --bg-tertiary: #fafbff;
+  --text-primary: #1f2131;
+  --text-secondary: #6e7388;
+  --text-muted: #8a90a6;
+  --border-color: #f0f0f0;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --bg-tertiary: #0f3460;
+  --text-primary: #e8e8e8;
+  --text-secondary: #b8b8b8;
+  --text-muted: #888888;
+  --border-color: #2a2a4a;
+}
+
 html,
 body {
   height: 100%;
@@ -8,6 +28,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Poppins', 'Inter', sans-serif;
   overflow: hidden;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #root {
