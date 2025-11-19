@@ -19313,7 +19313,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"4ab53b92819a40216836065ca766ed14\"",
-			"fetched": 1763552556413
+			"fetched": 1763560703417
 		}
 	},
 	"_distfiles": {
@@ -20084,7 +20084,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-13097b3edcaff8f4",
+	"_rev": "3-33eef429ac137ade",
 	"_id": "@mui/utils",
 	"readme": "# @mui/utils\n\nShared utilities used by MUI packages."
 }

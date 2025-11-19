@@ -717,7 +717,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"35698dd9cf35fd5efc28499df2a17106\"",
-			"fetched": 1763552559292
+			"fetched": 1763560703806
 		}
 	},
 	"_distfiles": {
@@ -763,7 +763,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-0941c117f1865ed1",
+	"_rev": "3-d11b3dfeb2869551",
 	"_id": "lodash.camelcase",
 	"readme": "# lodash.camelcase v4.3.0\n\nThe [lodash](https://lodash.com/) method `_.camelCase` exported as a [Node.js](https://nodejs.org/) module.\n\n## Installation\n\nUsing npm:\n```bash\n$ {sudo -H} npm i -g npm\n$ npm i --save lodash.camelcase\n```\n\nIn Node.js:\n```js\nvar camelCase = require('lodash.camelcase');\n```\n\nSee the [documentation](https://lodash.com/docs#camelCase) or [package source](https://github.com/lodash/lodash/blob/4.3.0-npm-packages/lodash.camelcase) for more details."
 }

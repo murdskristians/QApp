@@ -1395,7 +1395,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"7d2cbf3fd79f99ca8c7a1bd878c8050c\"",
-			"fetched": 1763552557209
+			"fetched": 1763560703694
 		}
 	},
 	"_distfiles": {
@@ -1506,7 +1506,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-a1a639d55482d81f",
+	"_rev": "3-da7d0719cf6edbae",
 	"_id": "bezier-easing",
 	"readme": "bezier-easing [![Build Status](https://travis-ci.org/gre/bezier-easing.png)](https://travis-ci.org/gre/bezier-easing)\n===\n\nBezierEasing provides **Cubic Bezier** Curve easing which generalizes easing functions (ease-in, ease-out, ease-in-out, ...any other custom curve) exactly like in CSS Transitions.\n\nImplementing efficient lookup is not easy because it implies projecting\nthe X coordinate to a Bezier Curve.\nThis micro library uses fast heuristics (involving dichotomic search, newton-raphson, sampling) to focus on **performance** and **precision**.\n\n> It is heavily based on implementations available in Firefox and Chrome (for the CSS transition-timing-function property).\n\nUsage\n-------\n\n```javascript\nvar easing = BezierEasing(0, 0, 1, 0.5);\n// easing allows to project x in [0.0,1.0] range onto the bezier-curve defined by the 4 points (see schema below).\nconsole.log(easing(0.0)); // 0.0\nconsole.log(easing(0.5)); // 0.3125\nconsole.log(easing(1.0)); // 1.0\n```\n\n(this schema is from the CSS spec)\n\n[![TimingFunction.png](https://www.w3.org/TR/css-timing-1/cubic-bezier-timing-curve.svg)](http://www.w3.org/TR/css3-transitions/#transition-timing-function-property)\n\n> `BezierEasing(P1.x, P1.y, P2.x, P2.y)`\n\nInstall\n-------\n\n[![npm install bezier-easing](https://nodei.co/npm/bezier-easing.png)](http://npmjs.org/package/bezier-easing)\n\nIt is the equivalent to [CSS Transitions' `transition-timing-function`](http://www.w3.org/TR/css3-transitions/#transition-timing-function-property).\n\n\nIn the same way you can define in CSS `cubic-bezier(0.42, 0, 0.58, 1)`,\nwith BezierEasing, you can define it using `BezierEasing(0.42, 0, 0.58, 1)` which have the `` function taking an X and computing the Y interpolated easing value (see schema).\n\nLicense\n-------\n\nMIT License.\n\nTests\n---\n\n[![Build Status](https://travis-ci.org/gre/bezier-easing.png)](https://travis-ci.org/gre/bezier-easing)\n\n```\nnpm test\n```\n\nSee also\n===\n\n- [https://github.com/gre/bezier-easing-editor/](https://github.com/gre/bezier-easing-editor/)\n\nWho use it?\n===\n\n- [React Native](https://github.com/facebook/react-native/blob/master/Libraries/Animated/src/bezier.js)\n- [Apple®](http://images.apple.com/v/mac-pro/home/b/scripts/overview.js) :)\n- [Velocity.js](https://github.com/julianshapiro/velocity)\n- [GLSL.io](http://glsl.io/) and [Diaporama Maker](https://github.com/gre/diaporama-maker)\n- [ipo](https://github.com/gre/ipo)\n\nMore informations\n-----------------\n\nImplementation based on this [article](http://greweb.me/2012/02/bezier-curve-based-easing-functions-from-concept-to-implementation/).\n\nContributing\n------------\n\nYou need a `node` installed.\n\nInstall the deps:\n\n```\nnpm install\n```\n\nThe library is in `index.js`.\n\nEnsure any modication will:\n- keep validating the tests (run `npm test`)\n- not bring performance regression (compare with `npm run benchmark` – don't rely 100% on its precision but it still helps to notice big gaps)\n- Run the visual example: `npm run visual`"
 }

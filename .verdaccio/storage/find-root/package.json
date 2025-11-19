@@ -357,7 +357,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"5657e1c3367025ee3db57ed54317ffcb\"",
-			"fetched": 1763552560252
+			"fetched": 1763560704026
 		}
 	},
 	"_distfiles": {
@@ -388,7 +388,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-e8a2781ae5131701",
+	"_rev": "3-42adda1b50cb2545",
 	"_id": "find-root",
 	"readme": "# find-root\nrecursively find the closest package.json\n\n[![Build Status](https://travis-ci.org/js-n/find-root.svg?branch=master)](https://travis-ci.org/js-n/find-root)\n\n## usage\nSay you want to check if the directory name of a project matches its\nmodule name in package.json:\n\n```js\nconst path = require('path')\nconst findRoot = require('find-root')\n\n// from a starting directory, recursively search for the nearest\n// directory containing package.json\nconst root = findRoot('/Users/jsdnxx/Code/find-root/tests')\n// => '/Users/jsdnxx/Code/find-root'\n\nconst dirname = path.basename(root)\nconsole.log('is it the same?')\nconsole.log(dirname === require(path.join(root, 'package.json')).name)\n```\n\nYou can also pass in a custom check function (by default, it checks for the\nexistence of `package.json` in a directory). In this example, we traverse up\nto find the root of a git repo:\n```js\nconst fs = require('fs')\n\nconst gitRoot = findRoot('/Users/jsdnxx/Code/find-root/tests', function (dir) {\n  return fs.existsSync(path.resolve(dir, '.git'))\n})\n```\n\n\n## api\n\n### `findRoot: (startingPath : string, check?: (dir: string) => boolean) => string`\n\nReturns the path for the nearest directory to `startingPath` containing\na `package.json` file, eg `/foo/module`.\n\nIf `check` is provided, returns the path for the closest parent directory\nwhere `check` returns true.\n\nThrows an error if no `package.json` is found at any level in the\n`startingPath`.\n\n\n## installation\n```sh\n> npm install find-root\n```\n\n## running the tests\n\nFrom package root:\n```sh\n> npm install\n> npm test\n```\n\n## contributors\n\n- jsdnxx\n\n\n## license\nMIT. (c) 2017 jsdnxx"
 }

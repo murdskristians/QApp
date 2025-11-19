@@ -1231,7 +1231,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"3a7554bcf6e748841a0aabe865ef84d0\"",
-			"fetched": 1763552560125
+			"fetched": 1763560703927
 		}
 	},
 	"_distfiles": {
@@ -1332,7 +1332,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-c6b3aa857c6df057",
+	"_rev": "3-e34512ad997a22a3",
 	"_id": "@emotion/memoize",
 	"readme": "ERROR: No README data found!"
 }

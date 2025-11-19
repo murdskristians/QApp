@@ -995,7 +995,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"d9c78426c7b257547e34ac30db608375\"",
-			"fetched": 1763552556232
+			"fetched": 1763560703237
 		}
 	},
 	"_distfiles": {
@@ -1076,7 +1076,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-532e7fb0b4b28bd1",
+	"_rev": "3-268c30e9e197ac6a",
 	"_id": "@emotion/weak-memoize",
 	"readme": "# @emotion/weak-memoize\n\n> A memoization function that uses a WeakMap\n\n## Install\n\n```bash\nyarn add @emotion/weak-memoize\n```\n\n## Usage\n\nBecause @emotion/weak-memoize uses a WeakMap the argument must be a non primitive type, e.g. objects, functions, arrays and etc. The function passed to `weakMemoize` must also only accept a single argument.\n\n```jsx\nimport weakMemoize from '@emotion/weak-memoize'\n\nlet doThing = weakMemoize(({ someProperty }) => {\n  return { newName: someProperty }\n})\n\nlet obj = { someProperty: true }\n\nlet firstResult = doThing(obj)\n\nlet secondResult = doThing(obj)\n\nfirstResult === secondResult // true\n\nlet newObj = { someProperty: true }\n\nlet thirdResult = doThing(newObj)\n\nthirdResult === firstResult // false\n```"
 }

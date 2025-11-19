@@ -16881,7 +16881,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"502ed3e5b661c0cff90efdfd95380f3c\"",
-			"fetched": 1763552566245
+			"fetched": 1763560704264
 		}
 	},
 	"_distfiles": {
@@ -17152,7 +17152,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-9ba13f75068f42f5",
+	"_rev": "3-de66768ec6bfd700",
 	"_id": "node-addon-api",
 	"readme": "README.md"
 }

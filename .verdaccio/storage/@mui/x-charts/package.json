@@ -23269,7 +23269,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"4478fe6994fb70f596550ea65ca21cc9\"",
-			"fetched": 1763552552826
+			"fetched": 1763560701175
 		}
 	},
 	"_distfiles": {
@@ -23995,7 +23995,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-2339a3fe6fa4fcfd",
+	"_rev": "4-363d5d0e6f37d348",
 	"_id": "@mui/x-charts",
 	"readme": "# MUI X Charts\n\nThis package is the community edition of the chart components.\nIt's part of [MUI X](https://mui.com/x/), an open-core extension of our Core libraries, with advanced components.\n\n## Installation\n\nInstall the package in your project directory with:\n\n```bash\nnpm install @mui/x-charts\n```\n\nThis component has the following peer dependencies that you need to install as well.\n\n```json\n\"peerDependencies\": {\n  \"@mui/material\": \"^5.15.14 || ^6.0.0 || ^7.0.0\",\n  \"react\": \"^17.0.0 || ^18.0.0 || ^19.0.0\",\n  \"react-dom\": \"^17.0.0 || ^18.0.0 || ^19.0.0\"\n},\n```\n\n## Documentation\n\nVisit [https://mui.com/x/react-charts/](https://mui.com/x/react-charts/) to view the full documentation."
 }

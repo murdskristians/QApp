@@ -5360,7 +5360,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"28f215cad44ad7a2ae9c114e1be286a2\"",
-			"fetched": 1763552558408
+			"fetched": 1763560703417
 		}
 	},
 	"_distfiles": {
@@ -5596,7 +5596,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-50bd2076e950b188",
+	"_rev": "3-7bafbc0388e27d46",
 	"_id": "@mui/types",
 	"readme": "# @mui/types\n\nUtility types used by MUI."
 }

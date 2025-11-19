@@ -718,7 +718,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"25a91b901333f776ce8b013a8a34af44\"",
-			"fetched": 1763552558335
+			"fetched": 1763560703500
 		}
 	},
 	"_distfiles": {
@@ -764,7 +764,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-db05fbb89ff03bbd",
+	"_rev": "3-433c2dc130313dea",
 	"_id": "make-cancellable-promise",
 	"readme": "[![npm](https://img.shields.io/npm/v/make-cancellable-promise.svg)](https://www.npmjs.com/package/make-cancellable-promise) ![downloads](https://img.shields.io/npm/dt/make-cancellable-promise.svg) [![CI](https://github.com/wojtekmaj/make-cancellable-promise/actions/workflows/ci.yml/badge.svg)](https://github.com/wojtekmaj/make-cancellable-promise/actions)\n\n# Make-Cancellable-Promise\n\nMake any Promise cancellable.\n\n## tl;dr\n\n- Install by executing `npm install make-cancellable-promise` or `yarn add make-cancellable-promise`.\n- Import by adding `import makeCancellablePromise from 'make-cancellable-promise`.\n- Do stuff with it!\n  ```ts\n  const { promise, cancel } = makeCancellablePromise(myPromise);\n  ```\n\n## User guide\n\n### makeCancellablePromise(myPromise)\n\nA function that returns an object with two properties:\n\n`promise` and `cancel`. `promise` is a wrapped around your promise. `cancel` is a function which stops `.then()` and `.catch()` from working on `promise`, even if promise passed to `makeCancellablePromise` resolves or rejects.\n\n#### Usage\n\n```ts\nconst { promise, cancel } = makeCancellablePromise(myPromise);\n```\n\nTypically, you'd want to use `makeCancellablePromise` in React components. If you call `setState` on an unmounted component, React will throw an error.\n\nHere's how you can use `makeCancellablePromise` with React:\n\n```tsx\nfunction MyComponent() {\n  const [status, setStatus] = useState('initial');\n\n  useEffect(() => {\n    const { promise, cancel } = makeCancellable(fetchData());\n\n    promise.then(() => setStatus('success')).catch(() => setStatus('error'));\n\n    return () => {\n      cancel();\n    };\n  }, []);\n\n  const text = (() => {\n    switch (status) {\n      case 'pending':\n        return 'Fetching…';\n      case 'success':\n        return 'Success';\n      case 'error':\n        return 'Error!';\n      default:\n        return 'Click to fetch';\n    }\n  })();\n\n  return <p>{text}</p>;\n}\n```\n\n## License\n\nThe MIT License.\n\n## Author\n\n<table>\n  <tr>\n    <td >\n      <img src=\"https://avatars.githubusercontent.com/u/5426427?v=4&s=128\" width=\"64\" height=\"64\" alt=\"Wojciech Maj\">\n    </td>\n    <td>\n      <a href=\"https://github.com/wojtekmaj\">Wojciech Maj</a>\n    </td>\n  </tr>\n</table>"
 }

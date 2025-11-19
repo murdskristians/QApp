@@ -405,7 +405,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"2a878b4990ff2024c1efb83c042c75bf\"",
-			"fetched": 1763552565559
+			"fetched": 1763560704220
 		}
 	},
 	"_distfiles": {
@@ -446,7 +446,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-c9d5fcb2a55cd826",
+	"_rev": "3-1df192c10d95c906",
 	"_id": "@protobufjs/eventemitter",
 	"readme": "@protobufjs/eventemitter\r\n========================\r\n[![npm](https://img.shields.io/npm/v/@protobufjs/eventemitter.svg)](https://www.npmjs.com/package/@protobufjs/eventemitter)\r\n\r\nA minimal event emitter.\r\n\r\nAPI\r\n---\r\n\r\n* **new EventEmitter()**<br />\r\n  Constructs a new event emitter instance.\r\n\r\n* **EventEmitter#on(evt: `string`, fn: `function`, [ctx: `Object`]): `EventEmitter`**<br />\r\n  Registers an event listener.\r\n\r\n* **EventEmitter#off([evt: `string`], [fn: `function`]): `EventEmitter`**<br />\r\n  Removes an event listener or any matching listeners if arguments are omitted.\r\n\r\n* **EventEmitter#emit(evt: `string`, ...args: `*`): `EventEmitter`**<br />\r\n  Emits an event by calling its listeners with the specified arguments.\r\n\r\n**License:** [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)"
 }

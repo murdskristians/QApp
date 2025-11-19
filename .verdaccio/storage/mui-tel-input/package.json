@@ -6761,7 +6761,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f91e7d1ea178a248cd04f3619f029136\"",
-			"fetched": 1763552552760
+			"fetched": 1763560700827
 		}
 	},
 	"_distfiles": {
@@ -6987,7 +6987,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-34b0bd382e3b9baf",
+	"_rev": "4-c922b1e4ce612838",
 	"_id": "mui-tel-input",
 	"readme": "<div align=\"center\">\n  <img src=\"https://viclafouch.github.io/mui-tel-input/img/logo.svg\" width=\"80\" />\n</div>\n<div align=\"center\">\n<h1>Material UI tel input</h1>\n  <p>A phone number input designed for the React library <a href=\"https://material-ui.com/\">Material UI</a></p>\n</div>\n<div align=\"center\">\n\n[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/viclafouch/mui-tel-input/blob/master/LICENSE)\n![ts](https://badgen.net/badge/Built%20With/TypeScript/blue)\n[![npm](https://img.shields.io/npm/v/mui-tel-input)](https://www.npmjs.com/package/mui-tel-input)\n\n<div align=\"center\">\n  <img src=\"https://github.com/viclafouch/mui-tel-input/blob/master/mui-tel-input.gif\" width=\"100%\" />\n</div>\n\n</div>\n\n## Installation\n\n```\n// with npm\nnpm install mui-tel-input\n\n// with yarn\nyarn add mui-tel-input\n```\n\nThe component uses [libphonenumber-js](https://www.npmjs.com/package/libphonenumber-js) for phone number parsing and formatting.\n\n## Usage\n\n```jsx\nimport React from 'react'\nimport { MuiTelInput } from 'mui-tel-input'\n\nconst MyComponent = () => {\n  const [value, setValue] = React.useState('')\n\n  const handleChange = (newValue) => {\n    setValue(newValue)\n  }\n\n  return <MuiTelInput value={value} onChange={handleChange} />\n}\n```\n\n## Next.js integration\n\nLearn how to use MUI Tel Input with [Next.js](https://nextjs.org/).\n\nOnce you have installed `MUI Tel Input` in your next.js project, it is important to transpile it as it is an ESM package first.\n\n```js\n/** @type {import('next').NextConfig} */\nconst nextConfig = {\n transpilePackages: ['mui-tel-input'],\n // your config\n}\n\nmodule.exports = nextConfig\n```\n\n## [Documentation](https://viclafouch.github.io/mui-tel-input/)\n\n## Changelog\n\nGo to [GitHub Releases](https://github.com/viclafouch/mui-tel-input/releases)\n\n## TypeScript\n\nThis library comes with TypeScript \"typings\". If you happen to find any bugs in those, create an issue.\n\n### 🐛 Bugs\n\nPlease file an issue for bugs, missing documentation, or unexpected behavior.\n\n### 💡 Feature Requests\n\nPlease file an issue to suggest new features. Vote on feature requests by adding\na 👍. This helps maintainers prioritize what to work on.\n\n## LICENSE\n\nMIT"
 }

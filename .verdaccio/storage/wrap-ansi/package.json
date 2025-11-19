@@ -2307,7 +2307,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"27503e9b656c1b6d35b69a81581d4587\"",
-			"fetched": 1763553917811
+			"fetched": 1763560704322
 		}
 	},
 	"_distfiles": {
@@ -2418,7 +2418,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "4-06fdddeed48d592a",
+	"_rev": "5-6bf33c9fc8895790",
 	"_id": "wrap-ansi",
 	"readme": ""
 }

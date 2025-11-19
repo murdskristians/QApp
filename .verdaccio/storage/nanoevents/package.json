@@ -3700,7 +3700,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f722785a5a788bf4029ae109771a6615\"",
-			"fetched": 1763552557210
+			"fetched": 1763560704116
 		}
 	},
 	"_distfiles": {
@@ -3926,7 +3926,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-13c3baa17e571963",
+	"_rev": "3-1b9c2019e42e5df9",
 	"_id": "nanoevents",
 	"readme": "# Nano Events\n\nSimple and tiny event emitter library for JavaScript.\n\n* Only **108 bytes** (minified and brotlied).\n  It uses [Size Limit] to control size.\n* The `on` method returns `unbind` function. You don’t need to save\n  callback to variable for `removeListener`.\n* TypeScript and ES modules support.\n* No aliases, just `emit` and `on` methods.\n  No Node.js [EventEmitter] compatibility.\n\n```js\nimport { createNanoEvents } from 'nanoevents'\n\nconst emitter = createNanoEvents()\n\nconst unbind = emitter.on('tick', volume => {\n  summary += volume\n})\n\nemitter.emit('tick', 2)\nsummary //=> 2\n\nunbind()\nemitter.emit('tick', 2)\nsummary //=> 2\n```\n\n[EventEmitter]: https://nodejs.org/api/events.html\n[Size Limit]:   https://github.com/ai/size-limit\n\n---\n\n<img src=\"https://cdn.evilmartians.com/badges/logo-no-label.svg\" alt=\"\" width=\"22\" height=\"16\" />  Made at <b><a href=\"https://evilmartians.com/devtools?utm_source=nanoevents&utm_campaign=devtools-button&utm_medium=github\">Evil Martians</a></b>, product consulting for <b>developer tools</b>.\n\n---\n\n\n## Docs\nRead full docs **[here](https://github.com/ai/nanoevents#readme)**."
 }

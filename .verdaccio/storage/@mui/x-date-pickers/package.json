@@ -40971,7 +40971,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"7cd3dbf43557af31fd83c0cb1d144c78\"",
-			"fetched": 1763552552851
+			"fetched": 1763560700033
 		}
 	},
 	"_distfiles": {
@@ -42137,7 +42137,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-91962cc6ecf559d7",
+	"_rev": "4-be318bb6c2d3e086",
 	"_id": "@mui/x-date-pickers",
 	"readme": "# MUI X Date Pickers\n\nThis package is the Community plan edition of the Date and Time Picker components.\nIt's part of [MUI X](https://mui.com/x/), an open-core extension of our Core libraries, with advanced components.\n\n## Installation\n\nInstall the package in your project directory with:\n\n```bash\nnpm install @mui/x-date-pickers\n```\n\nThen install the date library of your choice (if not already installed).\nThe pickers currently support the following date libraries:\n\n- [date-fns](https://date-fns.org/)\n- [Day.js](https://day.js.org/)\n- [Luxon](https://moment.github.io/luxon/#/)\n- [Moment.js](https://momentjs.com/)\n\n```bash\n# date-fns\nnpm install date-fns\n\n# or dayjs\nnpm install dayjs\n\n# or luxon\nnpm install luxon\n\n# or moment\nnpm install moment\n```\n\nThis component has the following peer dependencies that you need to install as well.\n\n```json\n\"peerDependencies\": {\n  \"@mui/material\": \"^5.15.14 || ^6.0.0 || ^7.0.0\",\n  \"react\": \"^17.0.0 || ^18.0.0 || ^19.0.0\",\n  \"react-dom\": \"^17.0.0 || ^18.0.0 || ^19.0.0\"\n},\n```\n\nAfter completing the installation, you have to set the `dateAdapter` prop of the `LocalizationProvider` accordingly.\nThe supported adapters are exported from `@mui/x-date-pickers`.\n\n```jsx\nimport { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';\n// date-fns\nimport { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';\n// or for dayjs\nimport { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';\n// or for luxon\nimport { AdapterLuxon } from '@mui/x-date-pickers/AdapterLuxon';\n// or for moment\nimport { AdapterMoment } from '@mui/x-date-pickers/AdapterMoment';\n\nfunction App({ children }) {\n  return <LocalizationProvider dateAdapter={AdapterDateFns}>{children}</LocalizationProvider>;\n}\n```\n\n## Documentation\n\nVisit [https://mui.com/x/react-date-pickers/](https://mui.com/x/react-date-pickers/) to view the full documentation."
 }

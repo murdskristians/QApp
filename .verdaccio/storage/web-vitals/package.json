@@ -16631,7 +16631,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"e98923a0e1d6742ac417f276bc02c5e4\"",
-			"fetched": 1763552549387
+			"fetched": 1763560702275
 		}
 	},
 	"_distfiles": {
@@ -17077,7 +17077,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "4-c7c15fb43e94ddd9",
+	"_rev": "5-08c40dfcd06003fe",
 	"_id": "web-vitals",
 	"readme": ""
 }

@@ -768,7 +768,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"670a00cfb1a28b20110751f551bf7069\"",
-			"fetched": 1763553921027
+			"fetched": 1763560705666
 		}
 	},
 	"_distfiles": {
@@ -824,7 +824,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-c7759d97e4372f07",
+	"_rev": "4-eb01ae4ce373a036",
 	"_id": "is-path-inside",
 	"readme": "# is-path-inside\n\n> Check if a path is inside another path\n\n## Install\n\n```\n$ npm install is-path-inside\n```\n\n## Usage\n\n```js\nimport isPathInside from 'is-path-inside';\n\nisPathInside('a/b/c', 'a/b');\n//=> true\n\nisPathInside('a/b/c', 'x/y');\n//=> false\n\nisPathInside('a/b/c', 'a/b/c');\n//=> false\n\nisPathInside('/Users/sindresorhus/dev/unicorn', '/Users/sindresorhus');\n//=> true\n```\n\n## API\n\n### isPathInside(childPath, parentPath)\n\nNote that relative paths are resolved against `process.cwd()` to make them absolute.\n\n**Important:** This package is meant for use with path manipulation. It does not check if the paths exist nor does it resolve symlinks. You should not use this as a security mechanism to guard against access to certain places on the file system.\n\n#### childPath\n\nType: `string`\n\nThe path that should be inside `parentPath`.\n\n#### parentPath\n\nType: `string`\n\nThe path that should contain `childPath`.\n\n---\n\n<div align=\"center\">\n\t<b>\n\t\t<a href=\"https://tidelift.com/subscription/pkg/npm-is-path-inside?utm_source=npm-is-path-inside&utm_medium=referral&utm_campaign=readme\">Get professional support for this package with a Tidelift subscription</a>\n\t</b>\n\t<br>\n\t<sub>\n\t\tTidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.\n\t</sub>\n</div>"
 }

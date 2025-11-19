@@ -19389,7 +19389,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"1a95189eccbed71b1e56f2819f7ae54e\"",
-			"fetched": 1763552563475
+			"fetched": 1763560704200
 		}
 	},
 	"_distfiles": {
@@ -20160,7 +20160,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-e33e08033e275afb",
+	"_rev": "3-97c9d7a14d258547",
 	"_id": "@mui/private-theming",
 	"readme": "# @mui/private-theming\n\nThe React theme context to be shared between `@mui/styles` and `@mui/material`."
 }

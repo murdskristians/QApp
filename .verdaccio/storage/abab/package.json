@@ -942,7 +942,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"45ff32e074c06c0df30c857f5d5266dd\"",
-			"fetched": 1763552560904
+			"fetched": 1763560704332
 		}
 	},
 	"_distfiles": {
@@ -1008,7 +1008,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-456e4884da05cd22",
+	"_rev": "3-22feaba933d364da",
 	"_id": "abab",
 	"readme": "# abab [![npm version](https://badge.fury.io/js/abab.svg)](https://www.npmjs.com/package/abab) [![Build Status](https://travis-ci.org/jsdom/abab.svg?branch=master)](https://travis-ci.org/jsdom/abab)\n\nA JavaScript module that implements `window.atob` and `window.btoa` according the forgiving-base64 algorithm in the [Infra Standard](https://infra.spec.whatwg.org/#forgiving-base64). The original code was forked from [w3c/web-platform-tests](https://github.com/w3c/web-platform-tests/blob/master/html/webappapis/atob/base64.html).\n\nCompatibility: Node.js version 3+ and all major browsers.\n\nInstall with `npm`:\n\n```sh\nnpm install abab\n```\n\n## API\n\n### `btoa` (base64 encode)\n\n```js\nconst { btoa } = require('abab');\nbtoa('Hello, world!'); // 'SGVsbG8sIHdvcmxkIQ=='\n```\n\n### `atob` (base64 decode)\n\n```js \nconst { atob } = require('abab');\natob('SGVsbG8sIHdvcmxkIQ=='); // 'Hello, world!'\n```\n\n#### Valid characters\n\n[Per the spec](https://html.spec.whatwg.org/multipage/webappapis.html#atob:dom-windowbase64-btoa-3), `btoa` will accept strings \"containing only characters in the range `U+0000` to `U+00FF`.\" If passed a string with characters above `U+00FF`, `btoa` will return `null`. If `atob` is passed a string that is not base64-valid, it will also return `null`. In both cases when `null` is returned, the spec calls for throwing a `DOMException` of type `InvalidCharacterError`.\n\n## Browsers\n\nIf you want to include just one of the methods to save bytes in your client-side code, you can `require` the desired module directly.\n\n```js\nconst atob = require('abab/lib/atob');\nconst btoa = require('abab/lib/btoa');\n```\n\n## Development\n\nIf you're **submitting a PR** or **deploying to npm**, please use the [checklists in CONTRIBUTING.md](CONTRIBUTING.md#checklists).\n\n## Remembering what `atob` and `btoa` stand for\n\nBase64 comes from IETF [RFC 4648](https://tools.ietf.org/html/rfc4648#section-4) (2006). \n\n- **`btoa`**, the encoder function, stands for **binary** to **ASCII**, meaning it converts any binary input into a subset of **ASCII** (Base64).\n- **`atob`**, the decoder function, converts **ASCII** (or Base64) to its original **binary** format."
 }

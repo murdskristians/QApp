@@ -1216,7 +1216,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"b79cf7e41c9e51bae846fdd2fd8a42fa\"",
-			"fetched": 1763552560454
+			"fetched": 1763560704081
 		}
 	},
 	"_distfiles": {
@@ -1317,7 +1317,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-2876db4a1ad8a331",
+	"_rev": "3-6385cb23a558a34b",
 	"_id": "@emotion/unitless",
 	"readme": "# @emotion/unitless\n\n> An object of css properties that don't accept values with units\n\n```jsx\nimport unitless from '@emotion/unitless'\n\nunitless.flex === 1\n\nunitless.padding === undefined\n```"
 }

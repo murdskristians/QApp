@@ -1230,7 +1230,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f1bf9c6873b3abbb0c4a5d433c02b9cd\"",
-			"fetched": 1763552558335
+			"fetched": 1763560703516
 		}
 	},
 	"_distfiles": {
@@ -1306,7 +1306,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-dad2000649ebd522",
+	"_rev": "3-e8c187938e22ad70",
 	"_id": "make-event-props",
 	"readme": "[![npm](https://img.shields.io/npm/v/make-event-props.svg)](https://www.npmjs.com/package/make-event-props) ![downloads](https://img.shields.io/npm/dt/make-event-props.svg) [![CI](https://github.com/wojtekmaj/make-event-props/actions/workflows/ci.yml/badge.svg)](https://github.com/wojtekmaj/make-event-props/actions)\n\n# Make-Event-Props\n\nA function that, given props, returns an object of event callback props optionally curried with additional arguments.\n\nThis package allows you to pass event callback props to a rendered DOM element without the risk of applying any invalid props that could cause unwanted side effects.\n\n## tl;dr\n\n- Install by executing `npm install make-event-props` or `yarn add make-event-props`.\n- Import by adding `import makeEventProps from 'make-event-props'`.\n- Create your event props object:\n  ```ts\n  const eventProps = useMemo(\n    () => makeEventProps(props, (eventName) => additionalArgs),\n    [additionalArgs],\n  );\n  ```\n- Use your event props:\n  ```tsx\n  return <div {...eventProps} />;\n  ```\n\n## License\n\nThe MIT License.\n\n## Author\n\n<table>\n  <tr>\n    <td >\n      <img src=\"https://avatars.githubusercontent.com/u/5426427?v=4&s=128\" width=\"64\" height=\"64\" alt=\"Wojciech Maj\">\n    </td>\n    <td>\n      <a href=\"https://github.com/wojtekmaj\">Wojciech Maj</a>\n    </td>\n  </tr>\n</table>"
 }

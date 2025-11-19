@@ -3570,7 +3570,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"6fe8e46a64cc1cd73db5b880a9437354\"",
-			"fetched": 1763553921029
+			"fetched": 1763560705663
 		}
 	},
 	"_distfiles": {
@@ -3761,7 +3761,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-1f20f74ffbac80be",
+	"_rev": "4-abbf59fabfaff1bf",
 	"_id": "lodash.merge",
 	"readme": "# lodash.merge v4.6.2\n\nThe [Lodash](https://lodash.com/) method `_.merge` exported as a [Node.js](https://nodejs.org/) module.\n\n## Installation\n\nUsing npm:\n```bash\n$ {sudo -H} npm i -g npm\n$ npm i --save lodash.merge\n```\n\nIn Node.js:\n```js\nvar merge = require('lodash.merge');\n```\n\nSee the [documentation](https://lodash.com/docs#merge) or [package source](https://github.com/lodash/lodash/blob/4.6.2-npm-packages/lodash.merge) for more details."
 }

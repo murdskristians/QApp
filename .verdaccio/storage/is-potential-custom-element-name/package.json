@@ -154,7 +154,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"2c97fdef6a4cdb246c3268f2c3367db3\"",
-			"fetched": 1763552562165
+			"fetched": 1763560704503
 		}
 	},
 	"_distfiles": {
@@ -170,7 +170,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-0b09a06228cf44c7",
+	"_rev": "3-a6bab638d66bd507",
 	"_id": "is-potential-custom-element-name",
 	"readme": "# is-potential-custom-element-name [![Build status](https://travis-ci.org/mathiasbynens/is-potential-custom-element-name.svg?branch=master)](https://travis-ci.org/mathiasbynens/is-potential-custom-element-name)\n\n_is-potential-custom-element-name_ checks whether a given string matches [the `PotentialCustomElementName` production](https://html.spec.whatwg.org/multipage/scripting.html#prod-potentialcustomelementname) as defined in the HTML Standard.\n\n## Installation\n\nTo use _is-potential-custom-element-name_ programmatically, install it as a dependency via [npm](https://www.npmjs.com/):\n\n```bash\n$ npm install is-potential-custom-element-name\n```\n\nThen, `require` it:\n\n```js\nconst isPotentialCustomElementName = require('is-potential-custom-element-name');\n```\n\n## Usage\n\n```js\nisPotentialCustomElementName('foo-bar');\n// → true\nisPotentialCustomElementName('Foo-bar');\n// → false\nisPotentialCustomElementName('baz-©');\n// → false\nisPotentialCustomElementName('annotation-xml');\n// → true\n```\n\n## Author\n\n| [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias \"Follow @mathias on Twitter\") |\n|---|\n| [Mathias Bynens](https://mathiasbynens.be/) |\n\n## License\n\n_is-potential-custom-element-name_ is available under the [MIT](https://mths.be/mit) license."
 }

@@ -374,7 +374,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"86c340e6f59bfa0e5780096367299778\"",
-			"fetched": 1763552565559
+			"fetched": 1763560704181
 		}
 	},
 	"_distfiles": {
@@ -410,7 +410,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-284b91f73e4529bb",
+	"_rev": "3-a22850b3eb980103",
 	"_id": "@protobufjs/fetch",
 	"readme": "@protobufjs/fetch\r\n=================\r\n[![npm](https://img.shields.io/npm/v/@protobufjs/fetch.svg)](https://www.npmjs.com/package/@protobufjs/fetch)\r\n\r\nFetches the contents of a file accross node and browsers.\r\n\r\nAPI\r\n---\r\n\r\n* **fetch(path: `string`, [options: { binary: boolean } ], [callback: `function(error: ?Error, [contents: string])`]): `Promise<string|Uint8Array>|undefined`**\r\n  Fetches the contents of a file.\r\n\r\n**License:** [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)"
 }

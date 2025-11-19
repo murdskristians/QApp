@@ -5501,7 +5501,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"769910738ba2e7c6ebb138e1c998cc42\"",
-			"fetched": 1763552560904
+			"fetched": 1763560704351
 		}
 	},
 	"_distfiles": {
@@ -5807,7 +5807,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-c4155a77afe98570",
+	"_rev": "3-d21a3b184904152d",
 	"_id": "parse5",
 	"readme": "<p align=\"center\">\n    <a href=\"https://github.com/inikulin/parse5\">\n        <img src=\"https://raw.github.com/inikulin/parse5/master/media/logo.png\" alt=\"parse5\" />\n    </a>\n</p>\n\n<div align=\"center\">\n<h1>parse5</h1>\n<i><b>HTML parser and serializer.</b></i>\n</div>\n<br>\n\n<div align=\"center\">\n<code>npm install --save parse5</code>\n</div>\n<br>\n\n<p align=\"center\">\n  📖 <a href=\"https://parse5.js.org/modules/parse5.html\"><b>Documentation</b></a> 📖\n</p>\n\n---\n\n<p align=\"center\">\n  <a href=\"https://github.com/inikulin/parse5/tree/master/docs/list-of-packages.md\">List of parse5 toolset packages</a>\n</p>\n\n<p align=\"center\">\n    <a href=\"https://github.com/inikulin/parse5\">GitHub</a>\n</p>\n\n<p align=\"center\">\n  <a href=\"http://astexplorer.net/#/1CHlCXc4n4\">Online playground</a>\n</p>\n\n<p align=\"center\">\n    <a href=\"https://github.com/inikulin/parse5/releases\">Changelog</a>\n</p>"
 }

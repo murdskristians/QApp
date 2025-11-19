@@ -9199,7 +9199,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"ce57d1141306c9c4bab176fc135485e3\"",
-			"fetched": 1763552552762
+			"fetched": 1763560699944
 		}
 	},
 	"_distfiles": {
@@ -9730,7 +9730,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-125b2340c478437a",
+	"_rev": "4-5ada25a0fa1bfb54",
 	"_id": "@emotion/styled",
 	"readme": "# @emotion/styled\n\n> The styled API for @emotion/react\n\n## Install\n\n```bash\nyarn add @emotion/react @emotion/styled\n```\n\n## Usage\n\n```jsx\nimport styled from '@emotion/styled'\n\nlet SomeComp = styled.div({\n  color: 'hotpink'\n})\n\nlet AnotherComp = styled.div`\n  color: ${props => props.color};\n`\n\nrender(\n  <SomeComp>\n    <AnotherComp color=\"green\" />\n  </SomeComp>\n)\n```\n\nMore documentation is available at [https://emotion.sh/docs/styled](https://emotion.sh/docs/styled)."
 }

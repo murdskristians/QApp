@@ -2657,7 +2657,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"cb4760b1ff354c4ed304bb3fcb0eea10\"",
-			"fetched": 1763552556308
+			"fetched": 1763560703236
 		}
 	},
 	"_distfiles": {
@@ -2848,7 +2848,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-278acd46f30ac139",
+	"_rev": "3-974c12fabae2ba2a",
 	"_id": "@emotion/utils",
 	"readme": "ERROR: No README data found!"
 }

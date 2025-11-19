@@ -108911,7 +108911,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"2438f3069ac82d91481e42c32cf06515\"",
-			"fetched": 1763552549492
+			"fetched": 1763560696695
 		}
 	},
 	"_distfiles": {
@@ -113657,7 +113657,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "4-0038782ee014cf70",
+	"_rev": "5-5eea64b6415a19dc",
 	"_id": "react-router-dom",
 	"readme": ""
 }

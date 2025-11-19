@@ -296,7 +296,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"8ccf21192461f9c1b0332ad905bca2c1\"",
-			"fetched": 1763552552760
+			"fetched": 1763560700345
 		}
 	},
 	"_distfiles": {
@@ -317,7 +317,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-c6b9c65aba186149",
+	"_rev": "4-789377c0c195c23d",
 	"_id": "dayjs-plugin-utc",
 	"readme": "English | [简体中文](./README.zh-CN.md)\n\n> this is a plugin for [dayjs](https://github.com/iamkun/dayjs), that gives dayjs the ability to operate UTC timezone\n\n---\n\n## Usage\n\n  * Via NPM:\n\n  ```console\n  npm i dayjs-plugin-utc --save\n  ```\n\n  ```javascript\n  import dayjsPluginUTC from 'dayjs-plugin-utc'\n\n  dayjs.extend(dayjsPluginUTC)\n  ```\n\n  * Via CDN:\n\n  ```html\n  <!-- Latest compiled and minified JavaScript -->\n  <script src=\"https://unpkg.com/dayjs\"></script>\n  <script src=\"https://unpkg.com/dayjs-plugin-utc\"></script>\n  <script>\n    dayjs.extend(dayjsPluginUTC.default)\n  </script>\n  ```\n\n  > **⚠️ NOTICE⚠️** \n  >\n  > when **NOT** add this plugin `dayjs()` will return an instance that timezone based of you local\n  > ```javascript\n  > dayjs('2018-05-18T03:04:05+06:00').format() // 2018-05-18T05:04:05+08:00\n  > ```\n  > after load this plugin the timezone of instance return by `dayjs()` will rely on what you passed\n  > ```javascript\n  > dayjs.extend(dayjsPluginUTC)\n  > dayjs('2018-05-18T03:04:05+06:00').format() // 2018-05-18T03:04:05+06:00\n  > ```\n  > if you always want an local timezone instance would be create or you already use dayjs in you project\n  >\n  > you can load this plugin with option `parseToLocal: true`\n  >\n  > ```javascript\n  > dayjs.extend(dayjsPluginUTC, { parseToLocal: true })\n  > dayjs('2018-05-18T03:04:05+06:00').format() // 2018-05-18T05:04:05+08:00\n  > ```\n  >\n\n## API\n\n  ### Parse\n\n  get an instance in UTC\n\n  ```javascript\n    dayjs.utc() \n    dayjs.utc('2018-05-18T03:04:05+06:00') \n    /* (string | number | Date | Dayjs) support like dayjs() */\n  ```\n\n  ### Get\n\n  with `dayjs().utcOffset()` you can get the UTC offset in minutes.\n  > Note: `dayjs().utcOffset()` returns the real offset from UTC, not the reverse offset (as returned by Date.prototype.getTimezoneOffset).\n\n  also you can check the timezone of an instance is local or UTC by `dayjs().isLocal()` and `dayjs().isUTC()`\n\n  ```javascript\n    dayjs().utcOffset() // (-480, -120, 0, 120, 480, etc.)\n    dayjs().isLocal()   // true\n    dayjs().isUTC()     // false\n  ```\n\n  ### Set\n\n  using `dayjs().utc()` and `dayjs().local()` you can set the timezone to UTC or you local timezone , and `dayjs().utcOffset(Number)` you can specify the timezone you want \n\n  ```javascript\n    let day = dayjs('2018-05-18T03:04:05+06:00')\n    \n    day.utc().format()           // 2018-05-17T21:04:05+00:00\n\n    day.local().format()         // 2018-05-18T05:04:05+08:00\n\n    day.utcOffset(240).format()  // 2018-05-18T01:04:05+04:00\n  ```"
 }

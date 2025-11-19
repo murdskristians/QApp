@@ -1390,7 +1390,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"8de4022b7bd7f3f258fff623c3b2165b\"",
-			"fetched": 1763552566328
+			"fetched": 1763560705124
 		}
 	},
 	"_distfiles": {
@@ -1501,7 +1501,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-9d380b6980152e22",
+	"_rev": "3-3bc2b2280c80aa32",
 	"_id": "@types/d3-path",
 	"readme": "[object Object]"
 }

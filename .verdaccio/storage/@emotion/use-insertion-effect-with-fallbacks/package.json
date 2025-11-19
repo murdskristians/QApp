@@ -430,7 +430,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f5624d40cbd9e83096ccfd067ef34051\"",
-			"fetched": 1763552556232
+			"fetched": 1763560703195
 		}
 	},
 	"_distfiles": {
@@ -456,7 +456,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-80aeff32e8ca946c",
+	"_rev": "3-3e6efb45e741f07c",
 	"_id": "@emotion/use-insertion-effect-with-fallbacks",
 	"readme": "# @emotion/use-insertion-effect-with-fallbacks"
 }

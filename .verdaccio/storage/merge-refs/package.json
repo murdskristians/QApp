@@ -1031,7 +1031,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"6c531ce82dc340fd625022250e663f33\"",
-			"fetched": 1763552558092
+			"fetched": 1763560703483
 		}
 	},
 	"_distfiles": {
@@ -1087,7 +1087,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-012da14f8b74f3cc",
+	"_rev": "3-25b8bf8593a5a0f7",
 	"_id": "merge-refs",
 	"readme": "[![npm](https://img.shields.io/npm/v/merge-refs.svg)](https://www.npmjs.com/package/merge-refs) ![downloads](https://img.shields.io/npm/dt/merge-refs.svg) [![CI](https://github.com/wojtekmaj/merge-refs/actions/workflows/ci.yml/badge.svg)](https://github.com/wojtekmaj/merge-refs/actions)\n\n# Merge-Refs\n\nA function that merges React refs into one. Filters out invalid (eg. falsy) refs as well and returns original ref if only one valid ref was given.\n\n## tl;dr\n\n- Install by executing `npm install merge-refs` or `yarn add merge-refs`.\n- Import by adding `import mergeRefs from 'merge-refs'`.\n- Use it in `ref` like so: `<div ref={mergeRefs(ref, someOtherRef)} />`\n\n## Accepted refs\n\n- Refs created using `createRef()`\n- Refs created using `useRef()`\n- Functional refs\n\n## Example\n\n```tsx\nfunction Hello() {\n  const ref1 = useRef<HTMLDivElement>(); // I'm going to be updated!\n  const ref2 = (element: HTMLDivElement) => {\n    // I'm going to be called!\n  };\n\n  return <div ref={mergeRefs(ref1, ref2)} />;\n}\n```\n\n## License\n\nThe MIT License.\n\n## Author\n\n<table>\n  <tr>\n    <td >\n      <img src=\"https://avatars.githubusercontent.com/u/5426427?v=4&s=128\" width=\"64\" height=\"64\" alt=\"Wojciech Maj\">\n    </td>\n    <td>\n      <a href=\"https://github.com/wojtekmaj\">Wojciech Maj</a>\n    </td>\n  </tr>\n</table>"
 }

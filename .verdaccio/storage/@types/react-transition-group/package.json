@@ -3298,7 +3298,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"9a81b746beae2011a4e08fa634322e74\"",
-			"fetched": 1763552558881
+			"fetched": 1763560703416
 		}
 	},
 	"_distfiles": {
@@ -3559,7 +3559,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-b1af4be77d39c7b4",
+	"_rev": "3-92ab58f4c912f374",
 	"_id": "@types/react-transition-group",
 	"readme": "[object Object]"
 }

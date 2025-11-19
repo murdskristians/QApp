@@ -6380,7 +6380,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"0d4436e32a72be35d084c20507af08fc\"",
-			"fetched": 1763552552761
+			"fetched": 1763560699936
 		}
 	},
 	"_distfiles": {
@@ -6596,7 +6596,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-1715148fb09de937",
+	"_rev": "4-184216d6ad4f37ae",
 	"_id": "@emotion/react",
 	"readme": "# @emotion/react\n\n> Simple styling in React.\n\n## Install\n\n```bash\nyarn add @emotion/react\n```\n\n## Usage\n\n```jsx\n/** @jsx jsx */\nimport { jsx, css, Global, ClassNames } from '@emotion/react'\n\nrender(\n  <div css={{ color: 'hotpink' }}>\n    <div\n      css={css`\n        color: green;\n      `}\n    />\n    <Global\n      styles={{\n        body: {\n          margin: 0,\n          padding: 0\n        }\n      }}\n    />\n    <ClassNames>\n      {({ css, cx }) => (\n        <div\n          className={cx(\n            'some-class',\n            css`\n              color: yellow;\n            `\n          )}\n        />\n      )}\n    </ClassNames>\n  </div>\n)\n```\n\nMore documentation is available at [https://emotion.sh](https://emotion.sh)."
 }

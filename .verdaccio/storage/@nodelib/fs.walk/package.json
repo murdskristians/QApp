@@ -1220,7 +1220,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"3fee06b170fd0ae06fd324c543309c76\"",
-			"fetched": 1763553921214
+			"fetched": 1763560705681
 		}
 	},
 	"_distfiles": {
@@ -1306,7 +1306,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-7182af13d3b80204",
+	"_rev": "4-55d9224ebf5277a6",
 	"_id": "@nodelib/fs.walk",
 	"readme": ""
 }

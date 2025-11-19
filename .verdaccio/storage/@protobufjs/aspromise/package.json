@@ -423,7 +423,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f591acaf8f086424a608d1587fbd8e48\"",
-			"fetched": 1763552565034
+			"fetched": 1763560704203
 		}
 	},
 	"_distfiles": {
@@ -464,7 +464,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-9409b55082d4ffa9",
+	"_rev": "3-521523eafc9ebaa7",
 	"_id": "@protobufjs/aspromise",
 	"readme": "@protobufjs/aspromise\r\n=====================\r\n[![npm](https://img.shields.io/npm/v/@protobufjs/aspromise.svg)](https://www.npmjs.com/package/@protobufjs/aspromise)\r\n\r\nReturns a promise from a node-style callback function.\r\n\r\nAPI\r\n---\r\n\r\n* **asPromise(fn: `function`, ctx: `Object`, ...params: `*`): `Promise<*>`**<br />\r\n  Returns a promise from a node-style callback function.\r\n\r\n**License:** [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)"
 }

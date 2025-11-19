@@ -845,7 +845,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"6b2e33394efabb8d8ce90e20242f5813\"",
-			"fetched": 1763552565946
+			"fetched": 1763560704611
 		}
 	},
 	"_distfiles": {
@@ -896,7 +896,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-ece64f0985c5ee99",
+	"_rev": "3-1336a30ea0e90a4a",
 	"_id": "xmlchars",
 	"readme": "Utilities for determining whether characters belong to character classes defined\nby the XML specs.\n\n## Organization\n\nIt used to be that the library was contained in a single file and you could just\nimport/require/what-have-you the `xmlchars` module. However, that setup did not\nwork well for people who cared about code optimization. Importing `xmlchars`\nmeant importing *all* of the library and because of the way the code was\ngenerated there was no way to shake the resulting code tree.\n\nDifferent modules cover different standards. At the time this documentation was\nlast updated, we had:\n\n* `xmlchars/xml/1.0/ed5` which covers XML 1.0 edition 5.\n* `xmlchars/xml/1.0/ed4` which covers XML 1.0 edition 4.\n* `xmlchars/xml/1.1/ed2` which covers XML 1.0 edition 2.\n* `xmlchars/xmlns/1.0/ed3` which covers XML Namespaces 1.0 edition 3.\n\n## Features\n\nThe \"things\" each module contains can be categorized as follows:\n\n1. \"Fragments\": these are parts and pieces of regular expressions that\ncorrespond to the productions defined in the standard that the module\ncovers. You'd use these to *build regular expressions*.\n\n2. Regular expressions that correspond to the productions defined in the\nstandard that the module covers.\n\n3. Lists: these are arrays of characters that correspond to the productions.\n\n4. Functions that test code points to verify whether they fit a production."
 }

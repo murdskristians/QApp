@@ -339,7 +339,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"2cfced14ec5dbdd8aa952ac107c977d3\"",
-			"fetched": 1763553920343
+			"fetched": 1763560705544
 		}
 	},
 	"_distfiles": {
@@ -370,7 +370,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-e9e3caccd6c18f17",
+	"_rev": "4-0947a4f0738db7d6",
 	"_id": "text-table",
 	"readme": "# text-table\n\ngenerate borderless text table strings suitable for printing to stdout\n\n[![build status](https://secure.travis-ci.org/substack/text-table.png)](http://travis-ci.org/substack/text-table)\n\n# example\n\n## default align\n\n``` js\nvar table = require('text-table');\nvar t = table([\n    [ 'master', '0123456789abcdef' ],\n    [ 'staging', 'fedcba9876543210' ]\n]);\nconsole.log(t);\n```\n\n```\nmaster   0123456789abcdef\nstaging  fedcba9876543210\n```\n\n## left-right align\n\n``` js\nvar table = require('text-table');\nvar t = table([\n    [ 'beep', '1024' ],\n    [ 'boop', '33450' ],\n    [ 'foo', '1006' ],\n    [ 'bar', '45' ]\n], { align: [ 'l', 'r' ] });\nconsole.log(t);\n```\n\n```\nbeep   1024\nboop  33450\nfoo    1006\nbar      45\n```\n\n## dotted align\n\n``` js\nvar table = require('text-table');\nvar t = table([\n    [ 'beep', '1024' ],\n    [ 'boop', '334.212' ],\n    [ 'foo', '1006' ],\n    [ 'bar', '45.6' ],\n    [ 'baz', '123.' ]\n], { align: [ 'l', '.' ] });\nconsole.log(t);\n```\n\n```\nbeep  1024\nboop   334.212\nfoo   1006\nbar     45.6\nbaz    123.\n```\n\n## centered\n\n``` js\nvar table = require('text-table');\nvar t = table([\n    [ 'beep', '1024', 'xyz' ],\n    [ 'boop', '3388450', 'tuv' ],\n    [ 'foo', '10106', 'qrstuv' ],\n    [ 'bar', '45', 'lmno' ]\n], { align: [ 'l', 'c', 'l' ] });\nconsole.log(t);\n```\n\n```\nbeep    1024   xyz\nboop  3388450  tuv\nfoo    10106   qrstuv\nbar      45    lmno\n```\n\n# methods\n\n``` js\nvar table = require('text-table')\n```\n\n## var s = table(rows, opts={})\n\nReturn a formatted table string `s` from an array of `rows` and some options\n`opts`.\n\n`rows` should be an array of arrays containing strings, numbers, or other\nprintable values.\n\noptions can be:\n\n* `opts.hsep` - separator to use between columns, default `'  '`\n* `opts.align` - array of alignment types for each column, default `['l','l',...]`\n\nalignment types are:\n\n* `'l'` - left\n* `'r'` - right\n* `'c'` - center\n* `'.'` - decimal\n\n# install\n\nWith [npm](https://npmjs.org) do:\n\n```\nnpm install text-table\n```\n\n# license\n\nMIT"
 }

@@ -874,7 +874,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"62dd3bc4dd25a70241971493017ff91f\"",
-			"fetched": 1763552561573
+			"fetched": 1763560704500
 		}
 	},
 	"_distfiles": {
@@ -930,7 +930,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-890580f7513d5a6a",
+	"_rev": "3-47f97065ab610f2a",
 	"_id": "whatwg-encoding",
 	"readme": "# Decode According to the WHATWG Encoding Standard\n\nThis package provides a thin layer on top of [iconv-lite](https://github.com/ashtuchkin/iconv-lite) which makes it expose some of the same primitives as the [Encoding Standard](https://encoding.spec.whatwg.org/).\n\n```js\nconst whatwgEncoding = require(\"whatwg-encoding\");\n\nconsole.assert(whatwgEncoding.labelToName(\"latin1\") === \"windows-1252\");\nconsole.assert(whatwgEncoding.labelToName(\"  CYRILLic \") === \"ISO-8859-5\");\n\nconsole.assert(whatwgEncoding.isSupported(\"IBM866\") === true);\n\n// Not supported by the Encoding Standard\nconsole.assert(whatwgEncoding.isSupported(\"UTF-32\") === false);\n\n// In the Encoding Standard, but this package can't decode it\nconsole.assert(whatwgEncoding.isSupported(\"x-mac-cyrillic\") === false);\n\nconsole.assert(whatwgEncoding.getBOMEncoding(new Uint8Array([0xFE, 0xFF])) === \"UTF-16BE\");\nconsole.assert(whatwgEncoding.getBOMEncoding(new Uint8Array([0x48, 0x69])) === null);\n\nconsole.assert(whatwgEncoding.decode(new Uint8Array([0x48, 0x69]), \"UTF-8\") === \"Hi\");\n```\n\n## API\n\n- `decode(uint8Array, fallbackEncodingName)`: performs the [decode](https://encoding.spec.whatwg.org/#decode) algorithm (in which any BOM will override the passed fallback encoding), and returns the resulting string\n- `labelToName(label)`: performs the [get an encoding](https://encoding.spec.whatwg.org/#concept-encoding-get) algorithm and returns the resulting encoding's name, or `null` for failure\n- `isSupported(name)`: returns whether the encoding is one of [the encodings](https://encoding.spec.whatwg.org/#names-and-labels) of the Encoding Standard, _and_ is an encoding that this package can decode (via iconv-lite)\n- `getBOMEncoding(uint8Array)`: sniffs the first 2–3 bytes of the supplied `Uint8Array`, returning one of the encoding names `\"UTF-8\"`, `\"UTF-16LE\"`, or `\"UTF-16BE\"` if the appropriate BOM is present, or `null` if no BOM is present\n\n## Unsupported encodings\n\nSince we rely on iconv-lite, we are limited to support only the encodings that they support. Currently we are missing support for:\n\n- ISO-2022-JP\n- ISO-8859-8-I\n- replacement\n- x-mac-cyrillic\n- x-user-defined\n\nPassing these encoding names will return `false` when calling `isSupported`, and passing any of the possible labels for these encodings to `labelToName` will return `null`.\n\n## Credits\n\nThis package was originally based on the excellent work of [@nicolashenry](https://github.com/nicolashenry), [in jsdom](https://github.com/tmpvar/jsdom/blob/7ce11776ce161e8d5921a7a183585327400f786b/lib/jsdom/living/helpers/encoding.js). It has since been pulled out into this separate package.\n\n## Alternatives\n\nIf you are looking for a JavaScript implementation of the Encoding Standard's `TextEncoder` and `TextDecoder` APIs, you'll want [@inexorabletash](https://github.com/inexorabletash)'s [text-encoding](https://github.com/inexorabletash/text-encoding) package. Node.js also has them [built-in](https://nodejs.org/dist/latest/docs/api/globals.html#globals_textdecoder)."
 }

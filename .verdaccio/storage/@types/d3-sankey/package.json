@@ -1139,7 +1139,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"8b5f49637b7aba51076c8f68ead3404d\"",
-			"fetched": 1763552562480
+			"fetched": 1763560704503
 		}
 	},
 	"_distfiles": {
@@ -1239,7 +1239,7 @@
 			"shasum": "9b79ff5768250cfd8c6340b167c409a0374f40bd"
 		}
 	},
-	"_rev": "3-d6f30ccfe0aec5f1",
+	"_rev": "4-173230aecc2cd77d",
 	"_id": "@types/d3-sankey",
 	"readme": "[object Object]"
 }

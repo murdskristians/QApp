@@ -4070,7 +4070,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"29c0730b71071809107dd939dcb2d886\"",
-			"fetched": 1763552552762
+			"fetched": 1763560700021
 		}
 	},
 	"_distfiles": {
@@ -4346,7 +4346,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-62b48d9eb14e3d88",
+	"_rev": "4-70d688d052f1c73b",
 	"_id": "@fontsource/inter",
 	"readme": "# Fontsource Inter\n\n[![npm (scoped)](https://img.shields.io/npm/v/@fontsource/inter?color=brightgreen)](https://www.npmjs.com/package/@fontsource/inter) [![Generic badge](https://img.shields.io/badge/fontsource-passing-brightgreen)](https://github.com/fontsource/fontsource) [![Monthly downloads](https://badgen.net/npm/dm/@fontsource/inter)](https://github.com/fontsource/fontsource) [![Total downloads](https://badgen.net/npm/dt/@fontsource/inter)](https://github.com/fontsource/fontsource) [![GitHub stars](https://img.shields.io/github/stars/fontsource/fontsource.svg?style=social&label=Star)](https://github.com/fontsource/fontsource/stargazers)\n\nThe CSS and web font files to easily self-host the “Inter” font. Please visit the main [Fontsource website](https://fontsource.org/fonts/inter) to view more details on this package.\n\n## Quick Installation\n\nFontsource offers multiple methods to import the CSS, including using a bundler like Vite or using SASS. You can find full documentation [here](https://fontsource.org/docs/getting-started/introduction).\n\n```javascript\nnpm install @fontsource/inter\n```\n\nWithin your app entry file or site component, import it in.\n\n```javascript\nimport \"@fontsource/inter\"; // Defaults to weight 400\nimport \"@fontsource/inter/400.css\"; // Specify weight\nimport \"@fontsource/inter/400-italic.css\"; // Specify weight and style\n```\n\nSupported variables:\n- Weights: `[100,200,300,400,500,600,700,800,900]`\n- Styles: `[italic,normal]`\n- Subsets: `[cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese]`\n\n> Note: `italic` may not be supported by all fonts. To learn more about what weights and styles are supported, please visit the [Fontsource website](https://fontsource.org/fonts/inter).\n\nFinally, you can reference the font name in a CSS stylesheet, CSS Module, or CSS-in-JS.\n\n```css\nbody {\n  font-family: \"Inter\";\n}\n```\n\n## Licensing\nAlways make sure to read the license for each font you use. Most of the fonts in the collection use the SIL Open Font License, v1.1. Some fonts use the Apache 2 license. The Ubuntu fonts use the Ubuntu Font License v1.0.\n\nCopyright 2016 The Inter Project Authors (https://github.com/rsms/inter) Inter-Italic[opsz,wght].ttf: Copyright 2016 The Inter Project Authors (https://github.com/rsms/inter)\n[OFL-1.1](https://openfontlicense.org)\n\n## Other Notes\nFont version (provided by source): `v20`.\n\nIf you have any suggestions or ideas to improve the performance of font loading or expand the existing library, feel free to star and contribute to this repository. You can share your suggestions or ideas by creating an [issue](https://github.com/fontsource/fontsource/issues)."
 }

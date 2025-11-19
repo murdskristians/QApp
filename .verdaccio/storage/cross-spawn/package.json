@@ -4977,7 +4977,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"e4706eff07ac4d767c2c5e32370ca537\"",
-			"fetched": 1763553920371
+			"fetched": 1763560705656
 		}
 	},
 	"_distfiles": {
@@ -5273,7 +5273,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-571722af0e1c1a5a",
+	"_rev": "4-00083474543b409e",
 	"_id": "cross-spawn",
 	"readme": ""
 }

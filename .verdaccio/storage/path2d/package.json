@@ -822,7 +822,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"5c6147f2b6b8d7bd3010a7e63dfb2ab0\"",
-			"fetched": 1763552562225
+			"fetched": 1763560704101
 		}
 	},
 	"_distfiles": {
@@ -868,7 +868,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-adbeee1730fea721",
+	"_rev": "3-e75201927ee89f8b",
 	"_id": "path2d",
 	"readme": "# path2d\n\n[![CI](https://github.com/nilzona/path2d-polyfill/actions/workflows/ci.yml/badge.svg)](https://github.com/nilzona/path2d-polyfill/actions/workflows/ci.yml)\n\nImplements `Path2D` api and `roundRect` for CanvasRenderingContext2D\n\n## Usage\n\n```shell\nnpm install --save path2d\n```\n\n## Use in a node environment\n\nThe package exports a few functions that can be used in a node environment:\n\n- `Path2D` - class to create Path2D objects used by the polyfill methods\n- `parsePath` - function for parsing an SVG path string into canvas commands\n- `roundRect` - implementation of roundRect using canvas commands\n- `applyPath2DToCanvasRenderingContext` - Adds Path2D functions (if needed) to a CanvasRenderingContext and augments the fill, stroke and clip command\n- `applyRoundRectToCanvasRenderingContext2D` - Adds roundRect function (if needed) to a CanvasRenderingContext\n\n```js\nimport { Path2D } from \"path2d\";\n```\n\n### usage with node-canvas\n\nTo get Path2D features with the [node-canvas library](https://github.com/Automattic/node-canvas) use the following pattern:\n\n```js\nconst { createCanvas, CanvasRenderingContext2D } = require(\"canvas\");\nconst { applyPath2DToCanvasRenderingContext, Path2D } = require(\"path2d\");\n\napplyPath2DToCanvasRenderingContext(CanvasRenderingContext2D);\n// Path2D features has now been added to CanvasRenderingContext2D\n\nconst canvas = createCanvas(200, 200);\nconst ctx = canvas.getContext(\"2d\");\n\nconst p = new Path2D(\"M10 10 l 20 0 l 0 20 Z\");\nctx.fillStyle = \"green\";\nctx.fill(p);\n```\n\nA working example of a node express server that serves an image drawn with canvas [can be seen here](https://gist.github.com/nilzona/e611c99336d8ea1f645bd391a459c24f)\n\n## Support table\n\n| Method               | Supported |\n| -------------------- | :-------: |\n| constructor(SVGPath) |    Yes    |\n| addPath()            |    Yes    |\n| closePath()          |    Yes    |\n| moveTo()             |    Yes    |\n| lineTo()             |    Yes    |\n| bezierCurveTo()      |    Yes    |\n| quadraticCurveTo()   |    Yes    |\n| arc()                |    Yes    |\n| ellipse()            |    Yes    |\n| rect()               |    Yes    |\n| roundRect()          |    Yes    |\n\n## See it in action\n\nClone [path2d-polyfill](https://github.com/nilzona/path2d-polyfill)\n\n```shell\npnpm install\npnpm dev\n```\n\nopen <http://localhost:5173/> to see the example page.\n\n## Contributing\n\nRecommended to use vscode with the prettier extension to keep formatting intact."
 }

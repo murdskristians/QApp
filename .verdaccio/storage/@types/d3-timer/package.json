@@ -1300,7 +1300,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"daafb2ce7f94d3b5911c0d33148771ab\"",
-			"fetched": 1763552562738
+			"fetched": 1763560704632
 		}
 	},
 	"_distfiles": {
@@ -1401,7 +1401,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-3a3eff718d6dd270",
+	"_rev": "3-47a1a2044be075f6",
 	"_id": "@types/d3-timer",
 	"readme": "[object Object]"
 }

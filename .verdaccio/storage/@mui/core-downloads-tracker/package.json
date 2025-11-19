@@ -17880,7 +17880,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"d6ed9bf89a00545b207ec96f9ed8d868\"",
-			"fetched": 1763552558954
+			"fetched": 1763560703451
 		}
 	},
 	"_distfiles": {
@@ -18796,7 +18796,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-aa50799fb1d2477f",
+	"_rev": "3-dcecc97c8f93a2a3",
 	"_id": "@mui/core-downloads-tracker",
 	"readme": "# @mui/core-downloads-tracker\n\nThis package does not contain any code.\nIt is used solely to track number of downloads of @mui/material and @mui/joy (the only packages that depend on it) and help us determine the number of users of @mui/base.\nCounting downloads is done by npm (as for every other package)."
 }

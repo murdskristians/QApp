@@ -2767,7 +2767,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"f37697114880b05ce736b5f2ac6d1f60\"",
-			"fetched": 1763552556530
+			"fetched": 1763560703237
 		}
 	},
 	"_distfiles": {
@@ -2968,7 +2968,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-ea7d3321491c6bff",
+	"_rev": "3-be542becdb3ca14a",
 	"_id": "@emotion/is-prop-valid",
 	"readme": "# @emotion/is-prop-valid\n\n> Check whether a prop is valid for HTML and SVG elements\n\n```bash\nyarn add @emotion/is-prop-valid\n```\n\n```jsx\nimport isPropValid from '@emotion/is-prop-valid'\n\nisPropValid('href') // true\n\nisPropValid('someRandomProp') // false\n```"
 }

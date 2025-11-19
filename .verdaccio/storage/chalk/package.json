@@ -4725,7 +4725,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"c1b778239cf0387b94c0e27847a1dcc2\"",
-			"fetched": 1763553920349
+			"fetched": 1763560705510
 		}
 	},
 	"_distfiles": {
@@ -4946,7 +4946,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-786ed55e962d30f9",
+	"_rev": "4-8df9d8f7147c4872",
 	"_id": "chalk",
 	"readme": ""
 }

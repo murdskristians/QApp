@@ -29042,7 +29042,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"1c69683c3a7be034149a26920f7875a2\"",
-			"fetched": 1763552558565
+			"fetched": 1763560703562
 		}
 	},
 	"_distfiles": {
@@ -30108,7 +30108,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-e6b8d9e3a7a63060",
+	"_rev": "3-d7427351c138cc12",
 	"_id": "@mui/system",
 	"readme": "# MUI System\n\nMUI System is a set of CSS utilities to help you build custom designs more efficiently. It makes it possible to rapidly lay out custom designs.\n\n## Installation\n\nInstall the package in your project directory with:\n\n<!-- #npm-tag-reference -->\n\n```bash\nnpm install @mui/system @emotion/react @emotion/styled\n```\n\n## Documentation\n\n<!-- #host-reference -->\n\nVisit [https://mui.com/system/getting-started/](https://mui.com/system/getting-started/) to view the full documentation."
 }

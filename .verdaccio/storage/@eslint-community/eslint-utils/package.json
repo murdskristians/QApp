@@ -2664,7 +2664,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"09e7076d2be0e78a218a1c8dd5abdaca\"",
-			"fetched": 1763553921552
+			"fetched": 1763560705718
 		}
 	},
 	"_distfiles": {
@@ -2780,7 +2780,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-9dce9b5918f2ee5f",
+	"_rev": "4-3ee0c0567b991f9d",
 	"_id": "@eslint-community/eslint-utils",
 	"readme": "# @eslint-community/eslint-utils\n\n[![npm version](https://img.shields.io/npm/v/@eslint-community/eslint-utils.svg)](https://www.npmjs.com/package/@eslint-community/eslint-utils)\n[![Downloads/month](https://img.shields.io/npm/dm/@eslint-community/eslint-utils.svg)](http://www.npmtrends.com/@eslint-community/eslint-utils)\n[![Build Status](https://github.com/eslint-community/eslint-utils/workflows/CI/badge.svg)](https://github.com/eslint-community/eslint-utils/actions)\n[![Coverage Status](https://codecov.io/gh/eslint-community/eslint-utils/branch/main/graph/badge.svg)](https://codecov.io/gh/eslint-community/eslint-utils)\n\n## 🏁 Goal\n\nThis package provides utility functions and classes for make ESLint custom rules.\n\nFor examples:\n\n-   [`getStaticValue`](https://eslint-community.github.io/eslint-utils/api/ast-utils.html#getstaticvalue) evaluates static value on AST.\n-   [`ReferenceTracker`](https://eslint-community.github.io/eslint-utils/api/scope-utils.html#referencetracker-class) checks the members of modules/globals as handling assignments and destructuring.\n\n## 📖 Usage\n\nSee [documentation](https://eslint-community.github.io/eslint-utils).\n\n## 📰 Changelog\n\nSee [releases](https://github.com/eslint-community/eslint-utils/releases).\n\n## ❤️ Contributing\n\nWelcome contributing!\n\nPlease use GitHub's Issues/PRs.\n\n### Development Tools\n\n-   `npm run test-coverage` runs tests and measures coverage.\n-   `npm run clean` removes the coverage result of `npm run test-coverage` command.\n-   `npm run coverage` shows the coverage result of the last `npm run test-coverage` command.\n-   `npm run lint` runs ESLint.\n-   `npm run watch` runs tests on each file change."
 }

@@ -6198,7 +6198,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"9d9b5fe7ae0e1a6126313085799cd3f9\"",
-			"fetched": 1763552556232
+			"fetched": 1763560703140
 		}
 	},
 	"_distfiles": {
@@ -6599,7 +6599,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-5597c2e51b9a414c",
+	"_rev": "3-e6f5cce1c76c60d4",
 	"_id": "@emotion/cache",
 	"readme": "# @emotion/cache\n\n### createCache\n\n`createCache` allows for low level customization of how styles get inserted by emotion. It's intended to be used with the [`<CacheProvider/>`](https://emotion.sh/docs/cache-provider) component to override the default cache, which is created with sensible defaults for most applications.\n\n```javascript\nimport createCache from '@emotion/cache'\n\nexport const myCache = createCache({\n  key: 'my-prefix-key',\n  stylisPlugins: [\n    /* your plugins here */\n  ]\n})\n```\n\n### Primary use cases\n\n- Using emotion in embedded contexts such as an `<iframe/>`\n\n- Setting a [nonce](#nonce-string) on any `<style/>` tag emotion creates for security purposes\n\n- Using emotion with a developer defined `<style/>` tag\n\n- Using emotion with custom Stylis plugins\n\n## Options\n\n### `nonce`\n\n`string`\n\nA nonce that will be set on each style tag that emotion inserts for [Content Security Policies](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP).\n\n### `stylisPlugins`\n\n`Array<Function>`\n\nA Stylis plugins that will be run by Stylis during preprocessing. [Read the Stylis docs to find out more](https://github.com/thysultan/stylis.js#middleware). This can be used for many purposes such as RTL.\n\n> Note:\n>\n> Prefixer is just a plugin which happens to be put in default `stylisPlugins`. If you plan to use custom `stylisPlugins` and you want to have your styles prefixed automatically you must include prefixer in your custom `stylisPlugins`. You can import `prefixer` from the `stylis` module to do that (`import { prefixer } from 'stylis'`);\n\n### `key`\n\n`string (Pattern: [^a-z-])`\n\nThe prefix before class names. It will also be set as the value of the `data-emotion` attribute on the style tags that emotion inserts and it's used in the attribute name that marks style elements in `renderStylesToString` and `renderStylesToNodeStream`. This is **required if using multiple emotion caches in the same app**.\n\n### `container`\n\n`Node`\n\nA DOM node that emotion will insert all of its style tags into. This is useful for inserting styles into iframes or windows.\n\n### `prepend`\n\n`boolean`\n\nA boolean representing whether to prepend rather than append style tags into the specified container DOM node."
 }

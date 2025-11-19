@@ -51586,7 +51586,7 @@
 	"_uplinks": {
 		"piche": {
 			"etag": "\"991723355b16dd5aa808e087957aacaf\"",
-			"fetched": 1763552549588
+			"fetched": 1763560697775
 		}
 	},
 	"_distfiles": {
@@ -53857,7 +53857,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-6fc2795617edb3dd",
+	"_rev": "4-51a240c31d7469bb",
 	"_id": "piche.ui",
 	"readme": "[![Quality Gate Status](https://sq.piche.it/api/project_badges/measure?project=piche.ui&metric=alert_status&token=sqb_54ce4f39fe0830c8b1aabe8ea1e58009aae2c34b)](https://sq.piche.it/dashboard?id=piche.ui) [![Security Rating](https://sq.piche.it/api/project_badges/measure?project=piche.ui&metric=security_rating&token=sqb_54ce4f39fe0830c8b1aabe8ea1e58009aae2c34b)](https://sq.piche.it/dashboard?id=piche.ui) [![Maintainability Rating](https://sq.piche.it/api/project_badges/measure?project=piche.ui&metric=sqale_rating&token=sqb_54ce4f39fe0830c8b1aabe8ea1e58009aae2c34b)](https://sq.piche.it/dashboard?id=piche.ui) [![Reliability Rating](https://sq.piche.it/api/project_badges/measure?project=piche.ui&metric=reliability_rating&token=sqb_54ce4f39fe0830c8b1aabe8ea1e58009aae2c34b)](https://sq.piche.it/dashboard?id=piche.ui)\n\n[![Coverage](https://sq.piche.it/api/project_badges/measure?project=piche.ui&metric=coverage&token=sqb_54ce4f39fe0830c8b1aabe8ea1e58009aae2c34b)](https://sq.piche.it/dashboard?id=piche.ui) [![Duplicated Lines (%)](https://sq.piche.it/api/project_badges/measure?project=piche.ui&metric=duplicated_lines_density&token=sqb_54ce4f39fe0830c8b1aabe8ea1e58009aae2c34b)](https://sq.piche.it/dashboard?id=piche.ui) [![Lines of Code](https://sq.piche.it/api/project_badges/measure?project=piche.ui&metric=ncloc&token=sqb_54ce4f39fe0830c8b1aabe8ea1e58009aae2c34b)](https://sq.piche.it/dashboard?id=piche.ui)\n\n### Piche UI\n\nLaunched on: https://ui.piche.it/\n\n# How to Test This Package in Another Project\n\nThis guide explains how to test **`piche.ui`** inside a different Vite-based project during development.\n\n---\n\n## Option 1 (Build)\n\n### 1. Build Package\n\n**`pnpm build`**\nMake sure the dist folder exists — this is what your consuming project will import.\n\n✅ If you make changes to the package, rebuild it before re-testing in the consuming app.\n\n### 2. Navigate to Your Target Project\n\nIn the target project, open the **`vite.config.ts`** file and prepare to add alias settings.\n\n```ts\nresolve: {\n  alias: {\n    // add your aliases here\n  }\n}\n```\n\n### 3. Add Alias Configuration\n\nInside the **`resolve.alias`** section of the config, add the necessary aliases to resolve the local package correctly.\nReplace **`your-local-path`** with your own absolute or relative path\n\n```ts\n'piche.ui': path.resolve(__dirname, 'your-local-path/piche.ui/dist'),\n```\n\n## Option 2 (Real time changes)\n\n### 1. Navigate to Your Target Project\n\nIn the target project, open the **`vite.config.ts`** file and prepare to add alias settings.\n\n```ts\nresolve: {\n  alias: {\n    // add your aliases here\n  }\n}\n```\n\n### 2. Add Alias Configuration\n\nInside the **`resolve.alias`** section of the config, add the necessary aliases to resolve the local package correctly.\nReplace **`your-local-path`** with your own absolute or relative path\n\n```ts\n'react': path.resolve(__dirname, 'node_modules/react'),\n'react-dom': path.resolve(__dirname, 'node_modules/react-dom'),\n'piche.ui': path.resolve(__dirname, 'your-local-path/piche.ui/src'),\n```"
 }

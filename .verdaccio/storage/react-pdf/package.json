@@ -19779,7 +19779,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"2e3fd3ec2d1a5d930690110748004cf8\"",
-			"fetched": 1763552552808
+			"fetched": 1763560700311
 		}
 	},
 	"_distfiles": {
@@ -20545,7 +20545,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-5fb862f4693c9af4",
+	"_rev": "4-284c32fe1d4dd0af",
 	"_id": "react-pdf",
 	"readme": ""
 }

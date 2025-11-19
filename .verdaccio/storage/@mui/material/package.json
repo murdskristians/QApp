@@ -35612,7 +35612,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"03870252ee08dc19275f5400629c83fb\"",
-			"fetched": 1763552552842
+			"fetched": 1763560699966
 		}
 	},
 	"_distfiles": {
@@ -36818,7 +36818,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "3-9ebe461a013053a5",
+	"_rev": "4-863d2f0ad70afdb0",
 	"_id": "@mui/material",
 	"readme": "<!-- #host-reference -->\n<!-- markdownlint-disable-next-line -->\n<p align=\"center\">\n  <a href=\"https://mui.com/material-ui/\" rel=\"noopener\" target=\"_blank\"><img width=\"150\" height=\"133\" src=\"https://mui.com/static/logo.svg\" alt=\"Material UI logo\"></a>\n</p>\n\n<h1 align=\"center\">Material UI</h1>\n\nMaterial UI is an open-source React component library that implements Google's [Material Design](https://m2.material.io/design/introduction/). It's comprehensive and can be used in production out of the box.\n\n## Installation\n\nInstall the package in your project directory with:\n\n<!-- #npm-tag-reference -->\n\n```bash\nnpm install @mui/material @emotion/react @emotion/styled\n```\n\n## Documentation\n\nVisit [https://mui.com/material-ui/](https://mui.com/material-ui/) to view the full documentation.\n\n## Questions\n\nFor how-to questions that don't involve making changes to the code base, please use [Stack Overflow](https://stackoverflow.com/questions/tagged/material-ui) instead of GitHub issues.\nUse the \"material-ui\" tag on Stack Overflow to make it easier for the community to find your question.\n\n## Examples\n\nOur documentation features [a collection of example projects using Material UI](https://mui.com/material-ui/getting-started/example-projects/).\n\n## Contributing\n\nRead the [contributing guide](/CONTRIBUTING.md) to learn about our development process, how to propose bug fixes and improvements, and how to build and test your changes.\n\nContributing to Material UI is about more than just issues and pull requests!\nThere are many other ways to [support Material UI](https://mui.com/material-ui/getting-started/faq/#mui-is-awesome-how-can-i-support-the-project) beyond contributing to the code base.\n\n## Changelog\n\nThe [changelog](https://github.com/mui/material-ui/releases) is regularly updated to reflect what's changed in each new release.\n\n## Roadmap\n\nFuture plans and high-priority features and enhancements can be found in the [roadmap](https://mui.com/material-ui/discover-more/roadmap/).\n\n## License\n\nThis project is licensed under the terms of the\n[MIT license](/LICENSE).\n\n## Security\n\nFor details of supported versions and contact details for reporting security issues, please refer to the [security policy](https://github.com/mui/material-ui/security/policy)."
 }

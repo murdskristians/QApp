@@ -240,7 +240,7 @@
 	"_uplinks": {
 		"npmjs": {
 			"etag": "W/\"9a2f6f190c89270c147d39291cc1a942\"",
-			"fetched": 1763552565750
+			"fetched": 1763560704720
 		}
 	},
 	"_distfiles": {
@@ -266,7 +266,7 @@
 		}
 	},
 	"_attachments": {},
-	"_rev": "2-eacb34561640909a",
+	"_rev": "3-ad32aaf86b6c2f11",
 	"_id": "@protobufjs/inquire",
 	"readme": "@protobufjs/inquire\r\n===================\r\n[![npm](https://img.shields.io/npm/v/@protobufjs/inquire.svg)](https://www.npmjs.com/package/@protobufjs/inquire)\r\n\r\nRequires a module only if available and hides the require call from bundlers.\r\n\r\nAPI\r\n---\r\n\r\n* **inquire(moduleName: `string`): `?Object`**<br />\r\n  Requires a module only if available.\r\n\r\n**License:** [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)"
 }
