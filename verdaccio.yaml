@@ -1,0 +1,25 @@
+storage: ./.verdaccio/storage
+plugins: ./.verdaccio/plugins
+
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+
+packages:
+  '@*/*':
+    access: $all
+    publish: $all
+    unpublish: $all
+    proxy: npmjs
+
+  '**':
+    access: $all
+    publish: $all
+    unpublish: $all
+    proxy: npmjs
+
+server:
+  keepAliveTimeout: 60
+
+logs:
+  - { type: stdout, format: pretty, level: http }
