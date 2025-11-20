@@ -7,6 +7,8 @@ import ResetPassword from './pages/auth/ResetPassword';
 import { Sidebar } from './components/sidebar/Sidebar';
 import { MainPanelWrapper } from './pages/user-info/MainPanelWrapper';
 import { ProfileContact } from './types/profile';
+import { Workspace, NotificationProvider } from 'react-firechat-poc';
+import 'react-firechat-poc/dist/react-firechat-poc.css';
 
 import {
   type FirebaseUser,
@@ -36,10 +38,20 @@ const createProfileContact = (user: FirebaseUser): ProfileContact => ({
   coverImageUrl: null,
 });
 
+const SELECTED_VERSION_KEY = 'chat-package-version';
+
 function App() {
   const [user, setUser] = useState<FirebaseUser | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [activeView, setActiveView] = useState<ActiveView>('profile');
+  const [selectedVersion, setSelectedVersion] = useState<string>(() => {
+    return localStorage.getItem(SELECTED_VERSION_KEY) || '';
+  });
+
+  const handleVersionChange = (version: string) => {
+    setSelectedVersion(version);
+    localStorage.setItem(SELECTED_VERSION_KEY, version);
+  };
 
   useEffect(() => {
     const unsubscribe = subscribeToAuthChanges((currentUser) => {
@@ -83,7 +95,13 @@ function App() {
           element={
             user ? (
               <div className="app-layout">
-                <Sidebar user={user} activeView={activeView} onSelectView={setActiveView} />
+                <Sidebar
+                  user={user}
+                  activeView={activeView}
+                  onSelectView={setActiveView}
+                  selectedVersion={selectedVersion}
+                  onVersionChange={handleVersionChange}
+                />
                 <section className="app-layout__profile-view">
                   {activeView === 'profile' ? (
                     <MainPanelWrapper
@@ -92,9 +110,9 @@ function App() {
                       onSignOut={handleSignOut}
                     />
                   ) : (
-                    <div>
-                      <p>Chat view coming soon...</p>
-                    </div>
+                    <NotificationProvider>
+                      <Workspace user={user} onSignOut={handleSignOut} />
+                    </NotificationProvider>
                   )}
                 </section>
               </div>

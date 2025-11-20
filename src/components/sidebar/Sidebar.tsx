@@ -1,3 +1,4 @@
+import { useState, useEffect, useRef } from 'react';
 import type firebaseCompat from 'firebase/compat/app';
 import { useTheme } from '../../hooks/useTheme';
 import './Sidebar.css';
@@ -8,12 +9,74 @@ type SidebarProps = {
   user: firebaseCompat.User;
   activeView: ActiveView;
   onSelectView: (view: ActiveView) => void;
+  selectedVersion: string;
+  onVersionChange: (version: string) => void;
 };
 
-export function Sidebar({ user, activeView, onSelectView }: SidebarProps) {
+export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVersionChange }: SidebarProps) {
   const displayName = user.displayName ?? user.email ?? 'User';
   const initials = displayName.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
   const { isDark, toggleTheme } = useTheme();
+
+  const [showVersionDropdown, setShowVersionDropdown] = useState(false);
+  const [versions, setVersions] = useState<string[]>([]);
+  const [isLoadingVersions, setIsLoadingVersions] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Fetch versions from Verdaccio
+  const fetchVersions = async () => {
+    setIsLoadingVersions(true);
+    try {
+      // Verdaccio default port is 4873
+      const response = await fetch('http://localhost:4873/react-firechat-poc');
+      if (response.ok) {
+        const data = await response.json();
+        const versionList = Object.keys(data.versions || {}).sort((a, b) => {
+          // Sort versions in descending order (newest first)
+          const partsA = a.split('.').map(Number);
+          const partsB = b.split('.').map(Number);
+          for (let i = 0; i < Math.max(partsA.length, partsB.length); i++) {
+            const diff = (partsB[i] || 0) - (partsA[i] || 0);
+            if (diff !== 0) return diff;
+          }
+          return 0;
+        });
+        setVersions(versionList);
+      } else {
+        console.error('Failed to fetch versions from Verdaccio');
+        setVersions([]);
+      }
+    } catch (error) {
+      console.error('Error fetching versions:', error);
+      setVersions([]);
+    } finally {
+      setIsLoadingVersions(false);
+    }
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setShowVersionDropdown(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleVersionButtonClick = () => {
+    if (!showVersionDropdown) {
+      fetchVersions();
+    }
+    setShowVersionDropdown(!showVersionDropdown);
+  };
+
+  const handleVersionSelect = (version: string) => {
+    onVersionChange(version);
+    setShowVersionDropdown(false);
+  };
 
   return (
     <aside className="sidebar">
@@ -61,6 +124,43 @@ export function Sidebar({ user, activeView, onSelectView }: SidebarProps) {
           </div>
           <span className="sidebar__nav-label">Chat</span>
         </button>
+
+        <div className="sidebar__version-selector" ref={dropdownRef}>
+          <button
+            className="sidebar__version-button"
+            onClick={handleVersionButtonClick}
+            title="Select chat package version"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="sidebar__version-label">
+              {selectedVersion || 'Version'}
+            </span>
+          </button>
+
+          {showVersionDropdown && (
+            <div className="sidebar__version-dropdown">
+              {isLoadingVersions ? (
+                <div className="sidebar__version-loading">Loading...</div>
+              ) : versions.length === 0 ? (
+                <div className="sidebar__version-empty">No versions found</div>
+              ) : (
+                versions.map((version) => (
+                  <button
+                    key={version}
+                    className={`sidebar__version-option ${version === selectedVersion ? 'selected' : ''}`}
+                    onClick={() => handleVersionSelect(version)}
+                  >
+                    {version}
+                  </button>
+                ))
+              )}
+            </div>
+          )}
+        </div>
       </nav>
 
       <button

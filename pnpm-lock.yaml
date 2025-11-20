@@ -33,8 +33,8 @@ importers:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
       react-firechat-poc:
-        specifier: ^0.1.0
-        version: 0.1.0(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@mui/system@5.18.0(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/babel__core@7.20.5)(@types/react@18.3.27)(eslint@8.57.1)(type-fest@0.21.3)(typescript@4.9.5)(vite@7.2.2(@types/node@20.19.25)(jiti@1.21.7)(terser@5.44.1))(ws@8.18.3)
+        specifier: ^0.1.16
+        version: 0.1.16(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@mui/system@5.18.0(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/babel__core@7.20.5)(@types/react@18.3.27)(eslint@8.57.1)(type-fest@0.21.3)(typescript@4.9.5)(vite@7.2.2(@types/node@20.19.25)(jiti@1.21.7)(terser@5.44.1))(ws@8.18.3)
       react-router-dom:
         specifier: ^6.28.0
         version: 6.30.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -6100,8 +6100,8 @@ packages:
   react-error-overlay@6.1.0:
     resolution: {integrity: sha512-SN/U6Ytxf1QGkw/9ve5Y+NxBbZM6Ht95tuXNMKs8EJyFa/Vy/+Co3stop3KBHARfn/giv+Lj1uUnTfOJ3moFEQ==}
 
-  react-firechat-poc@0.1.0:
-    resolution: {integrity: sha512-27uM51nINQ9mdSs98VtlL/oum9n/WMeAqom9JoCUQVjrHRGb7ADZ7pDod7b9xpxoVVIgz6XiXH1wW0BLpz4NAw==}
+  react-firechat-poc@0.1.16:
+    resolution: {integrity: sha512-P60sdN6DT0m4Sf/72SPRptsjHVAFWoAJTWyS1yZTx9bZcPG4xgy3P99iLYX13vI2y+ai4YvtrUHzP1cyroI2VQ==}
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -14675,7 +14675,7 @@ snapshots:
 
   react-error-overlay@6.1.0: {}
 
-  react-firechat-poc@0.1.0(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@mui/system@5.18.0(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/babel__core@7.20.5)(@types/react@18.3.27)(eslint@8.57.1)(type-fest@0.21.3)(typescript@4.9.5)(vite@7.2.2(@types/node@20.19.25)(jiti@1.21.7)(terser@5.44.1))(ws@8.18.3):
+  react-firechat-poc@0.1.16(@babel/plugin-syntax-flow@7.27.1(@babel/core@7.28.5))(@babel/plugin-transform-react-jsx@7.27.1(@babel/core@7.28.5))(@mui/system@5.18.0(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@emotion/styled@11.14.1(@emotion/react@11.14.0(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/react@18.3.27)(react@18.3.1))(@types/babel__core@7.20.5)(@types/react@18.3.27)(eslint@8.57.1)(type-fest@0.21.3)(typescript@4.9.5)(vite@7.2.2(@types/node@20.19.25)(jiti@1.21.7)(terser@5.44.1))(ws@8.18.3):
     dependencies:
       '@testing-library/dom': 10.4.1
       '@testing-library/jest-dom': 6.9.1

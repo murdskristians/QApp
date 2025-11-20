@@ -112,3 +112,103 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* Version Selector Styles */
+.sidebar__version-selector {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar__version-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 4px;
+  color: #f3f5ff;
+  transition: all 0.2s ease;
+  margin: 0 8px;
+  max-width: 64px;
+}
+
+.sidebar__version-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar__version-label {
+  font-size: 9px;
+  font-weight: 500;
+  color: #b8b8b8;
+  max-width: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sidebar__version-dropdown {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin-left: 8px;
+  background: #363636;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  min-width: 120px;
+  max-height: 200px;
+  overflow-y: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.sidebar__version-loading,
+.sidebar__version-empty {
+  padding: 12px 16px;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+.sidebar__version-option {
+  display: block;
+  width: 100%;
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 12px;
+  color: #f3f5ff;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sidebar__version-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar__version-option.selected {
+  background: rgba(62, 208, 221, 0.2);
+  color: #3ED0DD;
+  font-weight: 600;
+}
+
+.sidebar__version-dropdown::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar__version-dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar__version-dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}

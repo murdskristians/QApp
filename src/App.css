@@ -53,7 +53,6 @@
 .app-layout__profile-view {
   flex: 1;
   height: 100%;
-  padding: 24px;
   display: flex;
   background: transparent;
   overflow: hidden;
