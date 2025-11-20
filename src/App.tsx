@@ -7,8 +7,8 @@ import ResetPassword from './pages/auth/ResetPassword';
 import { Sidebar } from './components/sidebar/Sidebar';
 import { MainPanelWrapper } from './pages/user-info/MainPanelWrapper';
 import { ProfileContact } from './types/profile';
-import { Workspace, NotificationProvider } from 'react-firechat-poc';
-import 'react-firechat-poc/dist/react-firechat-poc.css';
+import { Workspace, NotificationProvider } from 'module-react-firebase-chat-app-poc';
+import 'module-react-firebase-chat-app-poc/dist/module-react-firebase-chat-app-poc.css';
 
 import {
   type FirebaseUser,
