@@ -111,7 +111,7 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
           onClick={() => onSelectView('chat')}
         >
           <div className="sidebar__chat-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="40" height="40" rx="12" fill="url(#chat-gradient)"/>
               <path d="M26.88 13.63C25.93 12.6 24.75 11.8 23.45 11.28C22.14 10.76 20.73 10.55 19.33 10.65C16.94 10.85 14.72 11.95 13.1 13.72C11.49 15.49 10.6 17.81 10.63 20.21V28.75C10.63 28.87 10.66 28.99 10.73 29.1C10.8 29.2 10.9 29.28 11.01 29.33C11.09 29.36 11.17 29.37 11.25 29.37C11.42 29.37 11.57 29.31 11.69 29.19L13.17 27.71C13.35 27.54 13.59 27.43 13.84 27.42C14.09 27.4 14.34 27.47 14.54 27.62C16.43 28.98 18.75 29.59 21.06 29.33C23.37 29.07 25.5 27.96 27.04 26.21C28.58 24.47 29.42 22.22 29.39 19.89C29.36 17.57 28.46 15.34 26.88 13.63Z" fill="white"/>
               <defs>
@@ -131,15 +131,15 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
             onClick={handleVersionButtonClick}
             title="Select chat package version"
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="sidebar__version-label">
-              {selectedVersion || 'Version'}
-            </span>
           </button>
+          <span className="sidebar__version-label">
+            {selectedVersion || 'Version'}
+          </span>
 
           {showVersionDropdown && (
             <div className="sidebar__version-dropdown">

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import Login from './pages/auth/Login';
@@ -43,7 +43,8 @@ const SELECTED_VERSION_KEY = 'chat-package-version';
 function App() {
   const [user, setUser] = useState<FirebaseUser | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [activeView, setActiveView] = useState<ActiveView>('profile');
+  const [activeView, setActiveView] = useState<ActiveView>('chat');
+  const prevUserRef = useRef<FirebaseUser | null>(null);
   const [selectedVersion, setSelectedVersion] = useState<string>(() => {
     return localStorage.getItem(SELECTED_VERSION_KEY) || '';
   });
@@ -55,8 +56,14 @@ function App() {
 
   useEffect(() => {
     const unsubscribe = subscribeToAuthChanges((currentUser) => {
+      const wasLoggedOut = !prevUserRef.current && currentUser;
+      prevUserRef.current = currentUser;
       setUser(currentUser);
       setIsLoading(false);
+      // При логине всегда открываем чат
+      if (wasLoggedOut) {
+        setActiveView('chat');
+      }
     });
 
     return unsubscribe;
