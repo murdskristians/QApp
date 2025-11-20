@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+/* Main app layout */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  transition: background 0.3s ease;
+}
+
+[data-theme="dark"] .app-layout {
+  background: linear-gradient(180deg, #16213e 0%, #1a1a2e 100%);
+}
+
+.app-layout__profile-view {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  background: transparent;
+  overflow: hidden;
+}
+
+.app-layout__profile-view > * {
+  flex: 1;
+  display: flex;
+}
