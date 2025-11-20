@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   padding: 24px 0;
-  gap: 32px;
+  gap: 19px;
   width: 80px;
   min-height: 100vh;
   flex-shrink: 0;
@@ -38,7 +38,7 @@
 .sidebar__nav {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 17px;
   width: 100%;
   align-items: center;
 }
@@ -56,12 +56,12 @@
 }
 
 .sidebar__chat-icon {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
 }
 
 .sidebar__nav-label {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 600;
   color: #f3f5ff;
 }
@@ -104,7 +104,7 @@
 }
 
 .sidebar__profile-name {
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 600;
   color: #f7f8ff;
   max-width: 70px;
@@ -120,23 +120,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 6px;
 }
 
 .sidebar__version-button {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 4px;
-  width: 100%;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
-  padding: 8px 4px;
+  padding: 0;
   color: #f3f5ff;
   transition: all 0.2s ease;
-  margin: 0 8px;
-  max-width: 64px;
+  margin: 0;
 }
 
 .sidebar__version-button:hover {
@@ -146,12 +146,13 @@
 
 .sidebar__version-label {
   font-size: 9px;
-  font-weight: 500;
-  color: #b8b8b8;
-  max-width: 56px;
+  font-weight: 600;
+  color: #f3f5ff;
+  max-width: 70px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-align: center;
 }
 
 .sidebar__version-dropdown {
