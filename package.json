@@ -7,10 +7,10 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^12.5.0",
+    "module-react-firebase-chat-app-poc": "^0.1.17",
     "piche.ui": "^1.1.461",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "module-react-firebase-chat-app-poc": "^0.1.17",
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
@@ -19,8 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "registry": "verdaccio --config verdaccio.yaml"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -41,10 +40,10 @@
     ]
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^20.19.24",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "typescript": "^4.9.5",
-    "verdaccio": "^6.2.1"
+    "typescript": "^4.9.5"
   }
 }
