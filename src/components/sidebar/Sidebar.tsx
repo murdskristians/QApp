@@ -23,12 +23,14 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
   const [isLoadingVersions, setIsLoadingVersions] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Fetch versions from Verdaccio
+  // Fetch versions from npm registry (Verdaccio or npmjs.com)
   const fetchVersions = async () => {
     setIsLoadingVersions(true);
     try {
-      // Verdaccio default port is 4873
-      const response = await fetch('http://localhost:4873/react-firechat-poc');
+      // Use environment variable or fallback to public npm registry
+      const registryUrl = process.env.REACT_APP_NPM_REGISTRY_URL || 'https://registry.npmjs.org';
+      const packageName = 'module-react-firebase-chat-app-poc';
+      const response = await fetch(`${registryUrl}/${packageName}`);
       if (response.ok) {
         const data = await response.json();
         const versionList = Object.keys(data.versions || {}).sort((a, b) => {
@@ -43,7 +45,7 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
         });
         setVersions(versionList);
       } else {
-        console.error('Failed to fetch versions from Verdaccio');
+        console.error('Failed to fetch versions from registry:', response.statusText);
         setVersions([]);
       }
     } catch (error) {
