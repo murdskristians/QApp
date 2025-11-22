@@ -6,6 +6,7 @@ import Register from './pages/auth/Register';
 import ResetPassword from './pages/auth/ResetPassword';
 import { Sidebar } from './components/sidebar/Sidebar';
 import { MainPanelWrapper } from './pages/user-info/MainPanelWrapper';
+import { SmartSuitePage } from './pages/smartsuite/SmartSuitePage';
 import { ProfileContact } from './types/profile';
 import { Workspace, NotificationProvider } from 'module-react-firebase-chat-app-poc';
 import 'module-react-firebase-chat-app-poc/dist/module-react-firebase-chat-app-poc.css';
@@ -18,7 +19,7 @@ import {
 
 import './App.css';
 
-type ActiveView = 'chat' | 'profile';
+type ActiveView = 'chat' | 'profile' | 'smartsuite';
 
 // Create profile contact from Firebase user
 const createProfileContact = (user: FirebaseUser): ProfileContact => ({
@@ -116,6 +117,8 @@ function App() {
                       isLoading={false}
                       onSignOut={handleSignOut}
                     />
+                  ) : activeView === 'smartsuite' ? (
+                    <SmartSuitePage />
                   ) : (
                     <NotificationProvider>
                       <Workspace user={user} onSignOut={handleSignOut} />
