@@ -39,10 +39,14 @@ class SmartSuiteService {
 
         if (response.status === 401) {
           error.message = 'Invalid API token or unauthorized access';
-        } else if (response.status === 429 || response.status === 422) {
-          error.message = 'Rate limit exceeded. Please try again later.';
+        } else if (response.status === 429) {
+          error.message = 'Rate limit exceeded. SmartSuite API has temporarily blocked your requests. Please wait 5-10 minutes before trying again.';
+        } else if (response.status === 422) {
+          error.message = 'Validation error. Please check your input data.';
         } else if (response.status === 404) {
           error.message = 'Resource not found';
+        } else if (response.status === 500) {
+          error.message = 'SmartSuite server error. Please try again in a few minutes.';
         }
 
         throw error;
@@ -56,11 +60,12 @@ class SmartSuiteService {
         throw error;
       }
 
-      throw {
+      const networkError: SmartSuiteApiError = {
         message: 'Network error or unable to connect to SmartSuite API',
         status: 0,
         details: error,
-      } as SmartSuiteApiError;
+      };
+      throw networkError;
     }
   }
 

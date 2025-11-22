@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { smartSuiteService } from '../services/smartsuite';
 import {
   SmartSuiteSolution,
@@ -20,9 +20,10 @@ export function useSmartSuiteSolutions() {
     loading: true,
     error: null,
   });
+  const fetchedRef = useRef(false);
 
   const fetchSolutions = useCallback(async () => {
-    setState({ data: null, loading: true, error: null });
+    setState(prev => ({ ...prev, loading: true, error: null }));
 
     try {
       const solutions = await smartSuiteService.listSolutions();
@@ -37,7 +38,10 @@ export function useSmartSuiteSolutions() {
   }, []);
 
   useEffect(() => {
-    fetchSolutions();
+    if (!fetchedRef.current) {
+      fetchedRef.current = true;
+      fetchSolutions();
+    }
   }, [fetchSolutions]);
 
   return { ...state, refetch: fetchSolutions };
@@ -49,9 +53,10 @@ export function useSmartSuiteTables() {
     loading: true,
     error: null,
   });
+  const fetchedRef = useRef(false);
 
   const fetchTables = useCallback(async () => {
-    setState({ data: null, loading: true, error: null });
+    setState(prev => ({ ...prev, loading: true, error: null }));
 
     try {
       const tables = await smartSuiteService.listTables();
@@ -66,7 +71,10 @@ export function useSmartSuiteTables() {
   }, []);
 
   useEffect(() => {
-    fetchTables();
+    if (!fetchedRef.current) {
+      fetchedRef.current = true;
+      fetchTables();
+    }
   }, [fetchTables]);
 
   return { ...state, refetch: fetchTables };
@@ -81,15 +89,15 @@ export function useSmartSuiteRecords(
     loading: false,
     error: null,
   });
+  const previousTableIdRef = useRef<string | null>(null);
 
   const fetchRecords = useCallback(async () => {
     if (!tableId) {
       setState({ data: null, loading: false, error: null });
-
       return;
     }
 
-    setState({ data: null, loading: true, error: null });
+    setState(prev => ({ ...prev, loading: true, error: null }));
 
     try {
       const response = await smartSuiteService.listRecords(tableId, params);
@@ -104,8 +112,11 @@ export function useSmartSuiteRecords(
   }, [tableId, params]);
 
   useEffect(() => {
-    fetchRecords();
-  }, [fetchRecords]);
+    if (tableId && tableId !== previousTableIdRef.current) {
+      previousTableIdRef.current = tableId;
+      fetchRecords();
+    }
+  }, [tableId, fetchRecords]);
 
   return { ...state, refetch: fetchRecords };
 }

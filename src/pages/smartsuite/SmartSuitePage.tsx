@@ -36,27 +36,48 @@ export function SmartSuitePage() {
 
   // Fetch table structure when a table is selected
   useEffect(() => {
-    if (selectedTable) {
-      const currentTable = tables?.find(t => t.id === selectedTable);
-      if (currentTable?.structure) {
-        setTableStructure(currentTable.structure);
+    const fetchTableStructure = async () => {
+      if (selectedTable) {
+        const currentTable = tables?.find(t => t.id === selectedTable);
+        if (currentTable?.structure) {
+          try {
+            // Parse structure if it's a string, otherwise use as-is
+            const structure = typeof currentTable.structure === 'string'
+              ? JSON.parse(currentTable.structure)
+              : currentTable.structure;
+            setTableStructure(Array.isArray(structure) ? structure : []);
+          } catch (error) {
+            console.error('Failed to parse table structure:', error);
+            setTableStructure([]);
+          }
+        } else {
+          // If structure not in list, fetch individual table
+          try {
+            const tableDetails = await smartSuiteService.getTable(selectedTable);
+            if (tableDetails?.structure) {
+              const structure = typeof tableDetails.structure === 'string'
+                ? JSON.parse(tableDetails.structure)
+                : tableDetails.structure;
+              setTableStructure(Array.isArray(structure) ? structure : []);
+            } else {
+              setTableStructure([]);
+            }
+          } catch (error) {
+            console.error('Failed to fetch table structure:', error);
+            setTableStructure([]);
+          }
+        }
+      } else {
+        setTableStructure([]);
       }
-    } else {
-      setTableStructure([]);
-    }
-  }, [selectedTable, tables]);
+    };
 
-  // Create field mapping from slug to label
-  const fieldMap = useMemo(() => {
-    const map: Record<string, string> = {};
-    tableStructure.forEach(field => {
-      map[field.slug] = field.label;
-    });
-    return map;
-  }, [tableStructure]);
+    fetchTableStructure();
+  }, [selectedTable, tables]);
 
   // Get visible fields (first 5 non-system fields)
   const visibleFields = useMemo(() => {
+    if (!tableStructure || tableStructure.length === 0) return [];
     return tableStructure
       .filter(field => !field.params?.system)
       .slice(0, 5);
@@ -276,7 +297,7 @@ export function SmartSuitePage() {
                     <tbody>
                       {records.map(record => (
                         <tr key={record.id}>
-                          <td>{record.id.slice(0, 8)}...</td>
+                          <td>{record.id ? record.id.slice(0, 8) + '...' : 'N/A'}</td>
                           {visibleFields.map(field => {
                             const value = record[field.slug];
                             let displayValue = '';
@@ -284,9 +305,11 @@ export function SmartSuitePage() {
                             if (value === null || value === undefined) {
                               displayValue = '-';
                             } else if (typeof value === 'object') {
-                              displayValue = JSON.stringify(value).slice(0, 50);
+                              const jsonStr = JSON.stringify(value);
+                              displayValue = jsonStr.length > 50 ? jsonStr.slice(0, 50) + '...' : jsonStr;
                             } else {
-                              displayValue = String(value).slice(0, 50);
+                              const strValue = String(value);
+                              displayValue = strValue.length > 50 ? strValue.slice(0, 50) + '...' : strValue;
                             }
 
                             return (

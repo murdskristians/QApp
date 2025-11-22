@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
 
-const SMARTSUITE_TOKEN = 'f7b0e3b4331b7558ace016bc8891622dde922dc7';
-const SMARTSUITE_WORKSPACE_ID = 'sfm1aa0l';
+const SMARTSUITE_TOKEN = '72ea108a24f2c4dcae6724e4a25ef0d116f64a0e';
+const SMARTSUITE_WORKSPACE_ID = 's1tfuose';
 
 module.exports = function(app) {
   app.use(
