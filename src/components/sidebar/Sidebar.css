@@ -129,6 +129,11 @@
   height: 48px;
 }
 
+.sidebar__smartsuite-icon {
+  width: 48px;
+  height: 48px;
+}
+
 .sidebar__nav-label {
   font-size: 9px;
   font-weight: 600;

@@ -3,7 +3,7 @@ import type firebaseCompat from 'firebase/compat/app';
 import { useTheme } from '../../hooks/useTheme';
 import './Sidebar.css';
 
-type ActiveView = 'chat' | 'profile';
+type ActiveView = 'chat' | 'profile' | 'smartsuite';
 
 type SidebarProps = {
   user: firebaseCompat.User;
@@ -25,12 +25,14 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
   const [isLoadingVersions, setIsLoadingVersions] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Fetch versions from Verdaccio
+  // Fetch versions from npm registry (Verdaccio or npmjs.com)
   const fetchVersions = async () => {
     setIsLoadingVersions(true);
     try {
-      // Verdaccio default port is 4873
-      const response = await fetch('http://localhost:4873/react-firechat-poc');
+      // Use environment variable or fallback to public npm registry
+      const registryUrl = process.env.REACT_APP_NPM_REGISTRY_URL || 'https://registry.npmjs.org';
+      const packageName = 'module-react-firebase-chat-app-poc';
+      const response = await fetch(`${registryUrl}/${packageName}`);
       if (response.ok) {
         const data = await response.json();
         const versionList = Object.keys(data.versions || {}).sort((a, b) => {
@@ -45,7 +47,7 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
         });
         setVersions(versionList);
       } else {
-        console.error('Failed to fetch versions from Verdaccio');
+        console.error('Failed to fetch versions from registry:', response.statusText);
         setVersions([]);
       }
     } catch (error) {
@@ -174,6 +176,26 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
             </div>
           )}
         </div>
+
+        <button
+          className={`sidebar__nav-item ${activeView === 'smartsuite' ? 'active' : ''}`}
+          onClick={() => onSelectView('smartsuite')}
+        >
+          <div className="sidebar__smartsuite-icon">
+            <svg width="48" height="48" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="12" fill="url(#smartsuite-gradient)"/>
+              <path d="M20 10L11 15V21C11 25.42 14.11 29.54 18.5 30.5C22.89 29.54 26 25.42 26 21V15L20 10Z" fill="white" stroke="white" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M20 13L14 16V21C14 23.83 16.24 26.53 19 27.24C21.76 26.53 24 23.83 24 21V16L20 13Z" fill="url(#smartsuite-gradient)" stroke="white" strokeWidth="0.5"/>
+              <defs>
+                <linearGradient id="smartsuite-gradient" x1="0" y1="1.77" x2="47.7" y2="22.14" gradientUnits="userSpaceOnUse">
+                  <stop stopColor="#8B5CF6"/>
+                  <stop offset="1" stopColor="#6D28D9"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span className="sidebar__nav-label">SmartSuite</span>
+        </button>
       </nav>
 
       <button
