@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useMediaQuery, useTheme } from '@mui/material';
 import { ProfileMenu } from '../../components/layout/ProfileMenu';
 import { PersonalInfo } from './PersonalInfo';
 import { PasswordSecurity } from './PasswordSecurity';
@@ -15,15 +16,33 @@ interface MainPanelWrapperProps {
   profileContact: any;
   isLoading: boolean;
   onSignOut: () => void;
+  onBackToChat?: () => void;
 }
 
 export const MainPanelWrapper: React.FC<MainPanelWrapperProps> = ({
   profileContact,
   isLoading,
   onSignOut,
+  onBackToChat,
 }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const defaultPath = menuList.find((item) => item.enabled)?.path ?? menuList[0].path;
   const [selectedPath, setSelectedPath] = useState<string>(defaultPath);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (!isMobile) {
+      setIsMenuOpen(false);
+    }
+  }, [isMobile]);
+
+  const handlePathChange = (path: string) => {
+    setSelectedPath(path);
+    if (isMobile) {
+      setIsMenuOpen(false);
+    }
+  };
 
   const renderContent = () => {
     switch (selectedPath) {
@@ -46,9 +65,42 @@ export const MainPanelWrapper: React.FC<MainPanelWrapperProps> = ({
     }
   };
 
+  const currentMenuItem = menuList.find(item => item.path === selectedPath);
+
   return (
     <MainPanel id="main-panel" data-testid="main-panel-wrapper">
-      <ProfileMenu onSignOut={onSignOut} selectedPath={selectedPath} onPathChange={setSelectedPath} />
+      {isMobile && (
+        <>
+          <div className="profile-mobile-header">
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="profile-menu-toggle-button"
+              aria-label="Open menu"
+            >
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12H21M3 6H21M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+            <div className="profile-mobile-header-title">
+              {currentMenuItem?.title || 'Menu'}
+            </div>
+            <div className="profile-mobile-header-spacer"></div>
+          </div>
+          {isMenuOpen && (
+            <div
+              onClick={() => setIsMenuOpen(false)}
+              className="profile-menu-overlay"
+            />
+          )}
+        </>
+      )}
+      <ProfileMenu
+        onSignOut={onSignOut}
+        selectedPath={selectedPath}
+        onPathChange={handlePathChange}
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+      />
       {renderContent()}
     </MainPanel>
   );

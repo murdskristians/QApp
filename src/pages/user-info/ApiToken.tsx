@@ -19,10 +19,14 @@ export const ApiToken = () => {
     <PuiBox
       sx={{
         height: '100%',
-        padding: '48px 40px',
+        padding: { xs: '24px 16px', md: '48px 40px' },
         overflowY: 'auto',
-        background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
+        background: { xs: 'transparent', md: 'transparent' },
+        '[data-theme="dark"] &': {
+          background: { xs: 'transparent', md: 'transparent' },
+        },
       }}
+      className="personal-info"
     >
       <PuiTypography
         variant="body-lg-medium"
@@ -40,12 +44,15 @@ export const ApiToken = () => {
       <PuiBox sx={{ maxWidth: '747px' }}>
         <PuiBox
           sx={{
-            background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
-            borderRadius: '24px',
-            padding: '24px',
+            background: { xs: 'transparent', md: 'transparent' },
+            borderRadius: { xs: '16px', md: '24px' },
+            padding: { xs: '16px', md: '24px' },
             display: 'flex',
             flexDirection: 'column',
-            gap: '24px',
+            gap: { xs: '16px', md: '24px' },
+            '[data-theme="dark"] &': {
+              background: { xs: 'transparent', md: 'transparent' },
+            },
           }}
         >
           {/* API Token Display */}
@@ -63,7 +70,11 @@ export const ApiToken = () => {
                 fullWidth
                 sx={{
                   fontFamily: 'monospace',
-                  backgroundColor: '#F9FAFB',
+                  backgroundColor: (theme) => theme.palette.background.default,
+                  '[data-theme="dark"] &': {
+                    backgroundColor: '#272727',
+                    color: '#ffffff',
+                  },
                 }}
               />
               <PuiButton variant="outlined" size="small" onClick={handleCopyToken} sx={{ padding: '2px 6px', fontSize: '10px', minWidth: 'auto', height: '24px' }}>

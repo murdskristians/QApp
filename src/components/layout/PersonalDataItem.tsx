@@ -17,13 +17,22 @@ export const PersonalDataItem = ({ title, value }: PersonalDataItemProps) => {
           letterSpacing: '0.08em',
           color: '#9CA3BA',
           fontSize: '11px',
+          '[data-theme="dark"] &': {
+            color: '#a7aec3',
+          },
         }}
       >
         {title}
       </PuiTypography>
       <PuiTypography
         variant="body-sm-medium"
-        sx={{ color: '#20243B', fontSize: '14px' }}
+        sx={{ 
+          color: '#20243B', 
+          fontSize: '14px',
+          '[data-theme="dark"] &': {
+            color: '#ffffff',
+          },
+        }}
       >
         {displayValue}
       </PuiTypography>

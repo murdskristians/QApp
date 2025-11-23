@@ -58,33 +58,56 @@ export const AppearanceTheme = () => {
     <PuiBox
       sx={{
         height: '100%',
-        padding: '48px 40px',
+        padding: { xs: '24px 16px', md: '48px 40px' },
         overflowY: 'auto',
-        background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
+        background: {
+          xs: 'transparent',
+          md: 'transparent',
+        },
+        // Dark theme support
+        '[data-theme="dark"] &': {
+          background: {
+            xs: 'transparent',
+            md: 'transparent',
+          },
+        },
       }}
     >
       <PuiTypography
         variant="body-lg-medium"
         sx={{
-          marginBottom: '36px !important',
-          marginLeft: '24px',
+          marginBottom: { xs: '24px !important', md: '36px !important' },
+          marginLeft: { xs: '0', md: '24px' },
           fontWeight: 500,
-          fontSize: '20px',
+          fontSize: { xs: '18px', md: '20px' },
           letterSpacing: '-0.01em',
+          '[data-theme="dark"] &': {
+            color: '#ffffff',
+          },
         }}
       >
         Appearance & Theme
       </PuiTypography>
 
-      <PuiBox sx={{ maxWidth: '747px' }}>
+      <PuiBox sx={{ maxWidth: { xs: '100%', md: '747px' } }}>
         <PuiBox
           sx={{
-            background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
-            borderRadius: '24px',
-            padding: '24px',
+            background: {
+              xs: 'transparent',
+              md: 'transparent',
+            },
+            borderRadius: { xs: '16px', md: '24px' },
+            padding: { xs: '16px', md: '24px' },
             display: 'flex',
             flexDirection: 'column',
-            gap: '24px',
+            gap: { xs: '16px', md: '24px' },
+            // Dark theme support
+            '[data-theme="dark"] &': {
+              background: {
+                xs: 'transparent',
+                md: 'transparent',
+              },
+            },
           }}
         >
           {/* Theme Mode */}
@@ -94,9 +117,14 @@ export const AppearanceTheme = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '16px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
               borderRadius: '12px',
-              border: '1px solid #E5E7EB',
+              border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
             }}
           >
             <PuiBox>
@@ -142,11 +170,16 @@ export const AppearanceTheme = () => {
                 onClick={() => handlePaletteChange('default')}
                 sx={{
                   padding: '16px',
-                  backgroundColor: '#ffffff',
+                  backgroundColor: (theme) => theme.palette.background.default,
                   borderRadius: '12px',
                   border: `2px solid ${selectedPalette === 'default' ? '#3398DB' : '#E5E7EB'}`,
                   cursor: 'pointer',
                   transition: 'all 0.2s',
+                  '[data-theme="dark"] &': {
+                    backgroundColor: '#272727',
+                    border: `2px solid ${selectedPalette === 'default' ? '#3398DB' : '#3a3a3a'}`,
+                    color: '#ffffff',
+                  },
                   '&:hover': {
                     borderColor: '#3398DB',
                     transform: 'translateY(-2px)',
@@ -197,11 +230,16 @@ export const AppearanceTheme = () => {
                     onClick={() => handlePaletteChange(paletteKey)}
                     sx={{
                       padding: '16px',
-                      backgroundColor: '#ffffff',
+                      backgroundColor: (theme) => theme.palette.background.default,
                       borderRadius: '12px',
                       border: `2px solid ${isSelected ? palette.primary : '#E5E7EB'}`,
                       cursor: 'pointer',
                       transition: 'all 0.2s',
+                      '[data-theme="dark"] &': {
+                        backgroundColor: '#272727',
+                        border: `2px solid ${isSelected ? palette.primary : '#3a3a3a'}`,
+                        color: '#ffffff',
+                      },
                       '&:hover': {
                         borderColor: palette.primary,
                         transform: 'translateY(-2px)',
@@ -251,9 +289,14 @@ export const AppearanceTheme = () => {
           <PuiBox
             sx={{
               padding: '20px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
               borderRadius: '12px',
-              border: '1px solid #E5E7EB',
+              border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
             }}
           >
             <PuiTypography variant="body-sm-semibold" sx={{ marginBottom: '12px', display: 'block' }}>

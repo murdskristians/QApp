@@ -56,9 +56,355 @@
   display: flex;
   background: transparent;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .app-layout__profile-view > * {
   flex: 1;
   display: flex;
+}
+
+/* Sidebar toggle button */
+.sidebar-toggle-button {
+  position: fixed;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9998;
+  transition: opacity 0.2s ease;
+  padding: 0;
+}
+
+.sidebar-toggle-button:hover {
+  opacity: 0.7;
+}
+
+.sidebar-toggle-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* Light theme - black arrow */
+.sidebar-toggle-button {
+  color: #000000;
+}
+
+/* Dark theme - white arrow */
+[data-theme="dark"] .sidebar-toggle-button {
+  color: #ffffff;
+}
+
+.sidebar-toggle-button svg {
+  width: 16px;
+  height: 16px;
+  transform: rotate(180deg);
+}
+
+/* Sidebar overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: none;
+  animation: fadeIn 0.3s ease;
+  backdrop-filter: blur(2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle-button {
+    display: flex;
+  }
+
+  .app-layout {
+    position: relative;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar-overlay {
+    display: none !important;
+  }
+}
+
+/* Profile menu mobile styles */
+.profile-menu-toggle-button {
+  position: fixed;
+  left: 12px;
+  top: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3f5ff;
+  z-index: 9999;
+  transition: all 0.2s ease;
+}
+
+.profile-menu-toggle-button:hover {
+  background: rgba(39, 39, 39, 1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .profile-menu-toggle-button {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.profile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  animation: fadeIn 0.3s ease;
+}
+
+.profile-menu-close-button {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  z-index: 10001;
+  padding: 0;
+  transition: opacity 0.2s ease;
+}
+
+.profile-menu-close-button:hover {
+  opacity: 0.7;
+}
+
+.profile-menu-close-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* Profile mobile header */
+.profile-mobile-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: #1a1a2e;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  z-index: 9998;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .profile-mobile-header {
+  background: #1a1a2e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.profile-mobile-header-title {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 100px);
+  pointer-events: none;
+}
+
+.profile-mobile-header-spacer {
+  width: 44px;
+  flex-shrink: 0;
+}
+
+.profile-back-to-chat-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3f5ff;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.profile-back-to-chat-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .profile-back-to-chat-button {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.profile-menu-toggle-button {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  color: #f3f5ff;
+  transition: all 0.2s ease;
+  padding: 0;
+  flex-shrink: 0;
+  z-index: 9998;
+}
+
+.profile-menu-toggle-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .profile-menu-toggle-button {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.profile-menu-toggle-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 769px) {
+  .profile-mobile-header {
+    display: none;
+  }
+}
+
+/* Add padding to profile content on mobile to account for header */
+@media (max-width: 768px) {
+  .personal-info {
+    padding-top: 72px !important;
+  }
+}
+
+/* Profile cards theme support */
+[data-theme="dark"] .MuiBox-root[style*="background-color: rgb(255, 255, 255)"],
+[data-theme="dark"] .MuiBox-root[style*="background-color: #ffffff"],
+[data-theme="dark"] .MuiBox-root[style*="background-color: white"] {
+  background-color: #272727 !important;
+  border-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] .MuiBox-root[style*="border: 1px solid rgb(229, 231, 235)"],
+[data-theme="dark"] .MuiBox-root[style*="border: 1px solid #E5E7EB"] {
+  border-color: #3a3a3a !important;
+}
+
+/* Profile inputs dark theme support */
+[data-theme="dark"] #main-panel .MuiInputBase-root,
+[data-theme="dark"] #main-panel .MuiOutlinedInput-root,
+[data-theme="dark"] #main-panel input {
+  background-color: #272727 !important;
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] #main-panel .MuiInputBase-root fieldset,
+[data-theme="dark"] #main-panel .MuiOutlinedInput-root fieldset {
+  border-color: #3a3a3a !important;
+}
+
+[data-theme="dark"] #main-panel .MuiInputBase-root:hover fieldset,
+[data-theme="dark"] #main-panel .MuiOutlinedInput-root:hover fieldset {
+  border-color: #4a4a4a !important;
+}
+
+[data-theme="dark"] #main-panel .MuiInputBase-root.Mui-focused fieldset,
+[data-theme="dark"] #main-panel .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #3398DB !important;
+}
+
+[data-theme="dark"] #main-panel .MuiInputBase-input,
+[data-theme="dark"] #main-panel input::placeholder {
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] #main-panel .MuiInputLabel-root {
+  color: #a7aec3 !important;
+}
+
+[data-theme="dark"] #main-panel .MuiInputLabel-root.Mui-focused {
+  color: #3398DB !important;
+}
+
+/* Profile text colors in dark theme */
+[data-theme="dark"] #main-panel .MuiTypography-root[style*="color: rgb(107, 114, 128)"],
+[data-theme="dark"] #main-panel .MuiTypography-root[style*="color: #6B7280"] {
+  color: #a7aec3 !important;
+}
+
+/* Dark text values in dark theme */
+[data-theme="dark"] #main-panel .MuiTypography-root[style*="color: rgb(32, 36, 59)"],
+[data-theme="dark"] #main-panel .MuiTypography-root[style*="color: #20243B"] {
+  color: #ffffff !important;
+}
+
+/* Labels in dark theme */
+[data-theme="dark"] #main-panel .MuiTypography-root[style*="color: rgb(156, 163, 186)"],
+[data-theme="dark"] #main-panel .MuiTypography-root[style*="color: #9CA3BA"] {
+  color: #a7aec3 !important;
+}
+
+/* All headings in dark theme */
+[data-theme="dark"] #main-panel h5,
+[data-theme="dark"] #main-panel .MuiTypography-h5 {
+  color: #ffffff !important;
+}
+
+/* Profile background in dark theme */
+[data-theme="dark"] #main-panel {
+  background-color: #1a1a2e !important;
+}
+
+[data-theme="dark"] #main-panel .personal-info {
+  background-color: transparent !important;
 }

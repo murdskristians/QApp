@@ -75,7 +75,13 @@ export const PersonalData = ({
       <NameWrapper>
         <PuiTypography
           variant="h5"
-          sx={{ marginBottom: '8px', fontWeight: 600 }}
+          sx={{ 
+            marginBottom: '8px', 
+            fontWeight: 600,
+            '[data-theme="dark"] &': {
+              color: '#ffffff',
+            },
+          }}
         >
           {profileContact.name}
         </PuiTypography>
@@ -83,7 +89,15 @@ export const PersonalData = ({
           <PuiStack
             sx={{ flexDirection: 'row', alignItems: 'center', gap: '8px' }}
           >
-            <PuiTypography variant="body-sm-medium" color="grey.400">
+            <PuiTypography 
+              variant="body-sm-medium" 
+              sx={{
+                color: 'grey.400',
+                '[data-theme="dark"] &': {
+                  color: '#a7aec3',
+                },
+              }}
+            >
               {profileContact.statusMessage}
             </PuiTypography>
           </PuiStack>

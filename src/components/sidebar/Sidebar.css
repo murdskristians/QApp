@@ -10,6 +10,75 @@
   min-height: 100vh;
   flex-shrink: 0;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar__close-button {
+  position: absolute;
+  top: 2px;
+  right: 3px;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: opacity 0.2s ease;
+  z-index: 1001;
+  padding: 0;
+}
+
+.sidebar__close-button:hover {
+  opacity: 0.7;
+}
+
+.sidebar__close-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 10000;
+    box-shadow: 4px 0 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+  }
+
+  .sidebar.sidebar--open {
+    transform: translateX(0);
+  }
+
+  .sidebar__close-button {
+    display: flex;
+    z-index: 10001;
+  }
+  
+  .sidebar__close-button svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 769px) {
+  .sidebar {
+    position: relative;
+    transform: none !important;
+  }
+
+  .sidebar__close-button {
+    display: none !important;
+  }
 }
 
 .sidebar__theme-toggle {

@@ -7,7 +7,10 @@ import ResetPassword from './pages/auth/ResetPassword';
 import { Sidebar } from './components/sidebar/Sidebar';
 import { MainPanelWrapper } from './pages/user-info/MainPanelWrapper';
 import { ProfileContact } from './types/profile';
-import { Workspace, NotificationProvider } from 'module-react-firebase-chat-app-poc';
+import {
+  Workspace,
+  NotificationProvider,
+} from 'module-react-firebase-chat-app-poc';
 import 'module-react-firebase-chat-app-poc/dist/module-react-firebase-chat-app-poc.css';
 
 import {
@@ -44,6 +47,7 @@ function App() {
   const [user, setUser] = useState<FirebaseUser | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [activeView, setActiveView] = useState<ActiveView>('chat');
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
   const prevUserRef = useRef<FirebaseUser | null>(null);
   const [selectedVersion, setSelectedVersion] = useState<string>(() => {
     return localStorage.getItem(SELECTED_VERSION_KEY) || '';
@@ -105,16 +109,51 @@ function App() {
                 <Sidebar
                   user={user}
                   activeView={activeView}
-                  onSelectView={setActiveView}
+                  onSelectView={(view) => {
+                    setActiveView(view);
+                    setIsSidebarOpen(false);
+                  }}
                   selectedVersion={selectedVersion}
                   onVersionChange={handleVersionChange}
+                  isOpen={isSidebarOpen}
+                  onClose={() => setIsSidebarOpen(false)}
                 />
+                {isSidebarOpen && (
+                  <div
+                    className="sidebar-overlay"
+                    onClick={() => setIsSidebarOpen(false)}
+                  />
+                )}
+                {!isSidebarOpen && (
+                  <button
+                    className="sidebar-toggle-button"
+                    onClick={() => setIsSidebarOpen(true)}
+                    aria-label="Open sidebar"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 4L8 8L4 12"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </button>
+                )}
                 <section className="app-layout__profile-view">
                   {activeView === 'profile' ? (
                     <MainPanelWrapper
                       profileContact={createProfileContact(user)}
                       isLoading={false}
                       onSignOut={handleSignOut}
+                      onBackToChat={() => setActiveView('chat')}
                     />
                   ) : (
                     <NotificationProvider>
@@ -136,4 +175,3 @@ function App() {
 }
 
 export default App;
-

@@ -18,35 +18,62 @@ export const PersonalInfo = ({
     <PuiBox
       sx={{
         height: '100%',
-        padding: '48px 40px',
+        padding: { xs: '24px 16px', md: '48px 40px' },
         overflowY: 'auto',
-        background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
+        background: {
+          xs: 'transparent',
+          md: 'transparent',
+        },
+        // Dark theme support
+        '[data-theme="dark"] &': {
+          background: {
+            xs: 'transparent',
+            md: 'transparent',
+          },
+        },
       }}
       className="personal-info"
     >
       <PuiTypography
         variant="body-lg-medium"
         sx={{
-          marginBottom: '36px !important',
-          marginLeft: '24px',
+          marginBottom: { xs: '24px !important', md: '36px !important' },
+          marginLeft: { xs: '0', md: '24px' },
           fontWeight: 500,
-          fontSize: '20px',
+          fontSize: { xs: '18px', md: '20px' },
           letterSpacing: '-0.01em',
+          color: {
+            xs: 'inherit',
+            md: 'inherit',
+          },
+          '[data-theme="dark"] &': {
+            color: '#ffffff',
+          },
         }}
       >
         Personal Information
       </PuiTypography>
-      <PuiBox sx={{ maxWidth: '747px' }}>
+      <PuiBox sx={{ maxWidth: { xs: '100%', md: '747px' } }}>
         <PuiBox
           sx={{
-            background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
-            borderRadius: '24px',
-            padding: '24px',
+            background: {
+              xs: 'transparent',
+              md: 'transparent',
+            },
+            borderRadius: { xs: '16px', md: '24px' },
+            padding: { xs: '16px', md: '24px' },
             display: 'flex',
             flexDirection: 'column',
-            gap: '16px',
+            gap: { xs: '12px', md: '16px' },
             '& > *': {
               marginBottom: '0 !important',
+            },
+            // Dark theme support
+            '[data-theme="dark"] &': {
+              background: {
+                xs: 'transparent',
+                md: 'transparent',
+              },
             },
           }}
         >

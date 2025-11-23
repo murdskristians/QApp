@@ -12,10 +12,14 @@ export const Notifications = () => {
     <PuiBox
       sx={{
         height: '100%',
-        padding: '48px 40px',
+        padding: { xs: '24px 16px', md: '48px 40px' },
         overflowY: 'auto',
-        background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
+        background: { xs: 'transparent', md: 'transparent' },
+        '[data-theme="dark"] &': {
+          background: { xs: 'transparent', md: 'transparent' },
+        },
       }}
+      className="personal-info"
     >
       <PuiTypography
         variant="body-lg-medium"
@@ -33,12 +37,15 @@ export const Notifications = () => {
       <PuiBox sx={{ maxWidth: '747px' }}>
         <PuiBox
           sx={{
-            background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
-            borderRadius: '24px',
-            padding: '24px',
+            background: { xs: 'transparent', md: 'transparent' },
+            borderRadius: { xs: '16px', md: '24px' },
+            padding: { xs: '16px', md: '24px' },
             display: 'flex',
             flexDirection: 'column',
-            gap: '16px',
+            gap: { xs: '12px', md: '16px' },
+            '[data-theme="dark"] &': {
+              background: { xs: 'transparent', md: 'transparent' },
+            },
           }}
         >
           {/* Email Notifications */}
@@ -48,9 +55,14 @@ export const Notifications = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '16px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
               borderRadius: '12px',
-              border: '1px solid #E5E7EB',
+              border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
             }}
           >
             <PuiBox>
@@ -83,9 +95,14 @@ export const Notifications = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '16px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
               borderRadius: '12px',
-              border: '1px solid #E5E7EB',
+              border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
             }}
           >
             <PuiBox>
@@ -118,9 +135,14 @@ export const Notifications = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '16px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
               borderRadius: '12px',
-              border: '1px solid #E5E7EB',
+              border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
             }}
           >
             <PuiBox>
@@ -153,9 +175,14 @@ export const Notifications = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '16px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
               borderRadius: '12px',
-              border: '1px solid #E5E7EB',
+              border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
             }}
           >
             <PuiBox>
@@ -188,9 +215,14 @@ export const Notifications = () => {
               justifyContent: 'space-between',
               alignItems: 'center',
               padding: '16px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
               borderRadius: '12px',
-              border: '1px solid #E5E7EB',
+              border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
             }}
           >
             <PuiBox>

@@ -11,9 +11,11 @@ type SidebarProps = {
   onSelectView: (view: ActiveView) => void;
   selectedVersion: string;
   onVersionChange: (version: string) => void;
+  isOpen?: boolean;
+  onClose?: () => void;
 };
 
-export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVersionChange }: SidebarProps) {
+export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVersionChange, isOpen, onClose }: SidebarProps) {
   const displayName = user.displayName ?? user.email ?? 'User';
   const initials = displayName.split(' ').map(n => n[0]).join('').toUpperCase().slice(0, 2);
   const { isDark, toggleTheme } = useTheme();
@@ -79,7 +81,18 @@ export function Sidebar({ user, activeView, onSelectView, selectedVersion, onVer
   };
 
   return (
-    <aside className="sidebar">
+    <aside className={`sidebar ${isOpen ? 'sidebar--open' : ''}`}>
+      {onClose && (
+        <button
+          className="sidebar__close-button"
+          onClick={onClose}
+          aria-label="Close sidebar"
+        >
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+      )}
       <button
         onClick={toggleTheme}
         className="sidebar__theme-toggle"

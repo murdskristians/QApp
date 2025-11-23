@@ -11,10 +11,14 @@ export const PasswordSecurity = () => {
     <PuiBox
       sx={{
         height: '100%',
-        padding: '48px 40px',
+        padding: { xs: '24px 16px', md: '48px 40px' },
         overflowY: 'auto',
-        background: 'linear-gradient(180deg, #f7f9ff 0%, #f5f7fb 100%)',
+        background: { xs: 'transparent', md: 'transparent' },
+        '[data-theme="dark"] &': {
+          background: { xs: 'transparent', md: 'transparent' },
+        },
       }}
+      className="personal-info"
     >
       <PuiTypography
         variant="body-lg-medium"
@@ -74,7 +78,12 @@ export const PasswordSecurity = () => {
           <PuiBox
             sx={{
               padding: '16px',
-              backgroundColor: '#ffffff',
+              backgroundColor: (theme) => theme.palette.background.default,
+              '[data-theme="dark"] &': {
+                backgroundColor: '#272727',
+                border: '1px solid #3a3a3a',
+                color: '#ffffff',
+              },
               borderRadius: '12px',
               border: '1px solid #E5E7EB',
             }}
@@ -107,9 +116,14 @@ export const PasswordSecurity = () => {
             <PuiBox
               sx={{
                 padding: '16px',
-                backgroundColor: '#ffffff',
+                backgroundColor: (theme) => theme.palette.background.default,
                 borderRadius: '12px',
-                border: '1px solid #E5E7EB',
+                border: (theme) => `1px solid ${theme.palette.grey[50]}`,
+                '[data-theme="dark"] &': {
+                  backgroundColor: '#272727',
+                  border: '1px solid #3a3a3a',
+                  color: '#ffffff',
+                },
               }}
             >
               <PuiBox sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

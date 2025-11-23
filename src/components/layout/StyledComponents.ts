@@ -14,10 +14,15 @@ import {
 } from 'piche.ui';
 
 export const SectionContainer = PuiStyled(PuiBox)(({ theme }) => ({
-  backgroundColor: 'white',
+  backgroundColor: theme.palette.background.default,
   borderRadius: '16px',
   border: `1px solid ${theme.palette.grey[50]}`,
   overflow: 'hidden',
+  // Dark theme support
+  '[data-theme="dark"] &': {
+    backgroundColor: '#272727',
+    border: `1px solid #3a3a3a`,
+  },
 }));
 
 export const CoverImageWrapper = PuiStyled(PuiBox)(({ theme }) => ({
@@ -191,6 +196,19 @@ export const StyledInput = PuiStyled(PuiTextInput)(({ theme }) => ({
     color: theme.palette.grey[500],
     fontSize: '12px',
     borderRadius: 'inherit',
+  },
+  // Dark theme support
+  '[data-theme="dark"] &': {
+    '&.MuiInputBase-root fieldset': {
+      borderColor: '#3a3a3a',
+    },
+    '&.MuiInputBase-root:hover fieldset': {
+      borderColor: '#4a4a4a',
+    },
+    '&.MuiInputBase-root .MuiInputBase-input': {
+      backgroundColor: '#272727',
+      color: '#ffffff',
+    },
   },
   '&.transparent-input.MuiInputBase-root': {
     '& .MuiInputBase-input': {
@@ -414,6 +432,26 @@ export const ProfileMenuWrapper = PuiStyled(PuiBox)(({ theme }) => ({
   height: '100%',
   padding: '32px 24px 28px',
   borderRight: `1px solid ${theme.palette.grey[100]}`,
+  [theme.breakpoints.down('md')]: {
+    position: 'fixed',
+    left: 0,
+    top: 0,
+    width: '280px',
+    height: '100vh',
+    zIndex: 10000,
+    transform: 'translateX(-100%)',
+    transition: 'transform 0.3s ease-in-out',
+    boxShadow: '2px 0 8px rgba(0, 0, 0, 0.2)',
+    '&.open': {
+      transform: 'translateX(0)',
+    },
+  },
+  // Dark theme support
+  '[data-theme="dark"] &': {
+    backgroundColor: '#272727',
+    borderRight: `1px solid #3a3a3a`,
+    color: '#ffffff',
+  },
 }));
 
 export const ProfileMenuItemWrapper = PuiStyled(PuiBox)(({ theme }) => ({
@@ -441,6 +479,21 @@ export const ProfileMenuItemWrapper = PuiStyled(PuiBox)(({ theme }) => ({
     opacity: 0.9,
     '&:hover': {
       backgroundColor: 'transparent',
+    },
+  },
+  // Dark theme support
+  '[data-theme="dark"] &': {
+    '& .MuiTypography-root': {
+      color: '#A7AEC3',
+    },
+    '&.selected': {
+      backgroundColor: '#3a3a3a',
+      '& .MuiTypography-root': {
+        color: '#ffffff',
+      },
+    },
+    '&:hover': {
+      backgroundColor: '#2a2a2a',
     },
   },
 }));
